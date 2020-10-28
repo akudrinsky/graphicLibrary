@@ -4,26 +4,30 @@ LDFLAGS  := -Wall -lsfml-graphics -lsfml-window -lsfml-system
 BUILD    := ./build
 OBJ_DIR  := $(BUILD)/objects
 APP_DIR  := $(BUILD)/
-TARGET   := yasa
+TARGET   := app
 INCLUDE  := 
 SRC      :=                           		\
-   	$(wildcard kudry/window/RectangleWindow/RectangleWindow.cpp)               	\
-	$(wildcard kudry/window/Button/Button.cpp)          \
-	$(wildcard kudry/engine/SFML/engineSFML.cpp)     \
-	$(wildcard kudry/engine/OpenGL/engineOpenGL.cpp)  \
-	$(wildcard kudry/simpleGraphics/color/color.cpp)          \
+   	$(wildcard kudry/window/RectangleWindow/*.cpp)               	\
+	$(wildcard kudry/window/Button/*.cpp)          \
+	$(wildcard kudry/engine/SFML/*.cpp)     \
+	$(wildcard kudry/engine/OpenGL/*.cpp)  \
+	$(wildcard kudry/simpleGraphics/color/*.cpp)          \
+	$(wildcard kudry/application/*.cpp)          \
+	$(wildcard kudry/engine/*.cpp)          \
+	$(wildcard kudry/window/*.cpp)          \
+	$(wildcard files-dialog/*.cpp)          \
 	# тут дописать все директории
 
 OBJECTS  := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
+all: build $(APP_DIR)/$(TARGET)
+
 run: $(APP_DIR)/$(TARGET)
 	./$(APP_DIR)/$(TARGET)
 
-all: build $(APP_DIR)/$(TARGET)
-
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(@D)
-	$(CXX) $(CXXFLAGS) $(INCLUDE) -c $< -o $@ $(LDFLAGS)
+	$(CXX) $(CXXFLAGS) $(INCLUDE) -c $< -o $@
 
 $(APP_DIR)/$(TARGET): $(OBJECTS)
 	@mkdir -p $(@D)
@@ -36,11 +40,11 @@ build:
 	@mkdir -p $(OBJ_DIR)
 
 debug: CXXFLAGS += -DDEBUG -Wshadow -Wformat=2 -Wfloat-equal \
-				   -Wconversion -Wlogical-op -Wshift-overflow=2     \
-				   -Wduplicated-cond -Wcast-qual -Wcast-align       \
+				   -Wconversion \
+				   -Wcast-qual -Wcast-align       \
 				   -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC       \
-				   -D_FORTIFY_SOURCE=2 -fsanitize=address 		    \
-				   -fsanitize=undefined -fno-sanitize-recover 	    \
+				    -fsanitize=address 		    \
+				   -fsanitize=undefined 	\
 				   -fstack-protector -Wno-format-nonliteral    \
 				   -Wno-shadow
 debug: all
@@ -51,6 +55,6 @@ findcpp:
 release: CXXFLAGS += -Wno-unused-parameter
 release: all
 
-#clean:
-#	-@rm -rvi $(OBJ_DIR)/*
-#	-@rm -rvi $(APP_DIR)/*
+clean:
+	-@rm -rvi $(OBJ_DIR)/*
+	-@rm -rvi $(APP_DIR)/*

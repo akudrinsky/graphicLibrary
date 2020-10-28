@@ -11,6 +11,7 @@ void engineSFML::Init(const char* windowName)
 }
 
 void engineSFML::Destroy() {
+    windowOS->close();
     delete windowOS;
 }
 
@@ -34,6 +35,30 @@ void engineSFML::DrawRect
     rect.setPosition(coords.x, coords.y);
 
     windowOS->draw(rect);
+}
+
+Event* engineSFML::PollEvent()
+{
+    Event* myEvent = new Event;
+
+    sf::Event SFMLevent;
+    windowOS->pollEvent(SFMLevent);
+
+    switch (SFMLevent.type) {
+    case sf::Event::MouseButtonPressed:
+        myEvent->ID = kudry::Event::MouseEvent;
+        myEvent->Data.Mouse.coord = FlatObj(SFMLevent.mouseButton.x, SFMLevent.mouseButton.y);
+        break;
+    
+    case sf::Event::Closed:
+        myEvent->ID = kudry::Event::Close;
+        break;
+    
+    default:
+        break;
+    }
+    
+    return myEvent;
 }
 
 };

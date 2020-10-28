@@ -11,12 +11,21 @@ namespace kudry
 class RectangleWindow : public AbstractWindow
 {
 public:
-    RectangleWindow
-    (
+    RectangleWindow(
         const FlatObj& center, 
         const FlatObj& size, 
         const Color& backgroundColor = Black
     );
+
+    virtual ~RectangleWindow() override;
+
+    virtual bool HandleEvent(Event* event) override;
+
+    virtual void Draw() override;
+
+    virtual void EmplaceWindow(AbstractWindow* window) override;
+
+    virtual void RemoveWindow(AbstractWindow* window) override;
 
 protected:
     FlatObj center;

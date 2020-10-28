@@ -21,7 +21,6 @@ public:
     virtual void RemoveWindow(AbstractWindow* window) = 0;
 
 protected:
-    AbstractWindow* parent;
     std::unordered_set<AbstractWindow*> subwindows;
 };
 

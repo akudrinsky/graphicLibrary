@@ -25,6 +25,8 @@ public:
 
     static void Destroy();
 
+    static Event* PollEvent();
+
 private:
 
     static sf::RenderWindow* windowOS;

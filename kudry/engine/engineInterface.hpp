@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../application/Event.hpp"
 #include "../simpleGraphics/geometry/geometry.hpp"
 #include "../simpleGraphics/color/color.hpp"
 
@@ -25,7 +26,8 @@ public:
 
     static void Destroy();
 
-    
+    static Event* PollEvent();
+
 private:
     ~engineInterface() = delete;
 };

@@ -1,26 +1,29 @@
 #pragma once
-
 #include "../simpleGraphics/geometry/geometry.hpp"
 
 namespace kudry
 {
 
-enum EventType 
-{
-    ClickEvent = 0,
-    MouseEvent = 1,
-    KeyboardEvent = 2,
-    IdleEvent = 3,
-};
-
 struct Event
 {
-    EventType eventID;
+    enum EventType 
+    {
+        Unknown,
+        MouseEvent,
+        Close,
+    };
+
+    Event();
+
+    EventType ID;
 
     struct MouseData 
     {
         FlatObj coord;
     };
+
+    struct None
+    {};
 
     struct ClickData 
     {
@@ -29,16 +32,18 @@ struct Event
 
     struct KeyboardData 
     {
-        FlatObj coord;
         //...
     };
 
-    union data 
+    union eventData
     {
         MouseData Mouse;
         ClickData Click;
         KeyboardData Keyboard;
-    };
+        None NoData;
+        
+        eventData();
+    } Data;
     
 };
 

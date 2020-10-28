@@ -8,9 +8,10 @@
 namespace kudry
 {
 
-// http://cpp-reference.ru/patterns/creational-patterns/singleton/
 class Application;
 
+namespace
+{
 class applicationDestroyer
 {
 private:
@@ -19,7 +20,8 @@ private:
 public:
     ~applicationDestroyer();
     void initialize(Application* app);
-};
+};   
+}
 
 class Application 
 {
@@ -35,6 +37,10 @@ public:
     void DeleteWindow(AbstractWindow* window);
 
     bool IsInside(AbstractWindow* window);
+
+    Event* PollEvent();
+
+    void Display();
 
 private:
     friend class applicationDestroyer;
