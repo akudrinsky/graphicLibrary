@@ -38,9 +38,7 @@ public:
 
     bool IsInside(AbstractWindow* window);
 
-    Event* PollEvent();
-
-    void Display();
+    uint8_t Run();
 
 private:
     friend class applicationDestroyer;

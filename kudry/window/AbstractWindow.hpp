@@ -1,7 +1,6 @@
 #pragma once
 
 #include "../application/Event.hpp"
-#include "../engine/settings.hpp"
 #include <unordered_set>
 
 namespace kudry

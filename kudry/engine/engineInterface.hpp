@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../application/Event.hpp"
+#include "../window/AbstractWindow.hpp"
 #include "../simpleGraphics/geometry/geometry.hpp"
 #include "../simpleGraphics/color/color.hpp"
 

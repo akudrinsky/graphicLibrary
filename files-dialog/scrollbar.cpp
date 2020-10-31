@@ -1,5 +1,6 @@
 #include "../kudry/application/application.hpp"
 #include "../kudry/window/RectangleWindow/RectangleWindow.hpp"
+#include "../kudry/LOGS/logs.hpp"
 
 int main(int argc, char* argv[]) 
 {
@@ -18,9 +19,5 @@ int main(int argc, char* argv[])
 
     app.NewWindow(rect);
 
-    kudry::Event* event = nullptr;
-
-    while ((event = app.PollEvent())->ID != kudry::Event::Close) {
-        app.Display();
-    }
+    return app.Run();
 }

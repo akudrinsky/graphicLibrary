@@ -52,7 +52,6 @@ Application& Application::Init(const char* name)
 void Application::NewWindow(AbstractWindow* window)
 {
     windows.emplace(window);
-    
 }
 
 void Application::DeleteWindow(AbstractWindow* window)
@@ -65,17 +64,9 @@ bool Application::IsInside(AbstractWindow* window)
     return windows.find(window) != windows.end();
 }
 
-Event* Application::PollEvent()
+uint8_t Application::Run()
 {
-    return Engine::PollEvent();
-}
-
-void Application::Display()
-{
-
-    for (auto window : windows) {
-        window->Draw();
-    }
+    return Engine::Run(windows);
 }
 
 };

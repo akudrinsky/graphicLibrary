@@ -7,7 +7,7 @@
     #define ON_DEBUG(...)\
         __VA_ARGS__
 #else
-    #define LOGS(data, ...) ;
+    #define LOGS(...) ;
     #define ON_DEBUG(...)\
         ;
 #endif

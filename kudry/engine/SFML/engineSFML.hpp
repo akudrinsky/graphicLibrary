@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <unordered_set>
 #include "../engineInterface.hpp"
 
 namespace kudry
@@ -25,7 +26,11 @@ public:
 
     static void Destroy();
 
+    static void Display();
+
     static Event* PollEvent();
+
+    static uint8_t Run(std::unordered_set<AbstractWindow*>& windows);
 
 private:
 

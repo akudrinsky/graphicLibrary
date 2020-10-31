@@ -1,4 +1,6 @@
 #include "RectangleWindow.hpp"
+#include "../../engine/settings.hpp"
+#include "../../LOGS/logs.hpp"
 
 namespace kudry
 {
@@ -30,6 +32,7 @@ bool RectangleWindow::HandleEvent(Event* event)
 void RectangleWindow::Draw()
 {
     Engine::DrawRect(center, size, backgroundColor);
+    LOGS("INFO >>> rect was drawn\n")
 }
 
 void RectangleWindow::EmplaceWindow(AbstractWindow* window)
