@@ -69,11 +69,6 @@ Event* engineSFML::PollEvent()
     return myEvent;
 }
 
-void engineSFML::Display()
-{
-    windowOS->display();
-}
-
 uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
 {
     while (windowOS->isOpen()) {
@@ -83,7 +78,7 @@ uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
         }
 
         for (auto window : windows) {
-            window->Draw();
+            window->Draw(this);
         }
         windowOS->display();
     }

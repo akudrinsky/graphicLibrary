@@ -9,28 +9,20 @@ namespace kudry
 
 class engineSFML : public engineInterface {
 public:
-    static void DrawRect
+    virtual void DrawRect
     (
         const FlatObj& coords, 
         const FlatObj& size, 
         const Color& color
-    );
+    ) override;
 
-    static void DrawText
-    (
-        const FlatObj& coords, 
-        const Color& color
-    );
+    virtual void Init(const char* windowName) override;
 
-    static void Init(const char* windowName);
+    virtual void Destroy() override;
 
-    static void Destroy();
+    virtual Event* PollEvent() override;
 
-    static void Display();
-
-    static Event* PollEvent();
-
-    static uint8_t Run(std::unordered_set<AbstractWindow*>& windows);
+    virtual uint8_t Run(std::unordered_set<AbstractWindow*>& windows) override;
 
 private:
 

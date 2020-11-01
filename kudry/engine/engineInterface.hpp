@@ -10,27 +10,24 @@ namespace kudry
 
 class engineInterface {
 public:
-    static void DrawRect
+    using WindowContainer = std::unordered_set<AbstractWindow*>;
+
+    virtual void DrawRect
     (
         const FlatObj& coords, 
         const FlatObj& size, 
         const Color& color
-    );
+    ) = 0;
 
-    static void DrawText
-    (
-        const FlatObj& coords, 
-        const Color& color
-    );
+    virtual void Init(const char* windowName) = 0;
 
-    static void Init(const char* windowName);
+    virtual void Destroy() = 0;
 
-    static void Destroy();
+    virtual Event* PollEvent() = 0;
 
-    static Event* PollEvent();
+    virtual uint8_t Run(WindowContainer& windows) = 0;
 
 private:
-    ~engineInterface() = delete;
 };
 
 }

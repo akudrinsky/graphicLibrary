@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../application/Event.hpp"
+#include "../engine/settings.hpp"
 #include <unordered_set>
 
 namespace kudry
@@ -13,7 +14,7 @@ public:
 
     virtual bool HandleEvent(Event* event) = 0;
 
-    virtual void Draw() = 0;
+    virtual void Draw(engineInterface* Canvas) = 0;
 
     virtual void EmplaceWindow(AbstractWindow* window) = 0;
 

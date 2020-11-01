@@ -21,7 +21,7 @@ public:
 
     virtual bool HandleEvent(Event* event) override;
 
-    virtual void Draw() override;
+    virtual void Draw(engineInterface* Canvas) override;
 
     virtual void EmplaceWindow(AbstractWindow* window) override;
 

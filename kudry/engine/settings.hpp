@@ -1,7 +1,8 @@
 #pragma once
-#include "SFML/engineSFML.hpp"
 
-namespace kudry 
+namespace kudry
 {
-    using Engine = engineSFML;
+
+class engineInterface;
+
 }

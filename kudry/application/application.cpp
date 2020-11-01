@@ -4,67 +4,77 @@
 namespace kudry
 {
 
-Application* Application::app = nullptr;
+template <typename Engine>
+Application<Engine>* Application<Engine>::app = nullptr;
 
-applicationDestroyer Application::destroyer = {};
+template <typename Engine>
+applicationDestroyer<Engine> Application<Engine>::destroyer = {};
 
 namespace
 {
-applicationDestroyer::~applicationDestroyer() 
+template <typename Engine>
+applicationDestroyer<Engine>::~applicationDestroyer() 
 {
     delete instance;
 }
 
-void applicationDestroyer::initialize(Application* app)
+template <typename Engine>
+void applicationDestroyer<Engine>::initialize(Application<Engine>* app)
 {
     instance = app;
 }
 };
 
-Application& Application::GetInstance() 
-{
-    if (app == nullptr) {
-        throw std::out_of_range("Application instance was not initialized");
-    }
-    return *app;
-}
-
-Application::Application(const char* name)
+template <typename Engine>
+Application<Engine>::Application(const char* name)
 {
     Engine::Init(name);
     LOGS("INFO >>> application was created\n")
 }
 
-Application::~Application()
+template <typename Engine>
+Application<Engine>::~Application()
 {
     Engine::Destroy();
 }
 
-Application& Application::Init(const char* name) 
+template <typename Engine>
+Application<Engine>& Application<Engine>::GetInstance(const char* name) 
 {
-    if (app == nullptr) {
+    if (app == nullptr and name != nullptr) {
         app = new Application(name);
         destroyer.initialize(app);
     }
+    else if (app == nullptr and name == nullptr) {
+        throw std::out_of_range("Application instance was not initialized");
+    }
+    else if (app != nullptr and name != nullptr) {
+        throw std::out_of_range("Application instance has already been initialized");
+    }
+
     return *app;
 }
 
-void Application::NewWindow(AbstractWindow* window)
+template <typename Engine>
+void Application<Engine>::NewWindow(AbstractWindow* window)
 {
     windows.emplace(window);
 }
 
-void Application::DeleteWindow(AbstractWindow* window)
+template <typename Engine>
+void Application<Engine>::DeleteWindow(AbstractWindow* window)
 {
     windows.erase(window);
 }
 
-bool Application::IsInside(AbstractWindow* window) 
+template <typename Engine>
+bool Application<Engine>::IsInside(AbstractWindow* window) 
 {
     return windows.find(window) != windows.end();
 }
 
-uint8_t Application::Run()
+template <typename Engine>
+uint8_t Application<Engine>::Loop()
 {
     return Engine::Run(windows);
 }
