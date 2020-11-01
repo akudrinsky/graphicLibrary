@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <unordered_set>
+#include <unordered_map>
 #include "../engineInterface.hpp"
 
 namespace kudry
@@ -16,7 +17,9 @@ public:
         const Color& color
     ) override;
 
-    virtual void Init(const char* windowName) override;
+    virtual void DrawText(const TextWindow& textToDraw) override;
+
+    virtual void Init(const std::string_view& windowName) override;
 
     virtual void Destroy() override;
 
@@ -27,6 +30,8 @@ public:
 private:
 
     static sf::RenderWindow* windowOS;
+
+    static std::unordered_map<std::string_view, sf::Font*> openedFonts;
 
     static sf::Vector2f changeFlatObj(const FlatObj& coords);
 

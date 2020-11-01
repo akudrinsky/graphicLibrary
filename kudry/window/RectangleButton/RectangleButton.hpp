@@ -5,9 +5,10 @@
 namespace kudry
 {
 
-class Button : public RectangleWindow
+class RectangleButton : public RectangleWindow
 {
 public:
+    
     
 
 protected:

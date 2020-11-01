@@ -10,7 +10,8 @@ int main(int argc, char* argv[])
         exit(1);
     }
 
-    kudry::Application<kudry::engineSFML>& app = kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
+    auto& app = 
+        kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
 
     kudry::AbstractWindow* rect = new kudry::RectangleWindow(
         kudry::FlatObj(100, 100), 

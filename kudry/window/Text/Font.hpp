@@ -1,4 +1,6 @@
+#pragma once
 
+#include <string_view>
 
 namespace kudry
 {
@@ -6,17 +8,14 @@ namespace kudry
 class Font 
 {
 public:
-    Font(const char* pathToFont);
+    explicit Font(const std::string_view& pathToFont);
 
-    static void MakeDefault(const Font& newDefault);
+    ~Font();
 
-    static const Font& Default();
-
-    
+    const std::string_view& getPathToFont() const;
 
 private:
-    static Font* defaultFont;
-
+    std::string_view pathToFont;
 };
 
 }

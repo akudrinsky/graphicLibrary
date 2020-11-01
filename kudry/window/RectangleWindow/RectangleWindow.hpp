@@ -3,7 +3,6 @@
 #include "../AbstractWindow.hpp"
 #include "../../simpleGraphics/geometry/geometry.hpp"
 #include "../../simpleGraphics/color/color.hpp"
-#include "../../simpleGraphics/color/color.hpp"
 
 namespace kudry
 {
@@ -19,13 +18,13 @@ public:
 
     virtual ~RectangleWindow() override;
 
-    virtual bool HandleEvent(Event* event) override;
+    virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
     virtual void Draw(engineInterface* Canvas) override;
 
-    virtual void EmplaceWindow(AbstractWindow* window) override;
+    virtual void EmplaceWindow([[maybe_unused]] AbstractWindow* window) override;
 
-    virtual void RemoveWindow(AbstractWindow* window) override;
+    virtual void RemoveWindow([[maybe_unused]] AbstractWindow* window) override;
 
 protected:
     FlatObj center;

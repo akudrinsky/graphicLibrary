@@ -6,14 +6,19 @@ namespace kudry
 
 sf::RenderWindow* engineSFML::windowOS = nullptr;
 
-void engineSFML::Init(const char* windowName)
+std::unordered_map<std::string_view, sf::Font*> engineSFML::openedFonts = {};
+
+void engineSFML::Init(const std::string_view& windowName)
 {
-    windowOS = new sf::RenderWindow(sf::VideoMode::getDesktopMode(), windowName);
+    windowOS = new sf::RenderWindow(sf::VideoMode::getDesktopMode(), windowName.data());
 }
 
 void engineSFML::Destroy() 
 {
     windowOS->close();
+    for (auto& openedFont : openedFonts) {
+        delete openedFont.second;
+    }
     delete windowOS;
 }
 
@@ -67,6 +72,19 @@ Event* engineSFML::PollEvent()
     }
 
     return myEvent;
+}
+
+void engineSFML::DrawText(const TextWindow& textToDraw)
+{
+    if (!openedFonts.count(textToDraw.GetFont()->getPathToFont())) {
+        auto font = new sf::Font();
+        font->loadFromFile(std::string(textToDraw.GetFont()->getPathToFont()));
+
+        openedFonts.emplace(textToDraw.GetFont()->getPathToFont(), font);
+    }
+
+
+
 }
 
 uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)

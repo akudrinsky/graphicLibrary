@@ -2,8 +2,11 @@
 
 #include "../application/Event.hpp"
 #include "../window/AbstractWindow.hpp"
+#include "../window/Text/Font.hpp"
+#include "../window/Text/Text.hpp"
 #include "../simpleGraphics/geometry/geometry.hpp"
 #include "../simpleGraphics/color/color.hpp"
+#include <string_view>
 
 namespace kudry
 {
@@ -19,7 +22,9 @@ public:
         const Color& color
     ) = 0;
 
-    virtual void Init(const char* windowName) = 0;
+    virtual void DrawText(const TextWindow& textToDraw) = 0;
+
+    virtual void Init(const std::string_view& windowName) = 0;
 
     virtual void Destroy() = 0;
 

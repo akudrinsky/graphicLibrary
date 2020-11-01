@@ -15,6 +15,7 @@ SRC      :=                           		\
 	$(wildcard kudry/application/*.cpp)          \
 	$(wildcard kudry/engine/*.cpp)          \
 	$(wildcard kudry/window/*.cpp)          \
+	$(wildcard kudry/window/Text/*.cpp)          \
 	$(wildcard files-dialog/*.cpp)          \
 	# тут дописать все директории
 

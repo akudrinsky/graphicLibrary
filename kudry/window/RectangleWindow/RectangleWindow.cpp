@@ -24,7 +24,7 @@ RectangleWindow::~RectangleWindow()
     size.y = 0;
 }
 
-bool RectangleWindow::HandleEvent(Event* event)
+bool RectangleWindow::HandleEvent([[maybe_unused]] Event* event)
 {
     return event != nullptr;
 }
@@ -35,14 +35,10 @@ void RectangleWindow::Draw(engineInterface* Canvas)
     LOGS("INFO >>> rect was drawn\n")
 }
 
-void RectangleWindow::EmplaceWindow(AbstractWindow* window)
-{
-    window = nullptr;
-}
+void RectangleWindow::EmplaceWindow([[maybe_unused]] AbstractWindow* window)
+{}
 
-void RectangleWindow::RemoveWindow(AbstractWindow* window)
-{
-    window = nullptr;
-}
+void RectangleWindow::RemoveWindow([[maybe_unused]] AbstractWindow* window)
+{}
 
 };
