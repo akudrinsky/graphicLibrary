@@ -32,4 +32,4 @@ protected:
     Color backgroundColor;
 };
 
-};
+}

@@ -15,7 +15,7 @@ public:
         const Color& backgroundColor = Black
     );
 
-    TextWindow text;
+    TextWindow Text;
 
 protected:
 

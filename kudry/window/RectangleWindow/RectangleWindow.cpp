@@ -41,4 +41,4 @@ void RectangleWindow::EmplaceWindow([[maybe_unused]] AbstractWindow* window)
 void RectangleWindow::RemoveWindow([[maybe_unused]] AbstractWindow* window)
 {}
 
-};
+}

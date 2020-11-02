@@ -8,6 +8,8 @@ sf::RenderWindow* engineSFML::windowOS = nullptr;
 
 std::unordered_map<std::string_view, sf::Font*> engineSFML::openedFonts = {};
 
+std::unordered_map<const void*, void*> engineSFML::resources = {};
+
 void engineSFML::Init(const std::string_view& windowName)
 {
     windowOS = new sf::RenderWindow(sf::VideoMode::getDesktopMode(), windowName.data());
@@ -16,7 +18,8 @@ void engineSFML::Init(const std::string_view& windowName)
 void engineSFML::Destroy() 
 {
     windowOS->close();
-    for (auto& openedFont : openedFonts) {
+    for (auto& openedFont : openedFonts) 
+    {
         delete openedFont.second;
     }
     delete windowOS;
@@ -56,7 +59,8 @@ Event* engineSFML::PollEvent()
     sf::Event SFMLevent;
     windowOS->pollEvent(SFMLevent);
 
-    switch (SFMLevent.type) {
+    switch (SFMLevent.type) 
+    {
     case sf::Event::MouseButtonPressed:
         myEvent->ID = kudry::Event::MouseEvent;
         myEvent->Data.Mouse.coord = FlatObj(SFMLevent.mouseButton.x, SFMLevent.mouseButton.y);
@@ -74,28 +78,50 @@ Event* engineSFML::PollEvent()
     return myEvent;
 }
 
-void engineSFML::DrawText(const TextWindow& textToDraw)
+void engineSFML::DrawText(const TextWindow* textToDraw)
 {
-    if (!openedFonts.count(textToDraw.GetFont()->getPathToFont())) {
+    auto fontName = textToDraw->GetFont()->getPathToFont();
+    if (!openedFonts.count(fontName)) 
+    {
         auto font = new sf::Font();
-        font->loadFromFile(std::string(textToDraw.GetFont()->getPathToFont()));
+        if (!font->loadFromFile(std::string(fontName)))
+        {
+            throw std::out_of_range("unable to load font");
+        }
 
-        openedFonts.emplace(textToDraw.GetFont()->getPathToFont(), font);
+        openedFonts.emplace(textToDraw->GetFont()->getPathToFont(), font);
     }
 
+    // TODO: check if works
+    if (!resources.count(textToDraw))
+    {
+        resources.emplace(
+            textToDraw, 
+            new sf::Text(
+                textToDraw->GetText(), 
+                *openedFonts.at(fontName), 
+                textToDraw->GetSize()
+            )
+        );
+    }
 
+    windowOS->draw(*reinterpret_cast<sf::Text*>(resources.at(textToDraw)));
+    LOGS("INFO >>> Text <%s> was written\n", textToDraw->GetText())
 
 }
 
 uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
 {
-    while (windowOS->isOpen()) {
+    while (windowOS->isOpen()) 
+    {
         sf::Event event;
-        while (windowOS->pollEvent(event)) {
+        while (windowOS->pollEvent(event)) 
+        {
             
         }
 
-        for (auto window : windows) {
+        for (auto window : windows) 
+        {
             window->Draw(this);
         }
         windowOS->display();
@@ -104,4 +130,4 @@ uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
     return 0;
 }
 
-};
+}

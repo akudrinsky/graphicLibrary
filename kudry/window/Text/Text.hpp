@@ -24,6 +24,8 @@ public:
 
     uint8_t GetSize() const;
 
+    const char* GetText() const;
+
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
     virtual void Draw(engineInterface* Canvas) override;
@@ -39,4 +41,4 @@ private:
     FlatObj coords;
 };
 
-};
+}

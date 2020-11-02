@@ -19,7 +19,28 @@ int main(int argc, char* argv[])
         kudry::Red
     );
 
+    LOGS("font\n")
+
+    kudry::Font font("data/Madina.ttf");
+
+    LOGS("font created\n")
+
+    auto* text = new kudry::TextWindow(
+        &font, 
+        "ex",
+        20
+    );
+
+    LOGS("text created\n")
+
+    text->SetCoords(kudry::FlatObj(10, 10));
+
+    LOGS("coords set\n")
+
+    app.NewWindow(text);
     app.NewWindow(rect);
+
+    LOGS("loop\n")
 
     return app.Loop();
 }

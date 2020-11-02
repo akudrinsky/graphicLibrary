@@ -5,6 +5,13 @@
 #include <unordered_map>
 #include "../engineInterface.hpp"
 
+template<> 
+struct std::hash<void*> {
+    size_t operator()(const void* &k) {
+        return reinterpret_cast<size_t>(k);
+    }
+};
+
 namespace kudry
 {
 
@@ -17,7 +24,7 @@ public:
         const Color& color
     ) override;
 
-    virtual void DrawText(const TextWindow& textToDraw) override;
+    virtual void DrawText(const TextWindow* textToDraw) override;
 
     virtual void Init(const std::string_view& windowName) override;
 
@@ -33,10 +40,12 @@ private:
 
     static std::unordered_map<std::string_view, sf::Font*> openedFonts;
 
+    static std::unordered_map<const void*, void*> resources;
+
     static sf::Vector2f changeFlatObj(const FlatObj& coords);
 
     static sf::Color changeColor(const Color& color);
 
 };
 
-};
+}

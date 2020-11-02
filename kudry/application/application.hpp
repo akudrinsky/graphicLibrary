@@ -55,7 +55,7 @@ private:
     virtual ~Application();
 };
 
-};
+}
 
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
@@ -86,7 +86,7 @@ void applicationDestroyer<Engine>::initialize(Application<Engine>* app)
 {
     instance = app;
 }
-};
+}
 
 template <typename Engine>
 Application<Engine>::Application(const char* name)
@@ -142,4 +142,4 @@ uint8_t Application<Engine>::Loop()
     return Engine::Run(windows);
 }
 
-};
+}

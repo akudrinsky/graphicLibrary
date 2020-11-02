@@ -22,7 +22,7 @@ public:
         const Color& color
     ) = 0;
 
-    virtual void DrawText(const TextWindow& textToDraw) = 0;
+    virtual void DrawText(const TextWindow* textToDraw) = 0;
 
     virtual void Init(const std::string_view& windowName) = 0;
 
