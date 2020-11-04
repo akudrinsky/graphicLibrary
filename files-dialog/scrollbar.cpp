@@ -5,7 +5,8 @@
 
 int main(int argc, char* argv[]) 
 {
-    if (argc != 2) {
+    if (argc != 2) 
+    {
         printf("Need name if window\n");
         exit(1);
     }
@@ -23,7 +24,7 @@ int main(int argc, char* argv[])
 
     kudry::Font font("data/Madina.ttf");
 
-    LOGS("font created\n")
+    LOGS("font %s created\n", font.getPathToFont().data())
 
     auto* text = new kudry::TextWindow(
         &font, 
@@ -33,7 +34,7 @@ int main(int argc, char* argv[])
 
     LOGS("text created\n")
 
-    text->SetCoords(kudry::FlatObj(10, 10));
+    text->SetCoords(kudry::FlatObj(500, 500));
 
     LOGS("coords set\n")
 

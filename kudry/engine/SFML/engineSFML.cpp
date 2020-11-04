@@ -89,7 +89,7 @@ void engineSFML::DrawText(const TextWindow* textToDraw)
             throw std::out_of_range("unable to load font");
         }
 
-        openedFonts.emplace(textToDraw->GetFont()->getPathToFont(), font);
+        openedFonts.emplace(fontName, font);
     }
 
     // TODO: check if works

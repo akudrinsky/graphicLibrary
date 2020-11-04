@@ -104,14 +104,17 @@ Application<Engine>::~Application()
 template <typename Engine>
 Application<Engine>& Application<Engine>::GetInstance(const char* name) 
 {
-    if (app == nullptr and name != nullptr) {
+    if (app == nullptr and name != nullptr) 
+    {
         app = new Application(name);
         destroyer.initialize(app);
     }
-    else if (app == nullptr and name == nullptr) {
+    else if (app == nullptr and name == nullptr) 
+    {
         throw std::out_of_range("Application instance was not initialized");
     }
-    else if (app != nullptr and name != nullptr) {
+    else if (app != nullptr and name != nullptr) 
+    {
         throw std::out_of_range("Application instance has already been initialized");
     }
 
