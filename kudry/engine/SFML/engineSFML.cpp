@@ -115,9 +115,34 @@ uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
     while (windowOS->isOpen()) 
     {
         sf::Event event;
+        kudry::Event myEvent;
+
         while (windowOS->pollEvent(event)) 
         {
-            
+            switch (event.type)
+            {
+                case sf::Event::Closed:
+                {
+                    LOGS("Close event\n")
+                    myEvent.ID = kudry::Event::Close;
+                    myEvent.Data.NoData = {};
+                    for (auto window : windows) 
+                    {
+                        window->HandleEvent(&myEvent);
+                    }
+                    windowOS->close();
+                }
+                // ...
+                default: 
+                {
+                    myEvent.ID = kudry::Event::Unknown;
+                    myEvent.Data.NoData = {};
+                    for (auto window : windows) 
+                    {
+                        window->HandleEvent(&myEvent);
+                    }
+                }
+            }
         }
 
         for (auto window : windows) 

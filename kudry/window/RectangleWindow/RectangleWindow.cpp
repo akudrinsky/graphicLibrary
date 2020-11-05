@@ -32,7 +32,7 @@ bool RectangleWindow::HandleEvent([[maybe_unused]] Event* event)
 void RectangleWindow::Draw(engineInterface* Canvas)
 {
     Canvas->DrawRect(center, size, backgroundColor);
-    LOGS("INFO >>> rect was drawn\n")
+    //LOGS("INFO >>> rect was drawn\n")
 }
 
 void RectangleWindow::EmplaceWindow([[maybe_unused]] AbstractWindow* window)

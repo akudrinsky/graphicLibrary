@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
 
     LOGS("coords set\n")
 
-    app.NewWindow(text);
+    //app.NewWindow(text);
     app.NewWindow(rect);
 
     LOGS("loop\n")
