@@ -2,6 +2,7 @@
 
 #include "../RectangleWindow/RectangleWindow.hpp"
 #include "../Text/Text.hpp"
+#include "../Comonents/Clickable.hpp"
 
 namespace kudry
 {
@@ -14,6 +15,8 @@ public:
         const FlatObj& size, 
         const Color& backgroundColor = Black
     );
+
+
 
     TextWindow Text;
 

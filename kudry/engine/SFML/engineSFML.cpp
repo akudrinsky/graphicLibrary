@@ -52,6 +52,7 @@ void engineSFML::DrawRect(
     windowOS->draw(rect);
 }
 
+[[deprecated]]
 Event* engineSFML::PollEvent()
 {
     Event* myEvent = new Event;
@@ -62,8 +63,13 @@ Event* engineSFML::PollEvent()
     switch (SFMLevent.type) 
     {
     case sf::Event::MouseButtonPressed:
-        myEvent->ID = kudry::Event::MouseEvent;
-        myEvent->Data.Mouse.coord = FlatObj(SFMLevent.mouseButton.x, SFMLevent.mouseButton.y);
+        myEvent->ID = kudry::Event::MousePressed;
+        myEvent->Data.Click.coord = FlatObj(SFMLevent.mouseButton.x, SFMLevent.mouseButton.y);
+        break;
+
+    case sf::Event::MouseButtonReleased:
+        myEvent->ID = kudry::Event::MouseReleased;
+        myEvent->Data.Click.coord = FlatObj(SFMLevent.mouseButton.x, SFMLevent.mouseButton.y);
         break;
     
     case sf::Event::Closed:
@@ -76,6 +82,7 @@ Event* engineSFML::PollEvent()
     }
 
     return myEvent;
+    return nullptr;
 }
 
 void engineSFML::DrawText(const TextWindow* textToDraw)
@@ -126,22 +133,38 @@ uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
                     LOGS("Close event\n")
                     myEvent.ID = kudry::Event::Close;
                     myEvent.Data.NoData = {};
-                    for (auto window : windows) 
-                    {
-                        window->HandleEvent(&myEvent);
-                    }
-                    windowOS->close();
+                    break;
                 }
-                // ...
+                case sf::Event::MouseButtonPressed:
+                {
+                    myEvent.ID = kudry::Event::MousePressed;
+                    myEvent.Data.Click.coord = 
+                        kudry::FlatObj(event.mouseButton.x, event.mouseButton.y);
+                    break;
+                }
+                case sf::Event::MouseButtonReleased:
+                {
+                    myEvent.ID = kudry::Event::MouseReleased;
+                    myEvent.Data.Click.coord = 
+                        kudry::FlatObj(event.mouseButton.x, event.mouseButton.y);
+                    break;
+                }
+                // TODO: more events
                 default: 
                 {
                     myEvent.ID = kudry::Event::Unknown;
                     myEvent.Data.NoData = {};
-                    for (auto window : windows) 
-                    {
-                        window->HandleEvent(&myEvent);
-                    }
+                    break;
                 }
+            }
+
+            for (auto window : windows) 
+                window->HandleEvent(&myEvent);
+
+            if (myEvent.ID == kudry::Event::Close)
+            {
+                windowOS->close();
+                LOGS("OS application window was closed\n")
             }
         }
 

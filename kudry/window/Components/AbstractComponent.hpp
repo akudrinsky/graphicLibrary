@@ -1,0 +1,7 @@
+namespace kudry
+{
+
+class AbstractComponent
+{};
+
+}

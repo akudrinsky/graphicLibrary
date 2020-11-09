@@ -23,6 +23,10 @@ public:
 
 protected:
     std::unordered_set<AbstractWindow*> subwindows;
+    //std::unordered_set<AbstractComponent*> components;
 };
+
+class AbstractComponent
+{};
 
 }

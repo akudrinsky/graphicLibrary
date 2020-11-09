@@ -9,18 +9,14 @@ struct Event
     enum EventType 
     {
         Unknown,
-        MouseEvent,
+        MousePressed,
+        MouseReleased,
         Close,
     };
 
     Event();
 
     EventType ID;
-
-    struct MouseData 
-    {
-        FlatObj coord;
-    };
 
     struct None
     {};
@@ -37,7 +33,6 @@ struct Event
 
     union eventData
     {
-        MouseData Mouse;
         ClickData Click;
         KeyboardData Keyboard;
         None NoData;
