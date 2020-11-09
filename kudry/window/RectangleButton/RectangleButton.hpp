@@ -2,7 +2,7 @@
 
 #include "../RectangleWindow/RectangleWindow.hpp"
 #include "../Text/Text.hpp"
-#include "../Comonents/Clickable.hpp"
+#include "../Components/Clickable.hpp"
 
 namespace kudry
 {
@@ -16,12 +16,10 @@ public:
         const Color& backgroundColor = Black
     );
 
-
-
-    TextWindow Text;
+    virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
 protected:
-
+    ClickableComponent clickInterface;
 };
 
 };

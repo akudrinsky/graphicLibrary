@@ -1,6 +1,6 @@
 #include "../kudry/application/application.hpp"
 #include "../kudry/engine/SFML/engineSFML.hpp"
-#include "../kudry/window/RectangleWindow/RectangleWindow.hpp"
+#include "../kudry/window/RectangleButton/RectangleButton.hpp"
 #include "../kudry/LOGS/logs.hpp"
 
 int main(int argc, char* argv[]) 
@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
     auto& app = 
         kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
 
-    kudry::AbstractWindow* rect = new kudry::RectangleWindow(
+    kudry::AbstractWindow* rect = new kudry::RectangleButton(
         kudry::FlatObj(100, 100), 
         kudry::FlatObj(100, 100),
         kudry::Red

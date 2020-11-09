@@ -10,18 +10,21 @@ class ClickableComponent
 public:
     typedef void (*Action_t)(AbstractWindow*);
 
+    ClickableComponent() = delete;
+
     ClickableComponent(
         Action_t clickAction, 
         Action_t releaseAction,
-        AbstractWindow* owner);
+        AbstractWindow* owner
+    );
 
     void OnClick();
     void OnRelease();
 
 private:
-    AbstractWindow* owner_;
     Action_t clickAction_;
     Action_t releaseAction_;
+    AbstractWindow* owner_;
 };
 
 }
