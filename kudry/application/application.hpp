@@ -4,7 +4,7 @@
 #include "../LOGS/logs.hpp"
 #include "../window/AbstractWindow.hpp"
 #include "SubscriptionManager/SubscriptionManager.hpp"
-#include "../window/SystemWindow/SystemWindow.hpp"
+//#include "../window/SystemWindow/SystemWindow.hpp"
 
 #include <stdexcept>
 #include <unordered_map>
@@ -47,7 +47,7 @@ public:
 private:
     friend class applicationDestroyer<Engine>;
 
-    SystemWindow sysEventSender;
+    //SystemWindow sysEventSender;
 
     static Application<Engine>* app;
 
@@ -97,11 +97,11 @@ void applicationDestroyer<Engine>::initialize(Application<Engine>* app)
 
 template <typename Engine>
 Application<Engine>::Application(const char* name)
-    :
-    sysEventSender()
+    //:
+    //sysEventSender()
 {
     Engine::Init(name);
-    windows.insert(&sysEventSender);
+    //windows.insert(&sysEventSender);
     LOGS("INFO >>> application was created\n")
 }
 
@@ -152,7 +152,7 @@ bool Application<Engine>::IsInside(AbstractWindow* window)
 template <typename Engine>
 uint8_t Application<Engine>::Loop()
 {
-    return Engine::Run(windows, &sysEventSender);
+    return Engine::Run(windows);
 }
 
 }

@@ -31,7 +31,7 @@ public:
 
     virtual Event* PollEvent() override;
 
-    virtual uint8_t Run(std::unordered_set<AbstractWindow*>& windows, SystemWindow* sysWindow) override;
+    virtual uint8_t Run(std::unordered_set<AbstractWindow*>& windows) override;
 
 private:
 

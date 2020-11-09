@@ -30,7 +30,7 @@ public:
 
     virtual Event* PollEvent() = 0;
 
-    virtual uint8_t Run(WindowContainer& windows, SystemWindow* sysWindow) = 0;
+    virtual uint8_t Run(WindowContainer& windows) = 0;
 
 private:
 };

@@ -117,10 +117,7 @@ void engineSFML::DrawText(const TextWindow* textToDraw)
 
 }
 
-uint8_t engineSFML::Run(
-    std::unordered_set<AbstractWindow*>& windows, 
-    SystemWindow* sysWindow
-)
+uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
 {
     while (windowOS->isOpen()) 
     {
@@ -161,7 +158,7 @@ uint8_t engineSFML::Run(
                 }
             }
 
-            SubscriptionManager::Send(sysWindow, &myEvent);
+            //SubscriptionManager::Send(sysWindow, &myEvent);
 
             for (auto window : windows) 
                 window->HandleEvent(&myEvent);
