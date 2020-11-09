@@ -3,6 +3,7 @@
 #include "../engine/settings.hpp"
 #include "../LOGS/logs.hpp"
 #include "../window/AbstractWindow.hpp"
+#include "SubscriptionManager/SubscriptionManager.hpp"
 #include <stdexcept>
 #include <unordered_map>
 

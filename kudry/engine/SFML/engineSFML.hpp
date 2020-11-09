@@ -19,8 +19,7 @@ class engineSFML : public engineInterface {
 public:
     virtual void DrawRect
     (
-        const FlatObj& coords, 
-        const FlatObj& size, 
+        const RectangleShape rect, 
         const Color& color
     ) override;
 

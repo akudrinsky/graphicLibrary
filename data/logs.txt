@@ -1,0 +1,96 @@
+-----LOG-----
+~~~~~~~~~~~~~
+INFO >>> application was created
+
+~~~~~~~~~~~~~
+FILE: files-dialog/../kudry/application/application.hpp
+LINE: 95
+FUNC: Application
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+font
+
+~~~~~~~~~~~~~
+FILE: files-dialog/scrollbar.cpp
+LINE: 23
+FUNC: main
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+font data/Madina.ttf created
+
+~~~~~~~~~~~~~
+FILE: files-dialog/scrollbar.cpp
+LINE: 27
+FUNC: main
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+text created
+
+~~~~~~~~~~~~~
+FILE: files-dialog/scrollbar.cpp
+LINE: 35
+FUNC: main
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+coords set
+
+~~~~~~~~~~~~~
+FILE: files-dialog/scrollbar.cpp
+LINE: 39
+FUNC: main
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+loop
+
+~~~~~~~~~~~~~
+FILE: files-dialog/scrollbar.cpp
+LINE: 44
+FUNC: main
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Close event
+
+~~~~~~~~~~~~~
+FILE: kudry/engine/SFML/engineSFML.cpp
+LINE: 132
+FUNC: Run
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+OS application window was closed
+
+~~~~~~~~~~~~~
+FILE: kudry/engine/SFML/engineSFML.cpp
+LINE: 166
+FUNC: Run
+---LOG-END---
+
+
+

@@ -1,4 +1,4 @@
-#include "../kudry/application/application.hpp"
+#include "../kudry/Application/Application.hpp"
 #include "../kudry/engine/SFML/engineSFML.hpp"
 #include "../kudry/window/RectangleButton/RectangleButton.hpp"
 #include "../kudry/LOGS/logs.hpp"

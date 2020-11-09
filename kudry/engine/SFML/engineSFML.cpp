@@ -40,14 +40,13 @@ sf::Color engineSFML::changeColor(const Color& color)
 }
 
 void engineSFML::DrawRect(
-    const FlatObj& coords, 
-    const FlatObj& size, 
+    const RectangleShape rect_, 
     const Color& color
 )
 {
-    sf::RectangleShape rect(changeFlatObj(size));
+    sf::RectangleShape rect(changeFlatObj(rect_.GetSize()));
     rect.setFillColor(changeColor(color));
-    rect.setPosition((float)coords.x, (float)coords.y);
+    rect.setPosition((float)rect_.GetOrigin().x, (float)rect_.GetOrigin().y);
 
     windowOS->draw(rect);
 }

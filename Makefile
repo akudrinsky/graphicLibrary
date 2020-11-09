@@ -6,20 +6,21 @@ OBJ_DIR  := $(BUILD)/objects
 APP_DIR  := $(BUILD)/
 TARGET   := app
 INCLUDE  := 
-SRC      :=                           		\
-   	$(wildcard kudry/window/RectangleWindow/*.cpp)               	\
-	$(wildcard kudry/window/RectangleButton/*.cpp)               	\
-	$(wildcard kudry/window/Components/*.cpp)               	\
-	$(wildcard kudry/window/Button/*.cpp)          \
-	$(wildcard kudry/engine/SFML/*.cpp)     \
-	$(wildcard kudry/engine/OpenGL/*.cpp)  \
-	$(wildcard kudry/simpleGraphics/color/*.cpp)          \
-	$(wildcard kudry/application/*.cpp)          \
-	$(wildcard kudry/engine/*.cpp)          \
-	$(wildcard kudry/window/*.cpp)          \
-	$(wildcard kudry/window/Text/*.cpp)          \
-	$(wildcard files-dialog/*.cpp)          \
-	# тут дописать все директории
+SRC      :=                           								\
+   	$(wildcard kudry/window/RectangleWindow/*.cpp)      			\
+	$(wildcard kudry/window/RectangleButton/*.cpp)      			\
+	$(wildcard kudry/window/Components/*.cpp)         				\
+	$(wildcard kudry/window/Components/Shapes/*.cpp)    			\
+	$(wildcard kudry/window/Button/*.cpp)         					\
+	$(wildcard kudry/engine/SFML/*.cpp)     						\
+	$(wildcard kudry/engine/OpenGL/*.cpp)  							\
+	$(wildcard kudry/simpleGraphics/color/*.cpp)        			\
+	$(wildcard kudry/application/*.cpp)          					\
+	$(wildcard kudry/application/SubscriptionManager/*.cpp)     	\
+	$(wildcard kudry/engine/*.cpp)          						\
+	$(wildcard kudry/window/*.cpp)          						\
+	$(wildcard kudry/window/Text/*.cpp)          					\
+	$(wildcard files-dialog/*.cpp)          						\
 
 OBJECTS  := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 

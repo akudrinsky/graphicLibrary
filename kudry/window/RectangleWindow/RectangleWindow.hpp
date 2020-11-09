@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../AbstractWindow.hpp"
+#include "../Components/Shapes/Rectangle.hpp"
 #include "../../simpleGraphics/geometry/geometry.hpp"
 #include "../../simpleGraphics/color/color.hpp"
 
@@ -27,8 +28,7 @@ public:
     virtual void RemoveWindow([[maybe_unused]] AbstractWindow* window) override;
 
 protected:
-    FlatObj center;
-    FlatObj size;
+    RectangleShape shape;
     Color backgroundColor;
 };
 

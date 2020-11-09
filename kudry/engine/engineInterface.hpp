@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../application/Event.hpp"
+#include "../window/Components/Shapes/Rectangle.hpp"
 #include "../window/AbstractWindow.hpp"
 #include "../window/Text/Font.hpp"
 #include "../window/Text/Text.hpp"
@@ -15,10 +16,8 @@ class engineInterface {
 public:
     using WindowContainer = std::unordered_set<AbstractWindow*>;
 
-    virtual void DrawRect
-    (
-        const FlatObj& coords, 
-        const FlatObj& size, 
+    virtual void DrawRect(
+        const RectangleShape rect, 
         const Color& color
     ) = 0;
 

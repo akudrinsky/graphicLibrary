@@ -10,19 +10,12 @@ RectangleWindow::RectangleWindow(
     const FlatObj& size, 
     const Color& backgroundColor
 )   :
-    center(center),
-    size(size),
+    shape(center, size),
     backgroundColor(backgroundColor)
 {}
 
 RectangleWindow::~RectangleWindow()
-{
-    center.x = 0;
-    center.y = 0;
-
-    size.x = 0;
-    size.y = 0;
-}
+{}
 
 bool RectangleWindow::HandleEvent([[maybe_unused]] Event* event)
 {
@@ -31,7 +24,7 @@ bool RectangleWindow::HandleEvent([[maybe_unused]] Event* event)
 
 void RectangleWindow::Draw(engineInterface* Canvas)
 {
-    Canvas->DrawRect(center, size, backgroundColor);
+    Canvas->DrawRect(shape, backgroundColor);
     //LOGS("INFO >>> rect was drawn\n")
 }
 

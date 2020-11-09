@@ -1,3 +1,5 @@
+#pragma once
+
 #include "../AbstractWindow.hpp"
 #include "../../simpleGraphics/geometry/geometry.hpp"
 #include <functional> // TODO: my std::function
