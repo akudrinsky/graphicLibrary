@@ -1,5 +1,6 @@
 #include "engineSFML.hpp"
 #include "../../LOGS/logs.hpp"
+#include "../../Application/SubscriptionManager/SubscriptionManager.hpp"
 
 namespace kudry
 {
@@ -116,7 +117,10 @@ void engineSFML::DrawText(const TextWindow* textToDraw)
 
 }
 
-uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
+uint8_t engineSFML::Run(
+    std::unordered_set<AbstractWindow*>& windows, 
+    SystemWindow* sysWindow
+)
 {
     while (windowOS->isOpen()) 
     {
@@ -156,6 +160,8 @@ uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
                     break;
                 }
             }
+
+            SubscriptionManager::Send(sysWindow, &myEvent);
 
             for (auto window : windows) 
                 window->HandleEvent(&myEvent);

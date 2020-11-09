@@ -3,8 +3,8 @@
 INFO >>> application was created
 
 ~~~~~~~~~~~~~
-FILE: files-dialog/../kudry/application/application.hpp
-LINE: 95
+FILE: files-dialog/../kudry/Application/Application.hpp
+LINE: 105
 FUNC: Application
 ---LOG-END---
 
@@ -72,11 +72,59 @@ FUNC: main
 
 -----LOG-----
 ~~~~~~~~~~~~~
+button has accepted click
+
+~~~~~~~~~~~~~
+FILE: kudry/window/RectangleButton/RectangleButton.cpp
+LINE: 10
+FUNC: clickTest
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+button has accepted release
+
+~~~~~~~~~~~~~
+FILE: kudry/window/RectangleButton/RectangleButton.cpp
+LINE: 15
+FUNC: releaseTest
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+button has accepted click
+
+~~~~~~~~~~~~~
+FILE: kudry/window/RectangleButton/RectangleButton.cpp
+LINE: 10
+FUNC: clickTest
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+button has accepted release
+
+~~~~~~~~~~~~~
+FILE: kudry/window/RectangleButton/RectangleButton.cpp
+LINE: 15
+FUNC: releaseTest
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
 Close event
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 132
+LINE: 136
 FUNC: Run
 ---LOG-END---
 
@@ -88,7 +136,7 @@ OS application window was closed
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 166
+LINE: 172
 FUNC: Run
 ---LOG-END---
 

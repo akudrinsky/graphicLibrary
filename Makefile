@@ -8,6 +8,7 @@ TARGET   := app
 INCLUDE  := 
 SRC      :=                           								\
    	$(wildcard kudry/window/RectangleWindow/*.cpp)      			\
+	$(wildcard kudry/window/SystemWindow/*.cpp)      				\
 	$(wildcard kudry/window/RectangleButton/*.cpp)      			\
 	$(wildcard kudry/window/Components/*.cpp)         				\
 	$(wildcard kudry/window/Components/Shapes/*.cpp)    			\

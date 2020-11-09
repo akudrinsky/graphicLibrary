@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../application/Event.hpp"
+#include "../Application/Event.hpp"
 #include "../LOGS/logs.hpp"
 #include "../engine/settings.hpp"
 #include <unordered_set>
