@@ -20,6 +20,10 @@ public:
         AbstractWindow* owner
     );
 
+    void ChangeClickAction(Action_t newAction);
+
+    void ChangeReleaseAction(Action_t newAction);
+
     void OnClick();
     void OnRelease();
 

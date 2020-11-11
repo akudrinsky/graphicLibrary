@@ -12,6 +12,7 @@ SRC      :=                           								\
 	$(wildcard kudry/window/RectangleButton/*.cpp)      			\
 	$(wildcard kudry/window/Components/*.cpp)         				\
 	$(wildcard kudry/window/Components/Shapes/*.cpp)    			\
+	$(wildcard kudry/window/Scrollbar/*.cpp)    					\
 	$(wildcard kudry/window/Button/*.cpp)         					\
 	$(wildcard kudry/engine/SFML/*.cpp)     						\
 	$(wildcard kudry/engine/OpenGL/*.cpp)  							\

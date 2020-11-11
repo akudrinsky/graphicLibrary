@@ -17,15 +17,15 @@ public:
         const Color& backgroundColor = Black
     );
 
-    //virtual void OnClick() = 0;
+    virtual void OnClick() = 0;
 
-    //virtual void OnRelease() = 0;
+    virtual void OnRelease() = 0;
 
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
 protected:
     ClickableComponent clickInterface;
-
+    
 };
 
 };

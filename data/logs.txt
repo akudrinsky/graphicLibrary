@@ -12,59 +12,11 @@ FUNC: Application
 
 -----LOG-----
 ~~~~~~~~~~~~~
-font
-
-~~~~~~~~~~~~~
-FILE: files-dialog/scrollbar.cpp
-LINE: 23
-FUNC: main
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-font data/Madina.ttf created
-
-~~~~~~~~~~~~~
-FILE: files-dialog/scrollbar.cpp
-LINE: 27
-FUNC: main
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-text created
-
-~~~~~~~~~~~~~
-FILE: files-dialog/scrollbar.cpp
-LINE: 35
-FUNC: main
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-coords set
-
-~~~~~~~~~~~~~
-FILE: files-dialog/scrollbar.cpp
-LINE: 39
-FUNC: main
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
 loop
 
 ~~~~~~~~~~~~~
-FILE: files-dialog/scrollbar.cpp
-LINE: 44
+FILE: files-dialog/main.cpp
+LINE: 26
 FUNC: main
 ---LOG-END---
 
@@ -72,48 +24,36 @@ FUNC: main
 
 -----LOG-----
 ~~~~~~~~~~~~~
-button has accepted click
+position: 0.05
 
 ~~~~~~~~~~~~~
-FILE: kudry/window/RectangleButton/RectangleButton.cpp
-LINE: 10
-FUNC: clickTest
+FILE: kudry/window/Scrollbar/Scrollbar.cpp
+LINE: 101
+FUNC: OnClick
 ---LOG-END---
 
 
 
 -----LOG-----
 ~~~~~~~~~~~~~
-button has accepted release
+position: 0.1
 
 ~~~~~~~~~~~~~
-FILE: kudry/window/RectangleButton/RectangleButton.cpp
-LINE: 15
-FUNC: releaseTest
+FILE: kudry/window/Scrollbar/Scrollbar.cpp
+LINE: 101
+FUNC: OnClick
 ---LOG-END---
 
 
 
 -----LOG-----
 ~~~~~~~~~~~~~
-button has accepted click
+position: 0.15
 
 ~~~~~~~~~~~~~
-FILE: kudry/window/RectangleButton/RectangleButton.cpp
-LINE: 10
-FUNC: clickTest
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-button has accepted release
-
-~~~~~~~~~~~~~
-FILE: kudry/window/RectangleButton/RectangleButton.cpp
-LINE: 15
-FUNC: releaseTest
+FILE: kudry/window/Scrollbar/Scrollbar.cpp
+LINE: 101
+FUNC: OnClick
 ---LOG-END---
 
 

@@ -5,23 +5,13 @@
 namespace kudry
 {
 
-static void clickTest (kudry::AbstractWindow*)
-{
-    LOGS("button has accepted click\n")
-}
-
-static void releaseTest (kudry::AbstractWindow*)
-{
-    LOGS("button has accepted release\n")
-}
-
 RectangleButton::RectangleButton(
     const FlatObj& center, 
     const FlatObj& size, 
     const Color& backgroundColor
 )   :
     RectangleWindow(center, size, backgroundColor),
-    clickInterface(clickTest, releaseTest, this)
+    clickInterface(nullptr, nullptr, this)
 {}
 
 bool RectangleButton::HandleEvent([[maybe_unused]] Event* event)
@@ -30,13 +20,19 @@ bool RectangleButton::HandleEvent([[maybe_unused]] Event* event)
     {
         case Event::MousePressed:
         {
-            clickInterface.OnClick();
+            if (!shape.Contains(event->Data.Click.coord))
+                return false;
+            //clickInterface.OnClick();
+            OnClick();
             return true;
             break;
         }
         case Event::MouseReleased:
         {
-            clickInterface.OnRelease();
+            if (!shape.Contains(event->Data.Click.coord))
+                return false;
+            //clickInterface.OnRelease();
+            OnRelease();
             return true;
             break;
         }
