@@ -3,6 +3,7 @@
 #include "../AbstractWindow.hpp"
 #include "Font.hpp"
 #include "../../simpleGraphics/geometry/geometry.hpp"
+#include <string>
 
 namespace kudry
 {
@@ -10,7 +11,7 @@ namespace kudry
 class TextWindow : public AbstractWindow 
 {
 public:
-    TextWindow(const Font* font, const char* text, const uint8_t size);
+    TextWindow(const Font* font, const std::string& text, const uint8_t size);
 
     ~TextWindow();
 
@@ -24,7 +25,7 @@ public:
 
     uint8_t GetSize() const;
 
-    const char* GetText() const;
+    const std::string& GetText() const;
 
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
@@ -36,7 +37,7 @@ public:
 
 private:
     const Font* font;
-    char* text;
+    std::string text;
     const uint8_t size;
     FlatObj coords;
 };

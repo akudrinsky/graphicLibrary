@@ -16,7 +16,7 @@ loop
 
 ~~~~~~~~~~~~~
 FILE: files-dialog/main.cpp
-LINE: 26
+LINE: 35
 FUNC: main
 ---LOG-END---
 
@@ -24,36 +24,24 @@ FUNC: main
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position: 0.05
+font: <Madina>
 
 ~~~~~~~~~~~~~
-FILE: kudry/window/Scrollbar/Scrollbar.cpp
-LINE: 101
-FUNC: OnClick
+FILE: kudry/engine/SFML/engineSFML.cpp
+LINE: 106
+FUNC: DrawText
 ---LOG-END---
 
 
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position: 0.1
+size: <20>
 
 ~~~~~~~~~~~~~
-FILE: kudry/window/Scrollbar/Scrollbar.cpp
-LINE: 101
-FUNC: OnClick
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-position: 0.15
-
-~~~~~~~~~~~~~
-FILE: kudry/window/Scrollbar/Scrollbar.cpp
-LINE: 101
-FUNC: OnClick
+FILE: kudry/engine/SFML/engineSFML.cpp
+LINE: 107
+FUNC: DrawText
 ---LOG-END---
 
 
@@ -64,7 +52,7 @@ Close event
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 133
+LINE: 136
 FUNC: Run
 ---LOG-END---
 
@@ -76,7 +64,7 @@ OS application window was closed
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 169
+LINE: 172
 FUNC: Run
 ---LOG-END---
 

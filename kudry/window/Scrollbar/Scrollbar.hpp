@@ -68,8 +68,10 @@ private:
         );
         virtual void OnClick() override;
         virtual void OnRelease() override;
+        virtual bool HandleEvent(Event* event) override;
     private:
         Scrollbar* scrlbar;
+        const FlatObj* clickData;
     };
 
     double position;

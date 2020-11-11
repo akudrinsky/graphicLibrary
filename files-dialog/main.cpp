@@ -23,6 +23,15 @@ int main(int argc, char* argv[])
 
     app.NewWindow(&scrlbar);
 
+    kudry::Font font(
+        "/Users/alexeykudrinsky/Documents"
+        "/MIPT/2_course/c++/files-dialog/"
+        "data/Madina.ttf"
+    );
+    kudry::TextWindow text(&font, "WORKS", 20);
+
+    app.NewWindow(&text);
+
     LOGS("loop\n")
 
     return app.Loop();

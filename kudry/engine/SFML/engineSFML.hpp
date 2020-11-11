@@ -15,10 +15,10 @@ struct std::hash<void*> {
 namespace kudry
 {
 
-class engineSFML : public engineInterface {
+class engineSFML : public engineInterface 
+{
 public:
-    virtual void DrawRect
-    (
+    virtual void DrawRect(
         const RectangleShape rect, 
         const Color& color
     ) override;

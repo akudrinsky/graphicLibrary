@@ -102,6 +102,9 @@ void engineSFML::DrawText(const TextWindow* textToDraw)
     // TODO: check if works
     if (!resources.count(textToDraw))
     {
+        //LOGS("string: <%s>\n", textToDraw->GetText())
+        LOGS("font: <%s>\n", (*openedFonts.at(fontName)).getInfo().family.c_str())
+        LOGS("size: <%d>\n", textToDraw->GetSize())
         resources.emplace(
             textToDraw, 
             new sf::Text(
@@ -113,7 +116,7 @@ void engineSFML::DrawText(const TextWindow* textToDraw)
     }
 
     windowOS->draw(*reinterpret_cast<sf::Text*>(resources.at(textToDraw)));
-    LOGS("INFO >>> Text <%s> was written\n", textToDraw->GetText())
+    //LOGS("INFO >>> Text <%s> was written\n", textToDraw->GetText())
 
 }
 

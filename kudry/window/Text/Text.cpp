@@ -7,30 +7,16 @@
 namespace kudry
 {
 
-TextWindow::TextWindow(const Font* font, const char* textToDraw, const uint8_t textSize)
+TextWindow::TextWindow(const Font* font, const std::string& textToDraw, const uint8_t textSize)
     :
     font(font),
-    text(new(std::nothrow) char[strnlen(textToDraw, PATH_MAX)]),
+    text(textToDraw),
     size(textSize),
     coords(0, 0)
-{
-    if (text == nullptr)
-    {  
-        std::cerr << "bad alloc in TextWindow constructor" << '\n';
-    }
-
-    // ?!?!? strcpy(text, textToDraw);
-    while (*textToDraw != '\0')
-    {
-        *text = *textToDraw;
-        ++textToDraw;
-    }
-}
+{}
 
 TextWindow::~TextWindow()
-{
-    delete [] text;
-}
+{}
 
 void TextWindow::SetCoords(const FlatObj& newCoords)
 {
@@ -57,7 +43,7 @@ uint8_t TextWindow::GetSize() const
     return size;
 }
 
-const char* TextWindow::GetText() const
+const std::string& TextWindow::GetText() const
 {
     return text;
 }

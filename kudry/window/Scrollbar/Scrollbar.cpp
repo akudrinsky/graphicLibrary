@@ -27,7 +27,8 @@ Scrollbar::Scrollbar(
     middle(
         FlatObj(origin.x, origin.y + size.x),
         FlatObj(size.x, size.y - 2 * size.x),
-        middleColor
+        middleColor,
+        this
     )
 {}
 
@@ -88,21 +89,59 @@ Scrollbar::middleButton::middleButton(
     Scrollbar* scrlbar
 )   :
     RectangleButton(center, size, backgroundColor),
-    scrlbar(scrlbar)
+    scrlbar(scrlbar),
+    clickData(reinterpret_cast<const FlatObj*>(0xBAD))
 {
     SubscriptionManager::Subscribe(scrlbar, this);
 }
 
 void Scrollbar::middleButton::OnClick()
 {
-    scrlbar->position -= scrlbar->step;
-    if (scrlbar->position < 0.0)
-        scrlbar->position = 0.0;
-    LOGS("position: %lg\n", scrlbar->position)
+    clickData = nullptr;
 }
 
 void Scrollbar::middleButton::OnRelease()
-{}
+{
+    if (shape.GetSize().y == 0.0)
+        return;
+
+    scrlbar->position = (clickData->y - shape.GetOrigin().y) / shape.GetSize().y;
+    LOGS("position = %lg after middle button\n", scrlbar->position)
+}
+
+bool Scrollbar::middleButton::HandleEvent(Event* event)
+{
+    switch (event->ID)
+    {
+        case Event::MousePressed:
+        {
+            if (!shape.Contains(event->Data.Click.coord))
+                return false;
+            //clickInterface.OnClick();
+            OnClick();
+            return true;
+            break;
+        }
+        case Event::MouseReleased:
+        {
+            if (!shape.Contains(event->Data.Click.coord))
+                return false;
+            
+            if (clickData != nullptr)
+                return false;
+            //clickInterface.OnRelease();
+            clickData = &(event->Data.Click.coord);
+            OnRelease();
+            return true;
+            break;
+        }
+        default:
+        {
+            break;
+        }
+    }
+    return false;
+}
 
 Scrollbar::lowerButton::lowerButton(
     const FlatObj& center, 
