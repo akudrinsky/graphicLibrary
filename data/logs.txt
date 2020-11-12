@@ -16,7 +16,7 @@ loop
 
 ~~~~~~~~~~~~~
 FILE: files-dialog/main.cpp
-LINE: 35
+LINE: 46
 FUNC: main
 ---LOG-END---
 
@@ -24,24 +24,23 @@ FUNC: main
 
 -----LOG-----
 ~~~~~~~~~~~~~
-font: <Madina>
-
+Scrollbar position was received: 0.814286
 ~~~~~~~~~~~~~
-FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 106
-FUNC: DrawText
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 28
+FUNC: HandleEvent
 ---LOG-END---
 
 
 
 -----LOG-----
 ~~~~~~~~~~~~~
-size: <20>
+position = 0.814286 after middle button
 
 ~~~~~~~~~~~~~
-FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 107
-FUNC: DrawText
+FILE: kudry/window/Scrollbar/Scrollbar.cpp
+LINE: 119
+FUNC: OnRelease
 ---LOG-END---
 
 
@@ -52,7 +51,7 @@ Close event
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 136
+LINE: 135
 FUNC: Run
 ---LOG-END---
 
@@ -64,7 +63,7 @@ OS application window was closed
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 172
+LINE: 171
 FUNC: Run
 ---LOG-END---
 

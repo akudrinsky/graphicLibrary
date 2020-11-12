@@ -14,6 +14,8 @@ public:
         const Color& middleColor
     );
 
+    //SetScrollable(const )
+
     void SetStep(const double& newStep);
 
     virtual ~Scrollbar() override;
@@ -73,6 +75,8 @@ private:
         Scrollbar* scrlbar;
         const FlatObj* clickData;
     };
+
+    void SendPosition();
 
     double position;
     double step;

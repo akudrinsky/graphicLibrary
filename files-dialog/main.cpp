@@ -1,6 +1,6 @@
 #include "../kudry/Application/Application.hpp"
 #include "../kudry/engine/SFML/engineSFML.hpp"
-#include "../kudry/window/Scrollbar/Scrollbar.hpp"
+#include "../kudry/window/Scrollbar/ScrollableText.hpp"
 #include "../kudry/LOGS/logs.hpp"
 
 int main(int argc, char* argv[]) 
@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
         kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
 
     kudry::Scrollbar scrlbar(
-        kudry::FlatObj(100, 200),
+        kudry::FlatObj(1000, 200),
         kudry::FlatObj(70, 700),
         kudry::Blue,
         kudry::Red
@@ -28,9 +28,20 @@ int main(int argc, char* argv[])
         "/MIPT/2_course/c++/files-dialog/"
         "data/Madina.ttf"
     );
-    kudry::TextWindow text(&font, "WORKS", 20);
+    kudry::TextWindow text(&font, "Once upon...\nWhile I pondered", 40);
 
-    app.NewWindow(&text);
+    kudry::ScrollableText scrltext(
+        text,
+        kudry::FlatObj(100, 200),
+        kudry::FlatObj(700, 700),
+        kudry::Red
+    ); 
+
+    scrltext.Attach(&scrlbar);
+
+    app.NewWindow(&scrltext);
+
+    //app.NewWindow(&text);
 
     LOGS("loop\n")
 

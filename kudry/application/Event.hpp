@@ -12,6 +12,7 @@ struct Event
         MousePressed,
         MouseReleased,
         Close,
+        User,
     };
 
     Event();
@@ -26,6 +27,11 @@ struct Event
         FlatObj coord;
     };
 
+    struct UserData
+    {
+        void* data;
+    };
+
     struct KeyboardData 
     {
         //...
@@ -36,6 +42,7 @@ struct Event
         ClickData Click;
         KeyboardData Keyboard;
         None NoData;
+        UserData User;
         
         eventData();
     } Data;

@@ -117,7 +117,6 @@ void engineSFML::DrawText(const TextWindow* textToDraw)
 
     windowOS->draw(*reinterpret_cast<sf::Text*>(resources.at(textToDraw)));
     //LOGS("INFO >>> Text <%s> was written\n", textToDraw->GetText())
-
 }
 
 uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)

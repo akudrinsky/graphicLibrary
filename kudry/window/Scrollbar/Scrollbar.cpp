@@ -59,6 +59,14 @@ void Scrollbar::EmplaceWindow([[maybe_unused]] AbstractWindow* window)
 void Scrollbar::RemoveWindow([[maybe_unused]] AbstractWindow* window)
 {}
 
+void Scrollbar::SendPosition()
+{
+    Event posEvent;
+    posEvent.ID = Event::User;
+    posEvent.Data.User.data = &position;
+    SubscriptionManager::Send(this, &posEvent);
+}
+
 Scrollbar::upperButton::upperButton(
     const FlatObj& center, 
     const FlatObj& size, 
@@ -76,6 +84,7 @@ void Scrollbar::upperButton::OnClick()
     scrlbar->position -= scrlbar->step;
     if (scrlbar->position < 0.0)
         scrlbar->position = 0.0;
+    scrlbar->SendPosition();
     LOGS("position: %lg\n", scrlbar->position)
 }
 
@@ -106,6 +115,7 @@ void Scrollbar::middleButton::OnRelease()
         return;
 
     scrlbar->position = (clickData->y - shape.GetOrigin().y) / shape.GetSize().y;
+    scrlbar->SendPosition();
     LOGS("position = %lg after middle button\n", scrlbar->position)
 }
 
@@ -160,6 +170,7 @@ void Scrollbar::lowerButton::OnClick()
     scrlbar->position += scrlbar->step;
     if (scrlbar->position > 1.0)
         scrlbar->position = 1.0;
+    scrlbar->SendPosition();
     LOGS("position: %lg\n", scrlbar->position)
 }
 
