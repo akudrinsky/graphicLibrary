@@ -94,33 +94,7 @@ void engineSFML::DrawText(
     double offset
 )
 {
-    auto fontName = textToDraw->GetFont()->getPathToFont();
-    if (!openedFonts.count(fontName)) 
-    {
-        auto font = new sf::Font();
-        if (!font->loadFromFile(std::string(fontName)))
-        {
-            throw std::out_of_range("unable to load font");
-        }
-
-        openedFonts.emplace(fontName, font);
-    }
-
-    // TODO: check if works
-    if (!resources.count(textToDraw))
-    {
-        //LOGS("string: <%s>\n", textToDraw->GetText())
-        LOGS("font: <%s>\n", (*openedFonts.at(fontName)).getInfo().family.c_str())
-        LOGS("size: <%d>\n", textToDraw->GetSize())
-        resources.emplace(
-            textToDraw, 
-            new sf::Text(
-                textToDraw->GetText(), 
-                *openedFonts.at(fontName), 
-                textToDraw->GetSize()
-            )
-        );
-    }
+    createTextObj(textToDraw);
 
     if (canvas == nullptr)
     {
@@ -214,6 +188,37 @@ uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
     }
     
     return 0;
+}
+
+void engineSFML::createTextObj(const TextWindow* textToDraw)
+{
+    auto fontName = textToDraw->GetFont()->getPathToFont();
+    if (!openedFonts.count(fontName)) 
+    {
+        auto font = new sf::Font();
+        if (!font->loadFromFile(std::string(fontName)))
+        {
+            throw std::out_of_range("unable to load font");
+        }
+
+        openedFonts.emplace(fontName, font);
+    }
+
+    // TODO: check if works
+    if (!resources.count(textToDraw))
+    {
+        //LOGS("string: <%s>\n", textToDraw->GetText())
+        LOGS("font: <%s>\n", (*openedFonts.at(fontName)).getInfo().family.c_str())
+        LOGS("size: <%d>\n", textToDraw->GetSize())
+        resources.emplace(
+            textToDraw, 
+            new sf::Text(
+                textToDraw->GetText(), 
+                *openedFonts.at(fontName), 
+                textToDraw->GetSize()
+            )
+        );
+    }
 }
 
 }

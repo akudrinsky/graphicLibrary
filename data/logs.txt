@@ -39,8 +39,8 @@ font: <Madina>
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 113
-FUNC: DrawText
+LINE: 211
+FUNC: createTextObj
 ---LOG-END---
 
 
@@ -51,8 +51,8 @@ size: <40>
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 114
-FUNC: DrawText
+LINE: 212
+FUNC: createTextObj
 ---LOG-END---
 
 
@@ -3920,62 +3920,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.000000
-~~~~~~~~~~~~~
-FILE: kudry/window/Scrollbar/ScrollableText.cpp
-LINE: 43
-FUNC: Draw
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-position 0.000000
-~~~~~~~~~~~~~
-FILE: kudry/window/Scrollbar/ScrollableText.cpp
-LINE: 43
-FUNC: Draw
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-position 0.000000
-~~~~~~~~~~~~~
-FILE: kudry/window/Scrollbar/ScrollableText.cpp
-LINE: 43
-FUNC: Draw
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-position 0.000000
-~~~~~~~~~~~~~
-FILE: kudry/window/Scrollbar/ScrollableText.cpp
-LINE: 43
-FUNC: Draw
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-position 0.000000
-~~~~~~~~~~~~~
-FILE: kudry/window/Scrollbar/ScrollableText.cpp
-LINE: 43
-FUNC: Draw
----LOG-END---
-
-
-
------LOG-----
-~~~~~~~~~~~~~
-Scrollbar position was received: 0.364286
+Scrollbar position was received: 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 29
@@ -3986,7 +3931,7 @@ FUNC: HandleEvent
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position = 0.364286 after middle button
+position = 0.639286 after middle button
 
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/Scrollbar.cpp
@@ -3998,7 +3943,7 @@ FUNC: OnRelease
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4009,7 +3954,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4020,7 +3965,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4031,7 +3976,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4042,7 +3987,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4053,7 +3998,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4064,7 +4009,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4075,7 +4020,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4086,7 +4031,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4097,7 +4042,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4108,7 +4053,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4119,7 +4064,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4130,7 +4075,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4141,7 +4086,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4152,7 +4097,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4163,7 +4108,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4174,7 +4119,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4185,7 +4130,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4196,7 +4141,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4207,7 +4152,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4218,7 +4163,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4229,7 +4174,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4240,7 +4185,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4251,7 +4196,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4262,7 +4207,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4273,7 +4218,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4284,7 +4229,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4295,7 +4240,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4306,7 +4251,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4317,7 +4262,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4328,7 +4273,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4339,7 +4284,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4350,7 +4295,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4361,7 +4306,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4372,7 +4317,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4383,7 +4328,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4394,7 +4339,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4405,7 +4350,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4416,7 +4361,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4427,7 +4372,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4438,7 +4383,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4449,7 +4394,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4460,7 +4405,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4471,7 +4416,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4482,7 +4427,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4493,7 +4438,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4504,7 +4449,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4515,7 +4460,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4526,7 +4471,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4537,7 +4482,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4548,7 +4493,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4559,7 +4504,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4570,7 +4515,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4581,7 +4526,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4592,7 +4537,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4603,7 +4548,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4614,7 +4559,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4625,7 +4570,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4636,7 +4581,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4647,7 +4592,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4658,7 +4603,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4669,7 +4614,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4680,7 +4625,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4691,7 +4636,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4702,7 +4647,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4713,7 +4658,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4724,7 +4669,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4735,7 +4680,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4746,7 +4691,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4757,7 +4702,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4768,7 +4713,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4779,7 +4724,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4790,7 +4735,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4801,7 +4746,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4812,7 +4757,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4823,7 +4768,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4834,7 +4779,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4845,7 +4790,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4856,7 +4801,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4867,7 +4812,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4878,7 +4823,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4889,7 +4834,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4900,7 +4845,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4911,7 +4856,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4922,7 +4867,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4933,7 +4878,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4944,7 +4889,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4955,7 +4900,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4966,7 +4911,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4977,7 +4922,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4988,7 +4933,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -4999,7 +4944,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5010,7 +4955,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5021,7 +4966,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5032,7 +4977,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5043,7 +4988,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5054,7 +4999,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5065,7 +5010,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5076,7 +5021,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5087,7 +5032,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5098,7 +5043,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5109,7 +5054,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5120,7 +5065,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5131,7 +5076,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5142,7 +5087,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5153,7 +5098,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5164,7 +5109,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5175,7 +5120,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5186,7 +5131,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5197,7 +5142,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5208,7 +5153,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5219,7 +5164,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5230,7 +5175,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5241,7 +5186,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5252,7 +5197,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5263,7 +5208,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5274,7 +5219,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5285,7 +5230,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5296,7 +5241,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5307,7 +5252,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5318,7 +5263,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5329,7 +5274,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5340,7 +5285,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5351,7 +5296,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5362,7 +5307,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5373,7 +5318,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5384,7 +5329,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5395,7 +5340,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5406,7 +5351,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5417,7 +5362,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5428,7 +5373,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5439,7 +5384,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5450,7 +5395,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5461,7 +5406,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5472,7 +5417,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5483,7 +5428,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5494,7 +5439,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5505,7 +5450,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5516,7 +5461,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5527,7 +5472,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5538,7 +5483,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5549,7 +5494,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5560,7 +5505,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5571,7 +5516,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5582,7 +5527,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5593,7 +5538,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5604,7 +5549,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5615,7 +5560,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5626,7 +5571,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5637,7 +5582,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5648,7 +5593,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5659,7 +5604,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5670,7 +5615,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5681,7 +5626,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5692,7 +5637,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5703,7 +5648,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5714,7 +5659,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5725,7 +5670,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5736,7 +5681,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5747,7 +5692,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5758,7 +5703,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5769,7 +5714,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5780,7 +5725,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5791,7 +5736,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5802,7 +5747,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5813,7 +5758,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5824,7 +5769,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5835,7 +5780,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5846,7 +5791,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5857,7 +5802,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5868,7 +5813,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5879,7 +5824,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5890,7 +5835,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5901,7 +5846,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5912,7 +5857,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5923,7 +5868,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5934,7 +5879,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5945,7 +5890,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5956,7 +5901,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5967,7 +5912,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5978,7 +5923,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -5989,7 +5934,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6000,7 +5945,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6011,7 +5956,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6022,7 +5967,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6033,7 +5978,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6044,7 +5989,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6055,7 +6000,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6066,7 +6011,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6077,7 +6022,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6088,7 +6033,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6099,7 +6044,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6110,7 +6055,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6121,7 +6066,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6132,7 +6077,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6143,7 +6088,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6154,7 +6099,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6165,7 +6110,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6176,7 +6121,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6187,7 +6132,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6198,7 +6143,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6209,7 +6154,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6220,7 +6165,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6231,7 +6176,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6242,7 +6187,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6253,7 +6198,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6264,7 +6209,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6275,7 +6220,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6286,7 +6231,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6297,7 +6242,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6308,7 +6253,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6319,7 +6264,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6330,7 +6275,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6341,7 +6286,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6352,7 +6297,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6363,7 +6308,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6374,7 +6319,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6385,7 +6330,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6396,7 +6341,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6407,7 +6352,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6418,7 +6363,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6429,7 +6374,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6440,7 +6385,7 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6451,7 +6396,590 @@ FUNC: Draw
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43
@@ -6466,7 +6994,7 @@ Close event
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 169
+LINE: 143
 FUNC: Run
 ---LOG-END---
 
@@ -6478,7 +7006,7 @@ OS application window was closed
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 205
+LINE: 179
 FUNC: Run
 ---LOG-END---
 
@@ -6486,7 +7014,7 @@ FUNC: Run
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position 0.364286
+position 0.639286
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
 LINE: 43

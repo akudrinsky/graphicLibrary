@@ -50,6 +50,8 @@ private:
 
     static sf::Color changeColor(const Color& color);
 
+    void createTextObj(const TextWindow* textToDraw);
+
 };
 
 }
