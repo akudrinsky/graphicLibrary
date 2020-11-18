@@ -16,7 +16,7 @@ loop
 
 ~~~~~~~~~~~~~
 FILE: files-dialog/main.cpp
-LINE: 46
+LINE: 55
 FUNC: main
 ---LOG-END---
 
@@ -24,10 +24,3961 @@ FUNC: main
 
 -----LOG-----
 ~~~~~~~~~~~~~
-Scrollbar position was received: 0.814286
+position 0.000000
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/ScrollableText.cpp
-LINE: 28
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+font: <Madina>
+
+~~~~~~~~~~~~~
+FILE: kudry/engine/SFML/engineSFML.cpp
+LINE: 113
+FUNC: DrawText
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+size: <40>
+
+~~~~~~~~~~~~~
+FILE: kudry/engine/SFML/engineSFML.cpp
+LINE: 114
+FUNC: DrawText
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.000000
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Scrollbar position was received: 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 29
 FUNC: HandleEvent
 ---LOG-END---
 
@@ -35,7 +3986,7 @@ FUNC: HandleEvent
 
 -----LOG-----
 ~~~~~~~~~~~~~
-position = 0.814286 after middle button
+position = 0.364286 after middle button
 
 ~~~~~~~~~~~~~
 FILE: kudry/window/Scrollbar/Scrollbar.cpp
@@ -47,11 +3998,2475 @@ FUNC: OnRelease
 
 -----LOG-----
 ~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
 Close event
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 135
+LINE: 169
 FUNC: Run
 ---LOG-END---
 
@@ -63,8 +6478,19 @@ OS application window was closed
 
 ~~~~~~~~~~~~~
 FILE: kudry/engine/SFML/engineSFML.cpp
-LINE: 171
+LINE: 205
 FUNC: Run
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+position 0.364286
+~~~~~~~~~~~~~
+FILE: kudry/window/Scrollbar/ScrollableText.cpp
+LINE: 43
+FUNC: Draw
 ---LOG-END---
 
 

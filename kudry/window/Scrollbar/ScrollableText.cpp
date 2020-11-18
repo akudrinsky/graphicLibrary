@@ -1,5 +1,6 @@
 #include "ScrollableText.hpp"
 #include "../../Application/SubscriptionManager/SubscriptionManager.hpp"
+#include "../../engine/engineInterface.hpp"
 
 namespace kudry
 {
@@ -39,7 +40,8 @@ bool ScrollableText::HandleEvent([[maybe_unused]] Event* event)
 
 void ScrollableText::Draw([[maybe_unused]] engineInterface* Canvas)
 {
-    //...
+    LOGS("position %lf", position)
+    Canvas->DrawText(&fulltext, &shape, &backgroundColor, position);
 }
 
 void ScrollableText::Attach(Scrollbar* manager)

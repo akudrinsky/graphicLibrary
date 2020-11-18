@@ -85,7 +85,14 @@ Event* engineSFML::PollEvent()
     return nullptr;
 }
 
-void engineSFML::DrawText(const TextWindow* textToDraw)
+
+
+void engineSFML::DrawText(
+    const TextWindow* textToDraw, 
+    const RectangleShape* canvas,
+    const Color* backgroundColor,
+    double offset
+)
 {
     auto fontName = textToDraw->GetFont()->getPathToFont();
     if (!openedFonts.count(fontName)) 
@@ -115,7 +122,34 @@ void engineSFML::DrawText(const TextWindow* textToDraw)
         );
     }
 
-    windowOS->draw(*reinterpret_cast<sf::Text*>(resources.at(textToDraw)));
+    if (canvas == nullptr)
+    {
+        windowOS->draw(*reinterpret_cast<sf::Text*>(resources.at(textToDraw)));
+    }
+    else
+    {
+        auto text = reinterpret_cast<sf::Text*>(resources.at(textToDraw));
+        text->setPosition(0, static_cast<float>(offset));
+
+        sf::RenderTexture rect;
+
+        rect.create(
+            static_cast<unsigned int>(canvas->GetSize().x), 
+            static_cast<unsigned int>(canvas->GetSize().y)
+        );
+        rect.clear(changeColor(*backgroundColor));
+        rect.draw(*text);
+        rect.display();
+
+        sf::Sprite viewSprite(rect.getTexture());
+        viewSprite.setPosition(
+            static_cast<unsigned int>(canvas->GetSize().x), 
+            static_cast<unsigned int>(canvas->GetSize().y)
+        );
+
+        windowOS->draw(viewSprite);
+    }
+    
     //LOGS("INFO >>> Text <%s> was written\n", textToDraw->GetText())
 }
 

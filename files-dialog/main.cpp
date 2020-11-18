@@ -3,6 +3,11 @@
 #include "../kudry/window/Scrollbar/ScrollableText.hpp"
 #include "../kudry/LOGS/logs.hpp"
 
+#include <fstream>
+#include <string>
+#include <streambuf>
+#include <sstream>
+
 int main(int argc, char* argv[]) 
 {
     if (argc != 2) 
@@ -17,8 +22,8 @@ int main(int argc, char* argv[])
     kudry::Scrollbar scrlbar(
         kudry::FlatObj(1000, 200),
         kudry::FlatObj(70, 700),
-        kudry::Blue,
-        kudry::Red
+        kudry::Color(50, 50, 50),
+        kudry::Color(150, 150, 150)
     );
 
     app.NewWindow(&scrlbar);
@@ -28,13 +33,17 @@ int main(int argc, char* argv[])
         "/MIPT/2_course/c++/files-dialog/"
         "data/Madina.ttf"
     );
-    kudry::TextWindow text(&font, "Once upon...\nWhile I pondered", 40);
+    std::ifstream t("data/BestPoemEver.txt");
+    std::stringstream buffer;
+    buffer << t.rdbuf();
+
+    kudry::TextWindow text(&font, buffer.str(), 40);
 
     kudry::ScrollableText scrltext(
         text,
-        kudry::FlatObj(100, 200),
+        kudry::FlatObj(100, 100),
         kudry::FlatObj(700, 700),
-        kudry::Red
+        kudry::Color(100, 100, 100)
     ); 
 
     scrltext.Attach(&scrlbar);
