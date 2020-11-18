@@ -102,8 +102,9 @@ void engineSFML::DrawText(
     }
     else
     {
+        LOGS("position in drawer: %lf", offset)
         auto text = reinterpret_cast<sf::Text*>(resources.at(textToDraw));
-        text->setPosition(0, static_cast<float>(offset));
+        text->setPosition(0, static_cast<float>(- offset * text->getGlobalBounds().height));
 
         sf::RenderTexture rect;
 
@@ -117,8 +118,8 @@ void engineSFML::DrawText(
 
         sf::Sprite viewSprite(rect.getTexture());
         viewSprite.setPosition(
-            static_cast<unsigned int>(canvas->GetSize().x), 
-            static_cast<unsigned int>(canvas->GetSize().y)
+            static_cast<unsigned int>(canvas->GetOrigin().x), 
+            static_cast<unsigned int>(canvas->GetOrigin().y)
         );
 
         windowOS->draw(viewSprite);
