@@ -21,6 +21,7 @@ public:
 
     virtual void Draw(engineInterface* Canvas) override;
 
+    // Makes ScrollableText able to recieve events from Scrollbar
     void Attach(Scrollbar* manager);
 
 private:

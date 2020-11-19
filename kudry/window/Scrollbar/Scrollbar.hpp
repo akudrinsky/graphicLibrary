@@ -4,6 +4,8 @@
 namespace kudry
 {
 
+// Scrollbar interface. If somebody wants to recieve events from scrollbar, 
+// it needs to subsribe for it (see ScrollableText::Attach method)
 class Scrollbar : public AbstractWindow
 {
 public:
@@ -16,6 +18,7 @@ public:
 
     //SetScrollable(const )
 
+    // Sets step with wich buttons influence position of scrollbar.
     void SetStep(const double& newStep);
 
     virtual ~Scrollbar() override;

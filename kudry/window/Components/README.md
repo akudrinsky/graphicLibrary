@@ -1,0 +1,1 @@
+Component is something that adds functionality to window - provides it with shape, ability to recieve clicks, etc.

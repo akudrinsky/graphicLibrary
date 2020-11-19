@@ -7,6 +7,7 @@
 namespace kudry
 {
 
+// Component that is responsible for click action
 class ClickableComponent
 {
 public:

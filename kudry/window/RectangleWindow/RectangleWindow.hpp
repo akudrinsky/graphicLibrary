@@ -8,6 +8,7 @@
 namespace kudry
 {
 
+// Class to describe something, that has rectangle shape
 class RectangleWindow : public AbstractWindow
 {
 public:

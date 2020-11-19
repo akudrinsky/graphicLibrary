@@ -4,8 +4,10 @@
 namespace kudry
 {
 
+// Structure with all events (including system and user ones)
 struct Event
 {
+    // Possible types of an event
     enum EventType 
     {
         Unknown,
@@ -17,6 +19,7 @@ struct Event
 
     Event();
 
+    // Event's type
     EventType ID;
 
     struct None
@@ -37,6 +40,8 @@ struct Event
         //...
     };
 
+    // Additional information about the event. 
+    // Makes sense only when knowing its ID.
     union eventData
     {
         ClickData Click;

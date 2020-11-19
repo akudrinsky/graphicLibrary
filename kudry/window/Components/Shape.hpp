@@ -6,6 +6,7 @@
 namespace kudry
 {
 
+// Shape interface
 class AbstractShapeComponent
 {
 public:

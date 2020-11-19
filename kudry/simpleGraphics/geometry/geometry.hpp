@@ -3,6 +3,7 @@
 namespace kudry 
 {
 
+// Just 2d object
 class FlatObj 
 {
 public:

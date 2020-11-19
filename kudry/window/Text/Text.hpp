@@ -8,6 +8,7 @@
 namespace kudry
 {
 
+// Describes text interface for my library
 class TextWindow : public AbstractWindow 
 {
 public:
@@ -15,16 +16,20 @@ public:
 
     ~TextWindow();
 
+    // Sets coordinates of text field
     void SetCoords(const FlatObj& newCoords);
 
 //    void ChangeFont(const Font* newFont);
 
 //    void ChangeText(const char* newText);
 
+    // Returns font of this text
     const Font* GetFont() const;
 
+    // Returns size of this text
     uint8_t GetSize() const;
 
+    // Returns size of this text for const objects
     const std::string& GetText() const;
 
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;

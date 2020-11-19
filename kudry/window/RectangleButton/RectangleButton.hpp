@@ -8,6 +8,7 @@
 namespace kudry
 {
 
+// Class to describe button with rectangle shape
 class RectangleButton : public RectangleWindow
 {
 public:
@@ -25,7 +26,6 @@ public:
 
 protected:
     ClickableComponent clickInterface;
-    
 };
 
 };

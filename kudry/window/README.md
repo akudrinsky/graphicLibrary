@@ -1,0 +1,1 @@
+Absract window is the most common interface to interact with windows

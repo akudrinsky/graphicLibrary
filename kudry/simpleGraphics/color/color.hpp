@@ -3,6 +3,7 @@
 namespace kudry 
 {
 
+// Color-describing interface for kudry drawing library
 class Color 
 {
 public:

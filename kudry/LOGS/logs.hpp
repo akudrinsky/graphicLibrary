@@ -1,4 +1,5 @@
 #pragma once
+// Just logs, nothing more
 
 #ifdef DEBUG
     #define LOGS(...)\

@@ -4,6 +4,7 @@
 namespace kudry
 {
 
+// Rectangle shape. Has many useful methods.
 class RectangleShape : AbstractShapeComponent
 {
 public:

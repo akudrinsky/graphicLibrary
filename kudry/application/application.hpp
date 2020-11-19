@@ -12,11 +12,14 @@
 namespace kudry
 {
 
+// Singleton.
+// Provides high level interface to interact with library.
 template <typename Engine>
 class Application;
 
 namespace
 {
+// needed to destroy singleton Application
 template <typename Engine>
 class applicationDestroyer
 {
@@ -33,15 +36,20 @@ template <typename Engine>
 class Application : private Engine
 {
 public:
-    // std::out_of_bounds
+    // Creates application instance with a given name. Can throw std::out_of_bounds if application is to being created not for the first time.
     static Application<Engine>& GetInstance(const char* name = nullptr);
 
+    // Adds new window to the application
     void NewWindow(AbstractWindow* window);
 
+    // Deletes window from application (can no longer be drawn or influence something)
     void DeleteWindow(AbstractWindow* window);
 
+    // Checks if application already has window inside
     bool IsInside(AbstractWindow* window);
 
+    // Main loop with drawings and all the events work. 
+    // All preparations must be ended before this function.
     uint8_t Loop();
 
 private:

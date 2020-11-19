@@ -5,6 +5,7 @@
 namespace kudry
 {
 
+// Useless for now
 class SystemWindow : public AbstractWindow
 {
 public:

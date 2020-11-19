@@ -1,0 +1,1 @@
+It is an instance, that is responsible for managing events, that occur inside some user-windows and influence other user windows, or they occur in "system" window and are needed for proper library functioning. If that is the case, all user windows are subscribed automatically on such "system" windows.

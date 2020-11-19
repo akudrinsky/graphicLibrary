@@ -5,6 +5,8 @@
 namespace kudry
 {
 
+// Font interface for my library. Does NOT contain font itself, it only has its name.
+// Font will be opened automatically in low-level engine implementation.
 class Font 
 {
 public:
