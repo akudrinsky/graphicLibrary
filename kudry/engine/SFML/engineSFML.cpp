@@ -160,6 +160,13 @@ uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
                         kudry::FlatObj(event.mouseButton.x, event.mouseButton.y);
                     break;
                 }
+                case sf::Event::MouseMoved:
+                {
+                    myEvent.ID = kudry::Event::MouseMoved;
+                    myEvent.Data.Click.coord = 
+                        kudry::FlatObj(event.mouseMove.x, event.mouseMove.y);
+                    break;
+                }
                 // TODO: more events
                 default: 
                 {

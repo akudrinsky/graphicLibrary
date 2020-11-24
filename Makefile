@@ -16,6 +16,7 @@ SRC      :=                           								\
 	$(wildcard kudry/window/Button/*.cpp)         					\
 	$(wildcard kudry/engine/SFML/*.cpp)     						\
 	$(wildcard kudry/engine/OpenGL/*.cpp)  							\
+	$(wildcard kudry/window/FigureDrawer/*.cpp)  					\
 	$(wildcard kudry/simpleGraphics/color/*.cpp)        			\
 	$(wildcard kudry/application/*.cpp)          					\
 	$(wildcard kudry/application/SubscriptionManager/*.cpp)     	\
@@ -23,7 +24,7 @@ SRC      :=                           								\
 	$(wildcard kudry/window/*.cpp)          						\
 	$(wildcard kudry/window/Text/*.cpp)          					\
 	$(wildcard kudry/window/Instrument/Instrument.cpp)          	\
-	$(wildcard files-dialog/*.cpp)          						\
+	$(wildcard files-dialog/main.cpp)          						\
 
 OBJECTS  := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 

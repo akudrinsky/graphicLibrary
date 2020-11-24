@@ -9,10 +9,12 @@ Color::Color(int Red, int Green, int Blue)
     Green(Green),
     Blue(Blue) 
 {}
-const kudry::Color kudry::Color::BlackColor(0, 0, 0);
-const kudry::Color kudry::Color::RedColor(255, 0, 0);
-const kudry::Color kudry::Color::GreenColor(0, 255, 0);
-const kudry::Color kudry::Color::BlueColor(0, 0, 255);
-const kudry::Color kudry::Color::WhiteColor(255, 255, 255);
+const Color Color::BlackColor(0, 0, 0);
+const Color Color::RedColor(255, 0, 0);
+const Color Color::GreenColor(0, 255, 0);
+const Color Color::BlueColor(0, 0, 255);
+const Color Color::WhiteColor(255, 255, 255);
+const Color Color::LightGreyColor(200, 200, 200);
+const Color Color::DarkGreyColor(100, 100, 100);
 
 }

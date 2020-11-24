@@ -3,7 +3,7 @@
 namespace kudry
 {
 
-kudry::Instrument* kudry::AbstractWindow::active = nullptr;
+kudry::AbstractWindow* kudry::Instrument::active = nullptr;
 
 void Instrument::SetActive()
 {

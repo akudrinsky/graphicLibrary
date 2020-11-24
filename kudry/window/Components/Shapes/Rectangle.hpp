@@ -22,6 +22,10 @@ public:
 
     const FlatObj& GetSize() const;
 
+    void SetOrigin(const FlatObj& origin);
+
+    void SetSize(const FlatObj& size);
+
     //virtual void Draw(engineInterface* Canvas) override;
 
 protected:

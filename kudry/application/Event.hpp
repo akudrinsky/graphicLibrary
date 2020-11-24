@@ -13,6 +13,7 @@ struct Event
         Unknown,
         MousePressed,
         MouseReleased,
+        MouseMoved,
         Close,
         User,
     };

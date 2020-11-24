@@ -18,6 +18,8 @@ public:
     static const Color GreenColor;
     static const Color BlueColor;
     static const Color WhiteColor;
+    static const Color LightGreyColor;
+    static const Color DarkGreyColor;
 };
 /*
 const Color Black(0, 0, 0);

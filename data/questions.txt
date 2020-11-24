@@ -1,0 +1,2 @@
+1) Instrument is a component or another class?
+2) Access base field from derived class ("shape problem" in RectangleDrawer)

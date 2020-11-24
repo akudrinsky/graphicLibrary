@@ -6,7 +6,7 @@
 namespace kudry
 {
 
-class RectangleDrawer : RectangleButton// : Instrument
+class RectangleDrawer : public RectangleButton // : Instrument
 {
 public:
     RectangleDrawer(
@@ -15,11 +15,25 @@ public:
         const Color& backgroundColor = Color::BlackColor
     );
 
+    virtual void Draw(engineInterface* Canvas) override;
+
+    virtual void OnClick() override;
+
+    virtual void OnRelease() override;
+
+    virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
 private:
-    RectangleShape shape;
+    RectangleShape managingShape;
     Color col;
     bool isActive;
+    FlatObj startingTouch;
+
+    void OnDrawingClick(FlatObj coords);
+
+    void OnDrawingRelease(FlatObj coords);
+
+    void OnMove(FlatObj coords);
 };
 
 }

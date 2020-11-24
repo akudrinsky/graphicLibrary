@@ -46,4 +46,14 @@ const FlatObj& RectangleShape::GetSize() const
     return size_;
 }
 
+void RectangleShape::SetOrigin(const FlatObj& origin)
+{
+    origin_ = origin;
+}
+
+void RectangleShape::SetSize(const FlatObj& size)
+{
+    size_ = size;
+}
+
 }
