@@ -15,7 +15,7 @@ public:
     RectangleButton(
         const FlatObj& center, 
         const FlatObj& size, 
-        const Color& backgroundColor = Black
+        const Color& backgroundColor = Color::BlackColor
     );
 
     virtual void OnClick() = 0;

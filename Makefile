@@ -22,6 +22,7 @@ SRC      :=                           								\
 	$(wildcard kudry/engine/*.cpp)          						\
 	$(wildcard kudry/window/*.cpp)          						\
 	$(wildcard kudry/window/Text/*.cpp)          					\
+	$(wildcard kudry/window/Instrument/Instrument.cpp)          	\
 	$(wildcard files-dialog/*.cpp)          						\
 
 OBJECTS  := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
