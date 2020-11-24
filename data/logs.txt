@@ -27,7 +27,7 @@ FUNC: main
 Not active MousePressed
 ~~~~~~~~~~~~~
 FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
-LINE: 65
+LINE: 69
 FUNC: HandleEvent
 ---LOG-END---
 
@@ -38,7 +38,7 @@ FUNC: HandleEvent
 Not active MouseReleased
 ~~~~~~~~~~~~~
 FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
-LINE: 79
+LINE: 83
 FUNC: HandleEvent
 ---LOG-END---
 
@@ -46,10 +46,10 @@ FUNC: HandleEvent
 
 -----LOG-----
 ~~~~~~~~~~~~~
-Active click
+Active click: coords are (860.00000, 378.00000)
 ~~~~~~~~~~~~~
 FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
-LINE: 35
+LINE: 38
 FUNC: OnDrawingClick
 ---LOG-END---
 
@@ -60,7 +60,139 @@ FUNC: OnDrawingClick
 Active release
 ~~~~~~~~~~~~~
 FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
-LINE: 50
+LINE: 43
+FUNC: OnDrawingRelease
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Not active MousePressed
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 69
+FUNC: HandleEvent
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Not active MouseReleased
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 83
+FUNC: HandleEvent
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Active click: coords are (540.00000, 732.00000)
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 38
+FUNC: OnDrawingClick
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Active release
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 43
+FUNC: OnDrawingRelease
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Not active MousePressed
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 69
+FUNC: HandleEvent
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Not active MouseReleased
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 83
+FUNC: HandleEvent
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Active click: coords are (1364.00000, 248.00000)
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 38
+FUNC: OnDrawingClick
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Active release
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 43
+FUNC: OnDrawingRelease
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Not active MousePressed
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 69
+FUNC: HandleEvent
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Not active MouseReleased
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 83
+FUNC: HandleEvent
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Active click: coords are (576.00000, 118.00000)
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 38
+FUNC: OnDrawingClick
+---LOG-END---
+
+
+
+-----LOG-----
+~~~~~~~~~~~~~
+Active release
+~~~~~~~~~~~~~
+FILE: kudry/window/FigureDrawer/FigureDrawer.cpp
+LINE: 43
 FUNC: OnDrawingRelease
 ---LOG-END---
 
