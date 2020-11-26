@@ -1,3 +1,4 @@
 1) Instrument is a component or another class?
 2) Access base field from derived class ("shape problem" in RectangleDrawer)
-3) Draw something without interfering with application?
+3) Draw something without interfering with application? - store windows in engine, not application
+4) 

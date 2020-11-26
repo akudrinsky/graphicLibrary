@@ -19,6 +19,7 @@ SRC      :=                           								\
 	$(wildcard kudry/window/FigureDrawer/*.cpp)  					\
 	$(wildcard kudry/simpleGraphics/color/*.cpp)        			\
 	$(wildcard kudry/application/*.cpp)          					\
+	$(wildcard kudry/Application/UserEvent/UserEvent.cpp)          	\
 	$(wildcard kudry/application/SubscriptionManager/*.cpp)     	\
 	$(wildcard kudry/engine/*.cpp)          						\
 	$(wildcard kudry/window/*.cpp)          						\

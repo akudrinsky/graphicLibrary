@@ -18,6 +18,15 @@ namespace kudry
 class engineSFML : public engineInterface 
 {
 public:
+    // Adds window to set of attached windows
+    virtual void NewWindow(AbstractWindow* window) override;
+
+    // Deletes window from set of attached windows
+    virtual void DeleteWindow(AbstractWindow* window) override;
+
+    // Check if window is attached
+    virtual bool IsInside(AbstractWindow* window) override;
+
     virtual void DrawRect(
         const RectangleShape rect, 
         const Color& color
@@ -36,9 +45,10 @@ public:
 
     virtual Event* PollEvent() override;
 
-    virtual uint8_t Run(std::unordered_set<AbstractWindow*>& windows) override;
+    virtual uint8_t Run() override;
 
 private:
+    WindowContainer windows;
 
     static sf::RenderWindow* windowOS;
 

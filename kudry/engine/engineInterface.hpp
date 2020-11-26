@@ -19,6 +19,15 @@ public:
     // Contains pointers to AbstractWindow's
     using WindowContainer = std::unordered_set<AbstractWindow*>;
 
+    // Adds window to set of attached windows
+    virtual void NewWindow(AbstractWindow* window) = 0;
+
+    // Deletes window from set of attached windows
+    virtual void DeleteWindow(AbstractWindow* window) = 0;
+
+    // Check if window is attached
+    virtual bool IsInside(AbstractWindow* window) = 0;
+
     // Draws rectangle with given characteristics
     virtual void DrawRect(
         const RectangleShape rect, 
@@ -43,8 +52,7 @@ public:
     virtual Event* PollEvent() = 0;
 
     // Main loop
-    // @param windows - set of windows, that are needed ot be drawn
-    virtual uint8_t Run(WindowContainer& windows) = 0;
+    virtual uint8_t Run() = 0;
 
 private:
 };

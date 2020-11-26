@@ -40,13 +40,13 @@ public:
     static Application<Engine>& GetInstance(const char* name = nullptr);
 
     // Adds new window to the application
-    void NewWindow(AbstractWindow* window);
+    virtual void NewWindow(AbstractWindow* window) override;
 
     // Deletes window from application (can no longer be drawn or influence something)
-    void DeleteWindow(AbstractWindow* window);
+    virtual void DeleteWindow(AbstractWindow* window) override;
 
     // Checks if application already has window inside
-    bool IsInside(AbstractWindow* window);
+    virtual bool IsInside(AbstractWindow* window) override;
 
     // Main loop with drawings and all the events work. 
     // All preparations must be ended before this function.
@@ -59,7 +59,7 @@ private:
 
     static Application<Engine>* app;
 
-    std::unordered_set<AbstractWindow*> windows;
+    //[[deprecated]] std::unordered_set<AbstractWindow*> windows;
 
     static applicationDestroyer<Engine> destroyer;
 
@@ -142,25 +142,25 @@ Application<Engine>& Application<Engine>::GetInstance(const char* name)
 template <typename Engine>
 void Application<Engine>::NewWindow(AbstractWindow* window)
 {
-    windows.emplace(window);
+    Engine::NewWindow(window);
 }
 
 template <typename Engine>
 void Application<Engine>::DeleteWindow(AbstractWindow* window)
 {
-    windows.erase(window);
+    Engine::DeleteWindow(window);
 }
 
 template <typename Engine>
 bool Application<Engine>::IsInside(AbstractWindow* window) 
 {
-    return windows.find(window) != windows.end();
+    return Engine::IsInside(window);
 }
 
 template <typename Engine>
 uint8_t Application<Engine>::Loop()
 {
-    return Engine::Run(windows);
+    return Engine::Run();
 }
 
 }

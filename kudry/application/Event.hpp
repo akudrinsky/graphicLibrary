@@ -5,8 +5,9 @@ namespace kudry
 {
 
 // Structure with all events (including system and user ones)
-struct Event
+class Event
 {
+public:
     // Possible types of an event
     enum EventType 
     {
@@ -16,12 +17,10 @@ struct Event
         MouseMoved,
         Close,
         User,
+        #include "UserDefined.def"
     };
 
     Event();
-
-    // Event's type
-    EventType ID;
 
     struct None
     {};
@@ -52,7 +51,10 @@ struct Event
         
         eventData();
     } Data;
-    
+
+//private:
+    // Event's type
+    EventType ID;
 };
 
 }

@@ -27,7 +27,7 @@ void RectangleDrawer::OnRelease()
 void RectangleDrawer::OnMove(FlatObj coords)
 {
     auto& origin = managingShape.GetOrigin();
-    if (origin.x <=0.001 and origin.y <= 0.001)
+    if (origin.x <= 0.001 and origin.y <= 0.001)
         return;
     managingShape.SetSize({coords.x - origin.x, coords.y - origin.y});
 }
@@ -35,12 +35,12 @@ void RectangleDrawer::OnMove(FlatObj coords)
 void RectangleDrawer::OnDrawingClick(FlatObj coords)
 {
     managingShape.SetOrigin(coords);
-    LOGS("Active click: coords are (%5.5lf, %5.5lf)", managingShape.GetOrigin().x,  managingShape.GetOrigin().y)
+    //LOGS("Active click: coords are (%5.5lf, %5.5lf)", managingShape.GetOrigin().x,  managingShape.GetOrigin().y)
 }
 
 void RectangleDrawer::OnDrawingRelease(FlatObj)
 {
-    LOGS("Active release")
+    //LOGS("Active release")
     isActive = false;
     managingShape.SetOrigin({0.0, 0.0});
     managingShape.SetSize({0.0, 0.0});
@@ -66,7 +66,7 @@ bool RectangleDrawer::HandleEvent(Event *event)
                 OnDrawingClick(event->Data.Click.coord);
                 return true;
             }
-            LOGS("Not active MousePressed")
+            //LOGS("Not active MousePressed")
             if (!shape.Contains(event->Data.Click.coord))
                 return false;
             OnClick();
@@ -80,7 +80,7 @@ bool RectangleDrawer::HandleEvent(Event *event)
                 OnDrawingRelease(event->Data.Click.coord);
                 return true;
             }
-            LOGS("Not active MouseReleased")
+            //LOGS("Not active MouseReleased")
             if (!shape.Contains(event->Data.Click.coord))
                 return false;
             OnRelease();

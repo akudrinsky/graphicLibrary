@@ -11,6 +11,21 @@ std::unordered_map<std::string_view, sf::Font*> engineSFML::openedFonts = {};
 
 std::unordered_map<const void*, void*> engineSFML::resources = {};
 
+void engineSFML::NewWindow(AbstractWindow *window)
+{
+    windows.emplace(window);
+}
+
+void engineSFML::DeleteWindow(AbstractWindow *window)
+{
+    windows.erase(window);
+}
+
+bool engineSFML::IsInside(AbstractWindow *window)
+{
+    return windows.find(window) != windows.end();
+}
+
 void engineSFML::Init(const std::string_view& windowName)
 {
     windowOS = new sf::RenderWindow(sf::VideoMode::getDesktopMode(), windowName.data());
@@ -128,7 +143,7 @@ void engineSFML::DrawText(
     //LOGS("INFO >>> Text <%s> was written\n", textToDraw->GetText())
 }
 
-uint8_t engineSFML::Run(std::unordered_set<AbstractWindow*>& windows)
+uint8_t engineSFML::Run()
 {
     while (windowOS->isOpen()) 
     {
