@@ -23,9 +23,9 @@ bool ScrollableText::HandleEvent([[maybe_unused]] Event* event)
 {
     switch (event->ID)
     {
-        case Event::User:
+        case Event::ScrollbarPosition:
         {
-            position = *static_cast<double*>(event->Data.User.data);
+            position = event->Data.Scrollbar.position;
             LOGS("Scrollbar position was received: %lg", position)
             return true;
             break;

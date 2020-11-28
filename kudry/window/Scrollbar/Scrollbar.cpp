@@ -62,8 +62,8 @@ void Scrollbar::RemoveWindow([[maybe_unused]] AbstractWindow* window)
 void Scrollbar::SendPosition()
 {
     Event posEvent;
-    posEvent.ID = Event::User;
-    posEvent.Data.User.data = &position;
+    posEvent.ID = Event::ScrollbarPosition;
+    posEvent.Data.Scrollbar.position = position;
     SubscriptionManager::Send(this, &posEvent);
 }
 

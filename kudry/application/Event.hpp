@@ -15,6 +15,7 @@ public:
         MousePressed,
         MouseReleased,
         MouseMoved,
+        ScrollbarPosition,
         Close,
         User,
         #include "UserDefined.def"
@@ -40,6 +41,11 @@ public:
         //...
     };
 
+    struct ScrollbarData 
+    {
+        double position;
+    };
+
     // Additional information about the event. 
     // Makes sense only when knowing its ID.
     union eventData
@@ -48,6 +54,7 @@ public:
         KeyboardData Keyboard;
         None NoData;
         UserData User;
+        ScrollbarData Scrollbar;
         
         eventData();
     } Data;

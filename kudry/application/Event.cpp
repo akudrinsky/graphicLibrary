@@ -11,7 +11,6 @@ Event::eventData::eventData()
 Event::Event()
     :
     ID(Unknown)
-{
-}
+{}
 
 }
