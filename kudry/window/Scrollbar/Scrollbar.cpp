@@ -61,9 +61,7 @@ void Scrollbar::RemoveWindow([[maybe_unused]] AbstractWindow* window)
 
 void Scrollbar::SendPosition()
 {
-    Event posEvent;
-    posEvent.ID = Event::ScrollbarPosition;
-    posEvent.Data.Scrollbar.position = position;
+    ScrollbarEvent posEvent(position);
     SubscriptionManager::Send(this, &posEvent);
 }
 
@@ -121,27 +119,27 @@ void Scrollbar::middleButton::OnRelease()
 
 bool Scrollbar::middleButton::HandleEvent(Event* event)
 {
-    switch (event->ID)
+    switch (event->GetEventType())
     {
-        case Event::MousePressed:
+        case Event::Mouse:
         {
-            if (!shape.Contains(event->Data.Click.coord))
+            auto realEvent = static_cast<MouseEvent*>(event);
+            if (!shape.Contains(realEvent->Position))
                 return false;
             //clickInterface.OnClick();
-            OnClick();
-            return true;
-            break;
-        }
-        case Event::MouseReleased:
-        {
-            if (!shape.Contains(event->Data.Click.coord))
-                return false;
-            
-            if (clickData != nullptr)
-                return false;
-            //clickInterface.OnRelease();
-            clickData = &(event->Data.Click.coord);
-            OnRelease();
+
+            if (realEvent->Action == MouseEvent::WasPressed)
+            {
+                OnClick();
+            }
+            else if (realEvent->Action == MouseEvent::WasReleased)
+            {
+                if (clickData != nullptr)
+                    return false;
+                clickData = &realEvent->Position;
+                OnRelease();
+            }
+                
             return true;
             break;
         }

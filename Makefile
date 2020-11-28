@@ -16,16 +16,15 @@ SRC      :=                           								\
 	$(wildcard kudry/window/Button/*.cpp)         					\
 	$(wildcard kudry/engine/SFML/*.cpp)     						\
 	$(wildcard kudry/engine/OpenGL/*.cpp)  							\
-	$(wildcard kudry/window/FigureDrawer/*.cpp)  					\
 	$(wildcard kudry/simpleGraphics/color/*.cpp)        			\
-	$(wildcard kudry/application/*.cpp)          					\
+	$(wildcard kudry/Application/*.cpp)          					\
 	$(wildcard kudry/Application/UserEvent/UserEvent.cpp)          	\
-	$(wildcard kudry/application/SubscriptionManager/*.cpp)     	\
+	$(wildcard kudry/Application/SubscriptionManager/*.cpp)     	\
 	$(wildcard kudry/engine/*.cpp)          						\
 	$(wildcard kudry/window/*.cpp)          						\
 	$(wildcard kudry/window/Text/*.cpp)          					\
 	$(wildcard kudry/window/Instrument/Instrument.cpp)          	\
-	$(wildcard files-dialog/main.cpp)          						\
+	$(wildcard files-dialog/raven-scrollbar.cpp)          						\
 
 OBJECTS  := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 

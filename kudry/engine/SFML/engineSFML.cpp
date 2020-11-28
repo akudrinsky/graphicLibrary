@@ -67,41 +67,6 @@ void engineSFML::DrawRect(
     windowOS->draw(rect);
 }
 
-[[deprecated]]
-Event* engineSFML::PollEvent()
-{
-    Event* myEvent = new Event;
-
-    sf::Event SFMLevent;
-    windowOS->pollEvent(SFMLevent);
-
-    switch (SFMLevent.type) 
-    {
-    case sf::Event::MouseButtonPressed:
-        myEvent->ID = kudry::Event::MousePressed;
-        myEvent->Data.Click.coord = FlatObj(SFMLevent.mouseButton.x, SFMLevent.mouseButton.y);
-        break;
-
-    case sf::Event::MouseButtonReleased:
-        myEvent->ID = kudry::Event::MouseReleased;
-        myEvent->Data.Click.coord = FlatObj(SFMLevent.mouseButton.x, SFMLevent.mouseButton.y);
-        break;
-    
-    case sf::Event::Closed:
-        LOGS("Closing event\n")
-        myEvent->ID = kudry::Event::Close;
-        break;
-    
-    default:
-        break;
-    }
-
-    return myEvent;
-    return nullptr;
-}
-
-
-
 void engineSFML::DrawText(
     const TextWindow* textToDraw, 
     const RectangleShape* canvas,
@@ -143,64 +108,74 @@ void engineSFML::DrawText(
     //LOGS("INFO >>> Text <%s> was written\n", textToDraw->GetText())
 }
 
+Event* CreateMyEvent(const sf::Event& sfmlEvent)
+{
+    Event* myEvent = nullptr;
+    switch (sfmlEvent.type)
+    {
+        case sf::Event::Closed:
+        {
+            myEvent = new Event(Event::Close);
+            LOGS("Close event\n")
+            break;
+        }
+        case sf::Event::MouseButtonPressed:
+        {
+            myEvent = new MouseEvent(
+                kudry::FlatObj(
+                    sfmlEvent.mouseButton.x, 
+                    sfmlEvent.mouseButton.y), 
+                MouseEvent::WasPressed);
+            break;
+        }
+        case sf::Event::MouseButtonReleased:
+        {
+            myEvent = new MouseEvent(
+                kudry::FlatObj(
+                    sfmlEvent.mouseButton.x, 
+                    sfmlEvent.mouseButton.y), 
+                MouseEvent::WasReleased);
+            break;
+        }
+        case sf::Event::MouseMoved:                
+        {
+            myEvent = new MouseEvent(
+                kudry::FlatObj(
+                    sfmlEvent.mouseButton.x, 
+                    sfmlEvent.mouseButton.y), 
+                MouseEvent::WasMoved);
+            break;
+        }
+        // TODO: more events
+        default: 
+        {
+            myEvent = new Event;
+        }
+    }
+    return myEvent;
+}
+
 uint8_t engineSFML::Run()
 {
     while (windowOS->isOpen()) 
     {
         sf::Event event;
-        kudry::Event myEvent;
+        kudry::Event* myEvent;
 
         while (windowOS->pollEvent(event)) 
         {
-            switch (event.type)
-            {
-                case sf::Event::Closed:
-                {
-                    LOGS("Close event\n")
-                    myEvent.ID = kudry::Event::Close;
-                    myEvent.Data.NoData = {};
-                    break;
-                }
-                case sf::Event::MouseButtonPressed:
-                {
-                    myEvent.ID = kudry::Event::MousePressed;
-                    myEvent.Data.Click.coord = 
-                        kudry::FlatObj(event.mouseButton.x, event.mouseButton.y);
-                    break;
-                }
-                case sf::Event::MouseButtonReleased:
-                {
-                    myEvent.ID = kudry::Event::MouseReleased;
-                    myEvent.Data.Click.coord = 
-                        kudry::FlatObj(event.mouseButton.x, event.mouseButton.y);
-                    break;
-                }
-                case sf::Event::MouseMoved:
-                {
-                    myEvent.ID = kudry::Event::MouseMoved;
-                    myEvent.Data.Click.coord = 
-                        kudry::FlatObj(event.mouseMove.x, event.mouseMove.y);
-                    break;
-                }
-                // TODO: more events
-                default: 
-                {
-                    myEvent.ID = kudry::Event::Unknown;
-                    myEvent.Data.NoData = {};
-                    break;
-                }
-            }
-
+            myEvent = CreateMyEvent(event);
             //SubscriptionManager::Send(sysWindow, &myEvent);
 
             for (auto window : windows) 
-                window->HandleEvent(&myEvent);
+                window->HandleEvent(myEvent);
 
-            if (myEvent.ID == kudry::Event::Close)
+            if (myEvent->GetEventType() == kudry::Event::Close)
             {
                 windowOS->close();
                 LOGS("OS application window was closed\n")
             }
+            delete myEvent;
         }
 
         for (auto window : windows) 

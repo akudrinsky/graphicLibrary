@@ -12,56 +12,44 @@ public:
     enum EventType 
     {
         Unknown,
-        MousePressed,
-        MouseReleased,
-        MouseMoved,
-        ScrollbarPosition,
+        Mouse,
+        Keyboard,
+        Scrollbar,
         Close,
         User,
-        #include "UserDefined.def"
     };
+
+    EventType GetEventType() const;
 
     Event();
 
-    struct None
-    {};
+    ~Event();
 
-    struct ClickData 
-    {
-        FlatObj coord;
-    };
-
-    struct UserData
-    {
-        void* data;
-    };
-
-    struct KeyboardData 
-    {
-        //...
-    };
-
-    struct ScrollbarData 
-    {
-        double position;
-    };
-
-    // Additional information about the event. 
-    // Makes sense only when knowing its ID.
-    union eventData
-    {
-        ClickData Click;
-        KeyboardData Keyboard;
-        None NoData;
-        UserData User;
-        ScrollbarData Scrollbar;
-        
-        eventData();
-    } Data;
-
-//private:
+    Event(EventType ID);
+private:
     // Event's type
     EventType ID;
+};
+
+class MouseEvent : public Event
+{
+public:
+    enum ActionType
+    {
+        WasPressed,
+        WasReleased,
+        WasMoved,
+    };
+    FlatObj Position;
+    ActionType Action;
+    MouseEvent(const FlatObj& pos, const ActionType& action);
+};
+
+class ScrollbarEvent : public Event
+{
+public:
+    double Position;
+    ScrollbarEvent(double position);
 };
 
 }

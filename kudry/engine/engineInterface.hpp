@@ -48,9 +48,6 @@ public:
     // Frees all resources of a low-level library
     virtual void Destroy() = 0;
 
-    [[deprecated]]
-    virtual Event* PollEvent() = 0;
-
     // Main loop
     virtual uint8_t Run() = 0;
 

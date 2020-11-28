@@ -43,8 +43,6 @@ public:
 
     virtual void Destroy() override;
 
-    virtual Event* PollEvent() override;
-
     virtual uint8_t Run() override;
 
 private:

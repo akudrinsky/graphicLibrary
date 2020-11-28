@@ -21,11 +21,12 @@ ScrollableText::~ScrollableText()
 
 bool ScrollableText::HandleEvent([[maybe_unused]] Event* event)
 {
-    switch (event->ID)
+    switch (event->GetEventType())
     {
-        case Event::ScrollbarPosition:
+        case Event::Scrollbar:
         {
-            position = event->Data.Scrollbar.position;
+            auto realEvent = static_cast<ScrollbarEvent*>(event);
+            position = realEvent->Position;
             LOGS("Scrollbar position was received: %lg", position)
             return true;
             break;

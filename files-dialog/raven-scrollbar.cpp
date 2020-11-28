@@ -1,4 +1,4 @@
-#include "../kudry/Application/application.hpp"
+#include "../kudry/Application/Application.hpp"
 #include "../kudry/engine/SFML/engineSFML.hpp"
 #include "../kudry/window/Scrollbar/ScrollableText.hpp"
 #include "../kudry/LOGS/logs.hpp"

@@ -16,23 +16,19 @@ RectangleButton::RectangleButton(
 
 bool RectangleButton::HandleEvent([[maybe_unused]] Event* event)
 {
-    switch (event->ID)
+    switch (event->GetEventType())
     {
-        case Event::MousePressed:
+        case Event::Mouse:
         {
-            if (!shape.Contains(event->Data.Click.coord))
+            MouseEvent* realEvent = static_cast<MouseEvent*>(event);
+            if (!shape.Contains(realEvent->Position))
                 return false;
             //clickInterface.OnClick();
-            OnClick();
-            return true;
-            break;
-        }
-        case Event::MouseReleased:
-        {
-            if (!shape.Contains(event->Data.Click.coord))
-                return false;
-            //clickInterface.OnRelease();
-            OnRelease();
+            if (realEvent->Action == MouseEvent::WasPressed)
+                OnClick();
+            else if (realEvent->Action == MouseEvent::WasReleased)
+                OnRelease();
+
             return true;
             break;
         }
