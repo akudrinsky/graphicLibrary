@@ -1,6 +1,8 @@
 #include "../kudry/Application/Application.hpp"
 #include "../kudry/engine/SFML/engineSFML.hpp"
 #include "../kudry/window/FigureDrawer/FigureDrawer.hpp"
+#include "../kudry/window/Instrument/Instrument.hpp"
+#include "../kudry/window/Instrument/Canvas.hpp"
 #include "../kudry/LOGS/logs.hpp"
 
 #include <fstream>
@@ -19,6 +21,8 @@ int main(int argc, char* argv[])
     auto& app = 
         kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
     
+    kudry::C
+
     kudry::RectangleDrawer rectdrw(
         {100, 100}, 
         {100, 100}, 

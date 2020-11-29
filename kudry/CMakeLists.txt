@@ -15,6 +15,7 @@ add_library(kudry
     ./window/RectangleButton/RectangleButton.cpp
     ./window/Instrument/Instrument.cpp
     ./window/Instrument/Canvas.cpp
+    ./window/Instrument/canvasEvents.cpp
     ./window/RectangleWindow/RectangleWindow.cpp
     ./window/SystemWindow/SystemWindow.cpp
     ./window/Components/Shapes/Picture.cpp

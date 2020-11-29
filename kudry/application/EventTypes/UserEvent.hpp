@@ -1,16 +1,16 @@
+#pragma once
+
 #include "../Event.hpp"
 
 namespace kudry
 {
 
-class UserEvent : Event
+// All non-standard events must be inherited from this class. 
+// This guarantees that event's ID in base class is correct.
+class UserEvent : public Event
 {
-    enum EventType 
-    {
-        ScrollBar,
-        
-    };
-
+public:
+    UserEvent();
 };
 
 }

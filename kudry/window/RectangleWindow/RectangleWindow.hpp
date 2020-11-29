@@ -20,7 +20,7 @@ public:
 
     virtual ~RectangleWindow() override;
 
-    void SetColor(const const Color& newColor);
+    void SetColor(const Color& newColor);
 
     void SetOrigin(const FlatObj& newOrigin);
 

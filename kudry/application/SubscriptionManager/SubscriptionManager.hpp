@@ -19,6 +19,9 @@ public:
     // This function sends an event to all subsribed windows
     static void Send(AbstractWindow* sender, Event* event);
 
+    // This function sends an event to exact window
+    static void SendTo(AbstractWindow* receiver, Event* event);
+
     // Unsubscribes all windows from this one (useful when window is destroyed)
     static void UnsubscribeAll(AbstractWindow* sender);
 

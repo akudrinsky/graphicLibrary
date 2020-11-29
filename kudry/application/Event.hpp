@@ -1,4 +1,5 @@
 #pragma once
+
 #include "../simpleGraphics/geometry/geometry.hpp"
 
 namespace kudry
@@ -17,6 +18,7 @@ public:
         Scrollbar,
         Close,
         User,
+        Canvas,
     };
 
     EventType GetEventType() const;
@@ -31,6 +33,9 @@ private:
     EventType ID;
 };
 
+/*--------------------------------------------------------------------------*/
+
+// Desribes all events got from mouse
 class MouseEvent : public Event
 {
 public:
@@ -45,6 +50,10 @@ public:
     MouseEvent(const FlatObj& pos, const ActionType& action);
 };
 
+/*--------------------------------------------------------------------------*/
+
+// Desribes all events got from scrollbar
+// TODO: make it a user event
 class ScrollbarEvent : public Event
 {
 public:

@@ -28,7 +28,7 @@ void RectangleWindow::Draw(engineInterface* Canvas)
     //LOGS("INFO >>> rect was drawn\n")
 }
 
-void RectangleWindow::SetColor(const const Color& newColor)
+void RectangleWindow::SetColor(const Color& newColor)
 {
     backgroundColor = newColor;
 }

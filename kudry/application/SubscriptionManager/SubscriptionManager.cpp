@@ -49,6 +49,14 @@ void SubscriptionManager::Send(AbstractWindow* sender, Event* event)
         window->HandleEvent(event);
 }
 
+void SubscriptionManager::SendTo(AbstractWindow *receiver, Event *event)
+{
+    checkNullptr(receiver);
+    checkNullptr(event);
+
+    receiver->HandleEvent(event);
+}
+
 void SubscriptionManager::UnsubscribeAll(AbstractWindow* sender)
 {
     checkNullptr(sender);

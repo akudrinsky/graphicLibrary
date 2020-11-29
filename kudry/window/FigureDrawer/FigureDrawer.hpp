@@ -1,3 +1,4 @@
+#pragma once
 //#include "../Instrument/Instrument.hpp"
 #include "../Components/Shapes/Rectangle.hpp"
 #include "../../simpleGraphics/color/color.hpp"

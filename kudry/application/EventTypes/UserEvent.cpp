@@ -3,5 +3,9 @@
 namespace kudry
 {
 
+UserEvent::UserEvent()
+    :
+    Event(User)
+{}
 
 }

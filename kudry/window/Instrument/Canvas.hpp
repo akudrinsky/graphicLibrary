@@ -1,20 +1,19 @@
-#include "../AbstractWindow.hpp"
+#pragma once
+
+#include "Instrument.hpp"
+#include "../RectangleButton/RectangleButton.hpp"
 
 namespace kudry
 {
 
-// Class that describes functionality, that every instrument must have.
-// Important: all instruments have an active one. It is the one that acts on canvas. 
-class AbstractInstrument : AbstractWindow
+// Class that describes canvas for all instruments.
+class Canvas : public RectangleWindow
 {
 public:
-    void SetActive();
+    virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
-protected:
-    
-
+    // virtual void Draw(engineInterface* engine) override;
 private:
-    static AbstractWindow* active;
 };
 
 }
