@@ -9,6 +9,8 @@ std::unordered_map<
     std::unordered_set<AbstractWindow*>
 > SubscriptionManager::subscriptions;
 
+/*--------------------------------------------------------------------------*/
+
 void SubscriptionManager::checkNullptr(void* ptr)
 {
     if (ptr == nullptr)
@@ -16,6 +18,8 @@ void SubscriptionManager::checkNullptr(void* ptr)
         throw std::invalid_argument("nullptr");
     }
 }
+
+/*--------------------------------------------------------------------------*/
 
 void SubscriptionManager::Subscribe(AbstractWindow* sender, AbstractWindow* receiver)
 {
@@ -29,6 +33,8 @@ void SubscriptionManager::Subscribe(AbstractWindow* sender, AbstractWindow* rece
     subscriptions[sender].insert(receiver);
 }
 
+/*--------------------------------------------------------------------------*/
+
 void SubscriptionManager::Unsubscribe(AbstractWindow* sender, AbstractWindow* receiver)
 {
     checkNullptr(sender);
@@ -36,6 +42,8 @@ void SubscriptionManager::Unsubscribe(AbstractWindow* sender, AbstractWindow* re
 
     subscriptions[sender].erase(receiver);
 }
+
+/*--------------------------------------------------------------------------*/
 
 void SubscriptionManager::Send(AbstractWindow* sender, Event* event)
 {
@@ -49,6 +57,8 @@ void SubscriptionManager::Send(AbstractWindow* sender, Event* event)
         window->HandleEvent(event);
 }
 
+/*--------------------------------------------------------------------------*/
+
 void SubscriptionManager::SendTo(AbstractWindow *receiver, Event *event)
 {
     checkNullptr(receiver);
@@ -57,11 +67,15 @@ void SubscriptionManager::SendTo(AbstractWindow *receiver, Event *event)
     receiver->HandleEvent(event);
 }
 
+/*--------------------------------------------------------------------------*/
+
 void SubscriptionManager::UnsubscribeAll(AbstractWindow* sender)
 {
     checkNullptr(sender);
     subscriptions[sender].clear();
 }
+
+/*--------------------------------------------------------------------------*/
 
 void SubscriptionManager::UnsubscribeFromAll(AbstractWindow* receiver)
 {

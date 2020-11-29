@@ -14,6 +14,8 @@ RectangleButton::RectangleButton(
     clickInterface(nullptr, nullptr, this)
 {}
 
+/*--------------------------------------------------------------------------*/
+
 bool RectangleButton::HandleEvent([[maybe_unused]] Event* event)
 {
     switch (event->GetEventType())

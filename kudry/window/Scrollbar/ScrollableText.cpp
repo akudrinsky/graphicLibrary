@@ -16,8 +16,12 @@ ScrollableText::ScrollableText(
     position(0.0)
 {}
 
+/*--------------------------------------------------------------------------*/
+
 ScrollableText::~ScrollableText()
 {}
+
+/*--------------------------------------------------------------------------*/
 
 bool ScrollableText::HandleEvent([[maybe_unused]] Event* event)
 {
@@ -39,11 +43,15 @@ bool ScrollableText::HandleEvent([[maybe_unused]] Event* event)
     return false;
 }
 
+/*--------------------------------------------------------------------------*/
+
 void ScrollableText::Draw([[maybe_unused]] engineInterface* Canvas)
 {
     LOGS("position %lf", position)
     Canvas->DrawText(&fulltext, &shape, &backgroundColor, position);
 }
+
+/*--------------------------------------------------------------------------*/
 
 void ScrollableText::Attach(Scrollbar* manager)
 {

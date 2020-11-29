@@ -14,6 +14,8 @@ void ClickableComponent::OnClick()
     (*clickAction_)(owner_);
 }
 
+/*--------------------------------------------------------------------------*/
+
 void ClickableComponent::OnRelease()
 {
     if (releaseAction_ == nullptr)
@@ -24,15 +26,21 @@ void ClickableComponent::OnRelease()
     (*releaseAction_)(owner_);
 }
 
+/*--------------------------------------------------------------------------*/
+
 void ClickableComponent::ChangeClickAction(Action_t newAction)
 {
     clickAction_ = newAction;
 }
 
+/*--------------------------------------------------------------------------*/
+
 void ClickableComponent::ChangeReleaseAction(Action_t newAction)
 {
     releaseAction_ = newAction;
 }
+
+/*--------------------------------------------------------------------------*/
 
 ClickableComponent::ClickableComponent(
     Action_t clickAction, 

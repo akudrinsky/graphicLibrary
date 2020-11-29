@@ -11,25 +11,35 @@ std::unordered_map<std::string_view, sf::Font*> engineSFML::openedFonts = {};
 
 std::unordered_map<const void*, void*> engineSFML::resources = {};
 
+/*--------------------------------------------------------------------------*/
+
 void engineSFML::NewWindow(AbstractWindow *window)
 {
     windows.emplace(window);
 }
+
+/*--------------------------------------------------------------------------*/
 
 void engineSFML::DeleteWindow(AbstractWindow *window)
 {
     windows.erase(window);
 }
 
+/*--------------------------------------------------------------------------*/
+
 bool engineSFML::IsInside(AbstractWindow *window)
 {
     return windows.find(window) != windows.end();
 }
 
+/*--------------------------------------------------------------------------*/
+
 void engineSFML::Init(const std::string_view& windowName)
 {
     windowOS = new sf::RenderWindow(sf::VideoMode::getDesktopMode(), windowName.data());
 }
+
+/*--------------------------------------------------------------------------*/
 
 void engineSFML::Destroy() 
 {
@@ -41,10 +51,14 @@ void engineSFML::Destroy()
     delete windowOS;
 }
 
+/*--------------------------------------------------------------------------*/
+
 sf::Vector2f engineSFML::changeFlatObj(const FlatObj& size) 
 {
     return sf::Vector2f((float)size.x, (float)size.y);
 }
+
+/*--------------------------------------------------------------------------*/
 
 sf::Color engineSFML::changeColor(const Color& color) 
 {
@@ -54,6 +68,8 @@ sf::Color engineSFML::changeColor(const Color& color)
         (sf::Uint8)color.Blue
     );
 }
+
+/*--------------------------------------------------------------------------*/
 
 void engineSFML::DrawRect(
     const RectangleShape rect_, 
@@ -66,6 +82,8 @@ void engineSFML::DrawRect(
 
     windowOS->draw(rect);
 }
+
+/*--------------------------------------------------------------------------*/
 
 void engineSFML::DrawText(
     const TextWindow* textToDraw, 
@@ -107,6 +125,8 @@ void engineSFML::DrawText(
     
     //LOGS("INFO >>> Text <%s> was written\n", textToDraw->GetText())
 }
+
+/*--------------------------------------------------------------------------*/
 
 Event* CreateMyEvent(const sf::Event& sfmlEvent)
 {
@@ -155,6 +175,8 @@ Event* CreateMyEvent(const sf::Event& sfmlEvent)
     return myEvent;
 }
 
+/*--------------------------------------------------------------------------*/
+
 uint8_t engineSFML::Run()
 {
     while (windowOS->isOpen()) 
@@ -187,6 +209,8 @@ uint8_t engineSFML::Run()
     
     return 0;
 }
+
+/*--------------------------------------------------------------------------*/
 
 void engineSFML::createTextObj(const TextWindow* textToDraw)
 {

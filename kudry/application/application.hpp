@@ -17,6 +17,8 @@ namespace kudry
 template <typename Engine>
 class Application;
 
+/*---------------------------------Unseen----------------------------------*/
+
 namespace
 {
 // needed to destroy singleton Application
@@ -31,6 +33,8 @@ public:
     void initialize(Application<Engine>* app);
 };   
 }
+
+/*-------------------------------Unceen-END----------------------------------*/
 
 template <typename Engine>
 class Application : private Engine
@@ -86,7 +90,7 @@ Application<Engine>* Application<Engine>::app = nullptr;
 template <typename Engine>
 applicationDestroyer<Engine> Application<Engine>::destroyer = {};
 
-//-------------------UNSEEN-------------------
+/*---------------------------------Unseen----------------------------------*/
 namespace
 {
 template <typename Engine>
@@ -101,7 +105,7 @@ void applicationDestroyer<Engine>::initialize(Application<Engine>* app)
     instance = app;
 }
 }
-//-----------------UNSEEN-END-----------------
+/*-------------------------------Unceen-END----------------------------------*/
 
 template <typename Engine>
 Application<Engine>::Application(const char* name)
@@ -113,11 +117,15 @@ Application<Engine>::Application(const char* name)
     LOGS("INFO >>> application was created\n")
 }
 
+/*--------------------------------------------------------------------------*/
+
 template <typename Engine>
 Application<Engine>::~Application()
 {
     Engine::Destroy();
 }
+
+/*--------------------------------------------------------------------------*/
 
 template <typename Engine>
 Application<Engine>& Application<Engine>::GetInstance(const char* name) 
@@ -139,11 +147,15 @@ Application<Engine>& Application<Engine>::GetInstance(const char* name)
     return *app;
 }
 
+/*--------------------------------------------------------------------------*/
+
 template <typename Engine>
 void Application<Engine>::NewWindow(AbstractWindow* window)
 {
     Engine::NewWindow(window);
 }
+
+/*--------------------------------------------------------------------------*/
 
 template <typename Engine>
 void Application<Engine>::DeleteWindow(AbstractWindow* window)
@@ -151,11 +163,15 @@ void Application<Engine>::DeleteWindow(AbstractWindow* window)
     Engine::DeleteWindow(window);
 }
 
+/*--------------------------------------------------------------------------*/
+
 template <typename Engine>
 bool Application<Engine>::IsInside(AbstractWindow* window) 
 {
     return Engine::IsInside(window);
 }
+
+/*--------------------------------------------------------------------------*/
 
 template <typename Engine>
 uint8_t Application<Engine>::Loop()

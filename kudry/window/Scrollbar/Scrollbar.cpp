@@ -32,8 +32,12 @@ Scrollbar::Scrollbar(
     )
 {}
 
+/*--------------------------------------------------------------------------*/
+
 Scrollbar::~Scrollbar()
 {}
+
+/*--------------------------------------------------------------------------*/
 
 bool Scrollbar::HandleEvent([[maybe_unused]] Event* event)
 {
@@ -41,10 +45,14 @@ bool Scrollbar::HandleEvent([[maybe_unused]] Event* event)
     return false;
 }
 
+/*--------------------------------------------------------------------------*/
+
 void Scrollbar::SetStep(const double& newStep)
 {
     step = newStep;
 }
+
+/*--------------------------------------------------------------------------*/
 
 void Scrollbar::Draw(engineInterface* Canvas)
 {
@@ -53,17 +61,25 @@ void Scrollbar::Draw(engineInterface* Canvas)
     middle.Draw(Canvas);
 }
 
+/*--------------------------------------------------------------------------*/
+
 void Scrollbar::EmplaceWindow([[maybe_unused]] AbstractWindow* window)
 {}
 
+/*--------------------------------------------------------------------------*/
+
 void Scrollbar::RemoveWindow([[maybe_unused]] AbstractWindow* window)
 {}
+
+/*--------------------------------------------------------------------------*/
 
 void Scrollbar::SendPosition()
 {
     ScrollbarEvent posEvent(position);
     SubscriptionManager::Send(this, &posEvent);
 }
+
+/*--------------------------------------------------------------------------*/
 
 Scrollbar::upperButton::upperButton(
     const FlatObj& center, 
@@ -77,6 +93,8 @@ Scrollbar::upperButton::upperButton(
     SubscriptionManager::Subscribe(scrlbar, this);
 }
 
+/*--------------------------------------------------------------------------*/
+
 void Scrollbar::upperButton::OnClick()
 {
     scrlbar->position -= scrlbar->step;
@@ -86,8 +104,12 @@ void Scrollbar::upperButton::OnClick()
     LOGS("position: %lg\n", scrlbar->position)
 }
 
+/*--------------------------------------------------------------------------*/
+
 void Scrollbar::upperButton::OnRelease()
 {}
+
+/*--------------------------------------------------------------------------*/
 
 Scrollbar::middleButton::middleButton(
     const FlatObj& center, 
@@ -102,10 +124,14 @@ Scrollbar::middleButton::middleButton(
     SubscriptionManager::Subscribe(scrlbar, this);
 }
 
+/*--------------------------------------------------------------------------*/
+
 void Scrollbar::middleButton::OnClick()
 {
     clickData = nullptr;
 }
+
+/*--------------------------------------------------------------------------*/
 
 void Scrollbar::middleButton::OnRelease()
 {
@@ -116,6 +142,8 @@ void Scrollbar::middleButton::OnRelease()
     scrlbar->SendPosition();
     LOGS("position = %lg after middle button\n", scrlbar->position)
 }
+
+/*--------------------------------------------------------------------------*/
 
 bool Scrollbar::middleButton::HandleEvent(Event* event)
 {
@@ -151,6 +179,8 @@ bool Scrollbar::middleButton::HandleEvent(Event* event)
     return false;
 }
 
+/*--------------------------------------------------------------------------*/
+
 Scrollbar::lowerButton::lowerButton(
     const FlatObj& center, 
     const FlatObj& size, 
@@ -163,6 +193,8 @@ Scrollbar::lowerButton::lowerButton(
     SubscriptionManager::Subscribe(scrlbar, this);
 }
 
+/*--------------------------------------------------------------------------*/
+
 void Scrollbar::lowerButton::OnClick()
 {
     scrlbar->position += scrlbar->step;
@@ -171,6 +203,8 @@ void Scrollbar::lowerButton::OnClick()
     scrlbar->SendPosition();
     LOGS("position: %lg\n", scrlbar->position)
 }
+
+/*--------------------------------------------------------------------------*/
 
 void Scrollbar::lowerButton::OnRelease()
 {}

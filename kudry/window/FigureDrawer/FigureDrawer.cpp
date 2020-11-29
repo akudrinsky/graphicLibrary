@@ -16,13 +16,19 @@ RectangleDrawer::RectangleDrawer(
     startingTouch(-1.0, -1.0)
 {}
 
+/*--------------------------------------------------------------------------*/
+
 void RectangleDrawer::OnClick()
 {}
+
+/*--------------------------------------------------------------------------*/
 
 void RectangleDrawer::OnRelease()
 {
     isActive = true;
 }
+
+/*--------------------------------------------------------------------------*/
 
 void RectangleDrawer::OnMove(FlatObj coords)
 {
@@ -32,11 +38,15 @@ void RectangleDrawer::OnMove(FlatObj coords)
     managingShape.SetSize({coords.x - origin.x, coords.y - origin.y});
 }
 
+/*--------------------------------------------------------------------------*/
+
 void RectangleDrawer::OnDrawingClick(FlatObj coords)
 {
     managingShape.SetOrigin(coords);
     //LOGS("Active click: coords are (%5.5lf, %5.5lf)", managingShape.GetOrigin().x,  managingShape.GetOrigin().y)
 }
+
+/*--------------------------------------------------------------------------*/
 
 void RectangleDrawer::OnDrawingRelease(FlatObj)
 {
@@ -46,6 +56,8 @@ void RectangleDrawer::OnDrawingRelease(FlatObj)
     managingShape.SetSize({0.0, 0.0});
 }
 
+/*--------------------------------------------------------------------------*/
+
 void RectangleDrawer::Draw(engineInterface* Canvas)
 {
     RectangleButton::Draw(Canvas);
@@ -54,6 +66,8 @@ void RectangleDrawer::Draw(engineInterface* Canvas)
         Canvas->DrawRect(managingShape, col);
     }
 }
+
+/*--------------------------------------------------------------------------*/
 
 bool RectangleDrawer::HandleEvent(Event *event)
 {
