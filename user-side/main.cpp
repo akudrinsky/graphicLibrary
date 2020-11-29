@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 
     auto& app = 
         kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
-
+    
     kudry::RectangleDrawer rectdrw(
         {100, 100}, 
         {100, 100}, 

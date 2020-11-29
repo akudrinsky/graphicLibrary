@@ -76,6 +76,7 @@ private:
         virtual bool HandleEvent(Event* event) override;
     private:
         Scrollbar* scrlbar;
+        // !!! ERROR: May be pointer to freed space !!!
         const FlatObj* clickData;
     };
 

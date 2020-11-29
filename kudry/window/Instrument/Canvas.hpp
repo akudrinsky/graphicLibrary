@@ -1,5 +1,4 @@
 #include "../AbstractWindow.hpp"
-#include "../../simpleGraphics/color/color.hpp"
 
 namespace kudry
 {
