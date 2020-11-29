@@ -28,6 +28,21 @@ void RectangleWindow::Draw(engineInterface* Canvas)
     //LOGS("INFO >>> rect was drawn\n")
 }
 
+void RectangleWindow::SetColor(const const Color& newColor)
+{
+    backgroundColor = newColor;
+}
+
+void RectangleWindow::SetOrigin(const FlatObj& newOrigin)
+{
+    shape.SetOrigin(newOrigin);
+}
+
+void RectangleWindow::SetSize(const FlatObj& newSize)
+{
+    shape.SetSize(newSize);
+}
+
 void RectangleWindow::EmplaceWindow([[maybe_unused]] AbstractWindow* window)
 {}
 

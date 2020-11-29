@@ -13,7 +13,7 @@ class RectangleButton : public RectangleWindow
 {
 public:
     RectangleButton(
-        const FlatObj& center, 
+        const FlatObj& origin, 
         const FlatObj& size, 
         const Color& backgroundColor = Color::BlackColor
     );

@@ -20,6 +20,12 @@ public:
 
     virtual ~RectangleWindow() override;
 
+    void SetColor(const const Color& newColor);
+
+    void SetOrigin(const FlatObj& newOrigin);
+
+    void SetSize(const FlatObj& newSize);
+
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
     virtual void Draw(engineInterface* Canvas) override;
