@@ -3,12 +3,14 @@
 #include "../Application/Event.hpp"
 #include "../window/Components/Shapes/Rectangle.hpp"
 #include "../window/AbstractWindow.hpp"
+#include "../window/Instrument/Canvas.hpp"
 #include "../window/SystemWindow/SystemWindow.hpp"
 #include "../window/Text/Font.hpp"
 #include "../window/Text/Text.hpp"
 #include "../simpleGraphics/geometry/geometry.hpp"
 #include "../simpleGraphics/color/color.hpp"
 #include <string_view>
+#include <deque>
 
 namespace kudry
 {
@@ -41,6 +43,26 @@ public:
         const Color* backgroundColor = nullptr,
         double offset = 0.0
     ) = 0;
+
+    // Draws line between points
+    virtual void DrawLine(
+        const Color& clr,
+        Thickness_t thickness,
+        const FlatObj& from,
+        const FlatObj& to,
+        const Canvas* canvas = nullptr
+    ) = 0;
+
+    // Draws curve between points
+    virtual void DrawCurve(
+        const Color& clr,
+        Thickness_t thickness,
+        const std::deque<FlatObj>& points,
+        const Canvas* canvas = nullptr
+    ) = 0;
+
+    // Draws canvas
+    virtual void DrawCanvas(const Canvas* canvas) = 0;
 
     // Inits the low-level library
     virtual void Init(const std::string_view& windowName) = 0;

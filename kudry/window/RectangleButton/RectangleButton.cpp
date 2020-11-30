@@ -5,13 +5,18 @@
 namespace kudry
 {
 
+RectangleButton::RectangleButton()
+{}
+
+/*--------------------------------------------------------------------------*/
+
 RectangleButton::RectangleButton(
     const FlatObj& center, 
     const FlatObj& size, 
     const Color& backgroundColor
 )   :
-    RectangleWindow(center, size, backgroundColor),
-    clickInterface(nullptr, nullptr, this)
+    RectangleWindow(center, size, backgroundColor)
+    //,clickInterface(nullptr, nullptr, this)
 {}
 
 /*--------------------------------------------------------------------------*/

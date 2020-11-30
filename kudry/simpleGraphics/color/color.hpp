@@ -3,6 +3,9 @@
 namespace kudry 
 {
 
+// Type that describes thickness of lines
+typedef int Thickness_t;
+
 // Color-describing interface for kudry drawing library
 class Color 
 {

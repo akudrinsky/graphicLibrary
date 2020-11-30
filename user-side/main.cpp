@@ -18,17 +18,23 @@ int main(int argc, char* argv[])
         exit(1);
     }
 
+    LOGS("Starting application %s", argv[1])
+
     auto& app = 
         kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
     
-    kudry::C
+    kudry::Canvas canvas;
+    canvas.SetColor(kudry::Color::LightGreyColor);
+    canvas.SetOrigin(kudry::FlatObj(200, 100));
+    canvas.SetSize(kudry::FlatObj(500, 800));
 
-    kudry::RectangleDrawer rectdrw(
-        {100, 100}, 
-        {100, 100}, 
-        kudry::Color::LightGreyColor);
+    kudry::Pencil pencil;
+    pencil.button.SetSize(kudry::FlatObj(50, 50));
+    pencil.button.SetOrigin(kudry::FlatObj(50, 50));
+    pencil.button.SetColor(kudry::Color::DarkGreyColor);
     
-    app.NewWindow(&rectdrw);
+    app.NewWindow(&canvas);
+    app.NewWindow(&pencil);
 
     LOGS("loop\n")
 

@@ -12,6 +12,8 @@ namespace kudry
 class RectangleButton : public RectangleWindow
 {
 public:
+    RectangleButton();
+
     RectangleButton(
         const FlatObj& origin, 
         const FlatObj& size, 
@@ -25,7 +27,7 @@ public:
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
 protected:
-    ClickableComponent clickInterface;
+    //ClickableComponent clickInterface;
 };
 
 };

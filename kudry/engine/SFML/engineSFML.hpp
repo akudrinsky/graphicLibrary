@@ -39,6 +39,24 @@ public:
         double offset = 0.0
     ) override;
 
+    virtual void DrawLine(
+        const Color& clr,
+        Thickness_t thickness,
+        const FlatObj& from,
+        const FlatObj& to,
+        const Canvas* canvas = nullptr
+    ) override;
+
+    // Draws curve between points
+    virtual void DrawCurve(
+        const Color& clr,
+        Thickness_t thickness,
+        const std::deque<FlatObj>& points,
+        const Canvas* canvas = nullptr
+    ) override;
+
+    virtual void DrawCanvas(const Canvas* canvas) override;
+
     virtual void Init(const std::string_view& windowName) override;
 
     virtual void Destroy() override;
@@ -50,6 +68,8 @@ private:
 
     static sf::RenderWindow* windowOS;
 
+    Event* createMyEvent(const sf::Event& sfmlEvent);
+
     static std::unordered_map<std::string_view, sf::Font*> openedFonts;
 
     static std::unordered_map<const void*, void*> resources;
@@ -59,6 +79,19 @@ private:
     static sf::Color changeColor(const Color& color);
 
     void createTextObj(const TextWindow* textToDraw);
+
+    sf::RenderTexture* textureByCanvas(const Canvas* canvas);
+
+    sf::Sprite spriteByCanvas(const Canvas* canvas);
+
+    /*
+    void createLine(
+        const Color& clr,
+        Thickness_t thickness,
+        const FlatObj& from,
+        const FlatObj& to
+    );
+    */
 
 };
 

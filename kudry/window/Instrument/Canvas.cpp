@@ -15,14 +15,20 @@ bool Canvas::HandleEvent(Event *event)
             if (!shape.Contains(realEvent->Position))
                 return false;
 
+            LOGS("Mouse event on Canvas\nCoords are (%lg, %lg)\n", realEvent->Position.x, realEvent->Position.y)
+
             CanvasEvent passingEvent {
                 .pos = realEvent->Position, 
                 .canvas = this, 
                 .act = realEvent->Action};
 
-            SubscriptionManager::SendTo(
-                AbstractInstrument::GetActive(), 
-                &passingEvent);
+            if (AbstractInstrument::GetActive() != nullptr)
+            {
+                SubscriptionManager::SendTo(
+                    AbstractInstrument::GetActive(), 
+                    &passingEvent
+                );
+            }
 
             return true;
             break;

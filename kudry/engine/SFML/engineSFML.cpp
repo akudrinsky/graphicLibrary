@@ -73,8 +73,7 @@ sf::Color engineSFML::changeColor(const Color& color)
 
 void engineSFML::DrawRect(
     const RectangleShape rect_, 
-    const Color& color
-)
+    const Color& color)
 {
     sf::RectangleShape rect(changeFlatObj(rect_.GetSize()));
     rect.setFillColor(changeColor(color));
@@ -102,7 +101,10 @@ void engineSFML::DrawText(
     {
         LOGS("position in drawer: %lf", offset)
         auto text = reinterpret_cast<sf::Text*>(resources.at(textToDraw));
-        text->setPosition(0, static_cast<float>(- offset * text->getGlobalBounds().height));
+        text->setPosition(
+            0, 
+            static_cast<float>(-offset * text->getGlobalBounds().height)
+        );
 
         sf::RenderTexture rect;
 
@@ -128,7 +130,43 @@ void engineSFML::DrawText(
 
 /*--------------------------------------------------------------------------*/
 
-Event* CreateMyEvent(const sf::Event& sfmlEvent)
+uint8_t engineSFML::Run()
+{
+    while (windowOS->isOpen()) 
+    {
+        sf::Event event;
+        Event* myEvent;
+
+        while (windowOS->pollEvent(event)) 
+        {
+            myEvent = createMyEvent(event);
+            //SubscriptionManager::Send(sysWindow, &myEvent);
+
+            for (auto window : windows) 
+                window->HandleEvent(myEvent);
+
+            if (myEvent->GetEventType() == Event::Close)
+            {
+                windowOS->close();
+                LOGS("OS application window was closed\n")
+            }
+            delete myEvent;
+        }
+
+        for (auto window : windows) 
+        {
+            window->Draw(this);
+        }
+        windowOS->display();
+    }
+    
+    return 0;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+Event* engineSFML::createMyEvent(const sf::Event& sfmlEvent)
 {
     Event* myEvent = nullptr;
     switch (sfmlEvent.type)
@@ -142,7 +180,7 @@ Event* CreateMyEvent(const sf::Event& sfmlEvent)
         case sf::Event::MouseButtonPressed:
         {
             myEvent = new MouseEvent(
-                kudry::FlatObj(
+                FlatObj(
                     sfmlEvent.mouseButton.x, 
                     sfmlEvent.mouseButton.y), 
                 MouseEvent::WasPressed);
@@ -151,7 +189,7 @@ Event* CreateMyEvent(const sf::Event& sfmlEvent)
         case sf::Event::MouseButtonReleased:
         {
             myEvent = new MouseEvent(
-                kudry::FlatObj(
+                FlatObj(
                     sfmlEvent.mouseButton.x, 
                     sfmlEvent.mouseButton.y), 
                 MouseEvent::WasReleased);
@@ -160,7 +198,7 @@ Event* CreateMyEvent(const sf::Event& sfmlEvent)
         case sf::Event::MouseMoved:                
         {
             myEvent = new MouseEvent(
-                kudry::FlatObj(
+                FlatObj(
                     sfmlEvent.mouseButton.x, 
                     sfmlEvent.mouseButton.y), 
                 MouseEvent::WasMoved);
@@ -177,37 +215,52 @@ Event* CreateMyEvent(const sf::Event& sfmlEvent)
 
 /*--------------------------------------------------------------------------*/
 
-uint8_t engineSFML::Run()
+void engineSFML::DrawLine(
+    const Color& clr,
+    Thickness_t,
+    const FlatObj& from,
+    const FlatObj& to,
+    const Canvas* canvas
+)
 {
-    while (windowOS->isOpen()) 
+    auto sfmlColor = changeColor(clr);
+    sf::Vertex line[2];
+    line[0].position = sf::Vector2f(from.x, from.y);
+    line[0].color = sfmlColor;
+    line[1].position = sf::Vector2f(to.x, to.y);
+    line[1].color = sfmlColor;
+
+    if (canvas == nullptr)
     {
-        sf::Event event;
-        kudry::Event* myEvent;
+        windowOS->draw(line, 2, sf::LineStrip);
+    }   
+    else
+    {
+        auto texture = textureByCanvas(canvas);
 
-        while (windowOS->pollEvent(event)) 
-        {
-            myEvent = CreateMyEvent(event);
-            //SubscriptionManager::Send(sysWindow, &myEvent);
+        texture->draw(line, 2, sf::LineStrip);
+        texture->display();
 
-            for (auto window : windows) 
-                window->HandleEvent(myEvent);
-
-            if (myEvent->GetEventType() == kudry::Event::Close)
-            {
-                windowOS->close();
-                LOGS("OS application window was closed\n")
-            }
-            delete myEvent;
-        }
-
-        for (auto window : windows) 
-        {
-            window->Draw(this);
-        }
-        windowOS->display();
+        windowOS->draw(spriteByCanvas(canvas));
     }
-    
-    return 0;
+}
+
+/*--------------------------------------------------------------------------*/
+
+void engineSFML::DrawCurve(
+    const Color& clr,
+    Thickness_t thickness,
+    const std::deque<FlatObj>& points,
+    const Canvas* canvas
+)
+{
+    if (points.size() <= 1) 
+        return;
+
+    for (int i = 0; i < (long)points.size() - 1; ++i)
+    {
+        DrawLine(clr, thickness, points[i], points[i + 1], canvas);
+    }
 }
 
 /*--------------------------------------------------------------------------*/
@@ -241,6 +294,48 @@ void engineSFML::createTextObj(const TextWindow* textToDraw)
             )
         );
     }
+}
+
+/*--------------------------------------------------------------------------*/
+
+sf::RenderTexture* engineSFML::textureByCanvas(const Canvas* canvas)
+{
+    if (!resources.count(canvas))
+    {
+        auto texture = new sf::RenderTexture;
+
+        texture->create(
+            static_cast<unsigned int>(canvas->GetSize().x), 
+            static_cast<unsigned int>(canvas->GetSize().y)
+        );
+        texture->clear(changeColor(canvas->GetColor()));
+
+        resources.emplace(canvas, texture);
+    }
+
+    return static_cast<sf::RenderTexture*>(resources.at(canvas));
+}
+
+/*--------------------------------------------------------------------------*/
+
+sf::Sprite engineSFML::spriteByCanvas(const Canvas* canvas)
+{
+    auto texture = textureByCanvas(canvas);
+
+    sf::Sprite viewSprite(texture->getTexture());
+    viewSprite.setPosition(
+        static_cast<unsigned int>(canvas->GetOrigin().x), 
+        static_cast<unsigned int>(canvas->GetOrigin().y)
+    );
+
+    return viewSprite;
+}
+
+/*--------------------------------------------------------------------------*/
+
+void engineSFML::DrawCanvas(const Canvas *canvas)
+{
+    windowOS->draw(spriteByCanvas(canvas));
 }
 
 }

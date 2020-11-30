@@ -12,6 +12,8 @@ namespace kudry
 class RectangleWindow : public AbstractWindow
 {
 public:
+    RectangleWindow();
+
     RectangleWindow(
         const FlatObj& center, 
         const FlatObj& size, 
@@ -25,6 +27,12 @@ public:
     void SetOrigin(const FlatObj& newOrigin);
 
     void SetSize(const FlatObj& newSize);
+
+    const Color& GetColor() const;
+
+    const FlatObj& GetOrigin() const;
+
+    const FlatObj& GetSize() const;
 
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 

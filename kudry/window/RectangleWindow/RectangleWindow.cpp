@@ -5,6 +5,14 @@
 namespace kudry
 {
 
+RectangleWindow::RectangleWindow()
+    :
+    shape(FlatObj(0.0, 0.0), FlatObj(0.0, 0.0)),
+    backgroundColor(kudry::Color::DarkGreyColor)
+{}
+
+/*--------------------------------------------------------------------------*/
+
 RectangleWindow::RectangleWindow(
     const FlatObj& center, 
     const FlatObj& size, 
@@ -64,5 +72,26 @@ void RectangleWindow::EmplaceWindow([[maybe_unused]] AbstractWindow* window)
 
 void RectangleWindow::RemoveWindow([[maybe_unused]] AbstractWindow* window)
 {}
+
+/*--------------------------------------------------------------------------*/
+
+const Color& RectangleWindow::GetColor() const
+{
+    return backgroundColor;
+}
+
+/*--------------------------------------------------------------------------*/
+
+const FlatObj& RectangleWindow::GetOrigin() const
+{
+    return shape.GetOrigin();
+}
+
+/*--------------------------------------------------------------------------*/
+
+const FlatObj& RectangleWindow::GetSize() const
+{
+    return shape.GetSize();
+}
 
 }
