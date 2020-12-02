@@ -39,22 +39,6 @@ public:
         double offset = 0.0
     ) override;
 
-    virtual void DrawLine(
-        const Color& clr,
-        Thickness_t thickness,
-        const FlatObj& from,
-        const FlatObj& to,
-        const Canvas* canvas = nullptr
-    ) override;
-
-    // Draws curve between points
-    virtual void DrawCurve(
-        const Color& clr,
-        Thickness_t thickness,
-        const std::deque<FlatObj>& points,
-        const Canvas* canvas = nullptr
-    ) override;
-
     virtual void DrawCanvas(const Canvas* canvas) override;
 
     virtual void Init(const std::string_view& windowName) override;

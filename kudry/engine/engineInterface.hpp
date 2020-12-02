@@ -44,23 +44,6 @@ public:
         double offset = 0.0
     ) = 0;
 
-    // Draws line between points
-    virtual void DrawLine(
-        const Color& clr,
-        Thickness_t thickness,
-        const FlatObj& from,
-        const FlatObj& to,
-        const Canvas* canvas = nullptr
-    ) = 0;
-
-    // Draws curve between points
-    virtual void DrawCurve(
-        const Color& clr,
-        Thickness_t thickness,
-        const std::deque<FlatObj>& points,
-        const Canvas* canvas = nullptr
-    ) = 0;
-
     // Draws canvas
     virtual void DrawCanvas(const Canvas* canvas) = 0;
 

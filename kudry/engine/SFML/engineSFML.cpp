@@ -215,59 +215,6 @@ Event* engineSFML::createMyEvent(const sf::Event& sfmlEvent)
 
 /*--------------------------------------------------------------------------*/
 
-void engineSFML::DrawLine(
-    const Color& clr,
-    Thickness_t,
-    const FlatObj& from,
-    const FlatObj& to,
-    const Canvas* canvas
-)
-{
-    LOGS("Drawing line (%lg, %lg) -> (%lg, %lg)", from.x, from.y, to.x, to.y)
-    auto sfmlColor = changeColor(clr);
-    sf::Vertex line[2];
-    line[0].position = sf::Vector2f(from.x, from.y);
-    line[0].color = sfmlColor;
-    line[1].position = sf::Vector2f(to.x, to.y);
-    line[1].color = sfmlColor;
-
-    if (canvas == nullptr)
-    {
-        windowOS->draw(line, 2, sf::LineStrip);
-    }   
-    else
-    {
-        auto texture = textureByCanvas(canvas);
-
-        texture->draw(line, 2, sf::LineStrip);
-        texture->display();
-
-        windowOS->draw(spriteByCanvas(canvas));
-    }
-}
-
-/*--------------------------------------------------------------------------*/
-
-void engineSFML::DrawCurve(
-    const Color& clr,
-    Thickness_t thickness,
-    const std::deque<FlatObj>& points,
-    const Canvas* canvas
-)
-{
-    //LOGS("Drawing curve")
-    if (points.size() <= 1) 
-        return;
-
-    for (int i = 0; i < (long)points.size() - 1; ++i)
-    {
-        LOGS("Points %d -> %d", i, i + 1)
-        DrawLine(clr, thickness, points[i], points[i + 1], canvas);
-    }
-}
-
-/*--------------------------------------------------------------------------*/
-
 void engineSFML::createTextObj(const TextWindow* textToDraw)
 {
     auto fontName = textToDraw->GetFont()->getPathToFont();
