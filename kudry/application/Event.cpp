@@ -29,7 +29,7 @@ Event::EventType Event::GetEventType() const
 
 /*--------------------------------------------------------------------------*/
 
-MouseEvent::MouseEvent(const FlatObj &pos, const MouseEvent::ActionType &action)
+MouseEvent::MouseEvent(const FlatObj<int> &pos, const MouseEvent::ActionType &action)
     :
     Event(Mouse),
     Position(pos),

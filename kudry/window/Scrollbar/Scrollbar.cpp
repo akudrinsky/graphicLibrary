@@ -5,8 +5,8 @@ namespace kudry
 {
 
 Scrollbar::Scrollbar(
-    const FlatObj& origin, 
-    const FlatObj& size, 
+    const FlatObj<int>& origin, 
+    const FlatObj<int>& size, 
     const Color& endsColor,
     const Color& middleColor
 )   :
@@ -14,19 +14,19 @@ Scrollbar::Scrollbar(
     step(0.05),
     toUpper(
         origin, 
-        FlatObj(size.x, size.x), 
+        FlatObj<int>(size.x, size.x), 
         endsColor,
         this
     ),
     toLower(
-        FlatObj(origin.x, origin.y + size.y - size.x), 
-        FlatObj(size.x, size.x), 
+        FlatObj<int>(origin.x, origin.y + size.y - size.x), 
+        FlatObj<int>(size.x, size.x), 
         endsColor,
         this
     ),
     middle(
-        FlatObj(origin.x, origin.y + size.x),
-        FlatObj(size.x, size.y - 2 * size.x),
+        FlatObj<int>(origin.x, origin.y + size.x),
+        FlatObj<int>(size.x, size.y - 2 * size.x),
         middleColor,
         this
     )
@@ -82,8 +82,8 @@ void Scrollbar::SendPosition()
 /*--------------------------------------------------------------------------*/
 
 Scrollbar::upperButton::upperButton(
-    const FlatObj& center, 
-    const FlatObj& size, 
+    const FlatObj<int>& center, 
+    const FlatObj<int>& size, 
     const Color& backgroundColor,
     Scrollbar* scrlbar
 )   :
@@ -112,14 +112,14 @@ void Scrollbar::upperButton::OnRelease()
 /*--------------------------------------------------------------------------*/
 
 Scrollbar::middleButton::middleButton(
-    const FlatObj& center, 
-    const FlatObj& size, 
+    const FlatObj<int>& center, 
+    const FlatObj<int>& size, 
     const Color& backgroundColor,
     Scrollbar* scrlbar
 )   :
     RectangleButton(center, size, backgroundColor),
     scrlbar(scrlbar),
-    clickData(reinterpret_cast<const FlatObj*>(0xBAD))
+    clickData(reinterpret_cast<const FlatObj<int>*>(0xBAD))
 {
     SubscriptionManager::Subscribe(scrlbar, this);
 }
@@ -182,8 +182,8 @@ bool Scrollbar::middleButton::HandleEvent(Event* event)
 /*--------------------------------------------------------------------------*/
 
 Scrollbar::lowerButton::lowerButton(
-    const FlatObj& center, 
-    const FlatObj& size, 
+    const FlatObj<int>& center, 
+    const FlatObj<int>& size, 
     const Color& backgroundColor,
     Scrollbar* scrlbar
 )   :

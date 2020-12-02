@@ -12,8 +12,8 @@ class Canvas : public AbstractWindow
 {
 public:
     Canvas(
-        const FlatObj& position, 
-        const FlatObj& size, 
+        const FlatObj<int>& position, 
+        const FlatObj<int>& size, 
         const Color& color = Color::DarkGreyColor
     );
 
@@ -25,9 +25,9 @@ public:
 
     const Picture& GetPicture() const;
 
-    void SetOrigin(const FlatObj& origin);
+    void SetOrigin(const FlatObj<int>& origin);
 
-    void SetSize(const FlatObj& size);
+    void SetSize(const FlatObj<int>& size);
 
     void SetColor(const Color& clr);
 

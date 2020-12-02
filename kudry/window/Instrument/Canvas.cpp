@@ -7,8 +7,8 @@ namespace kudry
 {
 
 Canvas::Canvas(
-    const FlatObj &position, 
-    const FlatObj &size, 
+    const FlatObj<int> &position, 
+    const FlatObj<int> &size, 
     const Color &color
 )   :
     picture(position, size)
@@ -29,7 +29,7 @@ bool Canvas::HandleEvent(Event *event)
                 return false;
 
             LOGS(
-                "Mouse event on Canvas\nCoords are (%lg, %lg)\nType is %d\n",
+                "Mouse event on Canvas\nCoords are (%d, %d)\nType is %d\n",
                 realEvent->Position.x, 
                 realEvent->Position.y, 
                 realEvent->Action)
@@ -84,14 +84,14 @@ const Picture& Canvas::GetPicture() const
 
 /*--------------------------------------------------------------------------*/
 
-void Canvas::SetOrigin(const FlatObj& origin)
+void Canvas::SetOrigin(const FlatObj<int>& origin)
 {
     picture.SetOrigin(origin);
 }
 
 /*--------------------------------------------------------------------------*/
 
-void Canvas::SetSize(const FlatObj& size)
+void Canvas::SetSize(const FlatObj<int>& size)
 {
     picture.SetSize(size);
 }

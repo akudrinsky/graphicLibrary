@@ -3,13 +3,13 @@
 namespace kudry
 {
 
-RectangleShape::RectangleShape(const FlatObj& origin, const FlatObj& size)
+RectangleShape::RectangleShape(const FlatObj<int>& origin, const FlatObj<int>& size)
     :
     origin_(origin),
     size_(size)
 {}
 
-bool RectangleShape::Contains(const FlatObj& point)
+bool RectangleShape::Contains(const FlatObj<int>& point)
 {
     //LOGS("check x\n")
     // check x axis
@@ -26,32 +26,32 @@ bool RectangleShape::Contains(const FlatObj& point)
     return true;
 }
 
-FlatObj& RectangleShape::GetOrigin()
+FlatObj<int>& RectangleShape::GetOrigin()
 {
     return origin_;
 }
 
-FlatObj& RectangleShape::GetSize()
+FlatObj<int>& RectangleShape::GetSize()
 {
     return size_;
 }
 
-const FlatObj& RectangleShape::GetOrigin() const
+const FlatObj<int>& RectangleShape::GetOrigin() const
 {
     return origin_;
 }
 
-const FlatObj& RectangleShape::GetSize() const
+const FlatObj<int>& RectangleShape::GetSize() const
 {
     return size_;
 }
 
-void RectangleShape::SetOrigin(const FlatObj& origin)
+void RectangleShape::SetOrigin(const FlatObj<int>& origin)
 {
     origin_ = origin;
 }
 
-void RectangleShape::SetSize(const FlatObj& size)
+void RectangleShape::SetSize(const FlatObj<int>& size)
 {
     size_ = size;
 }

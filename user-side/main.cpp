@@ -1,6 +1,6 @@
 #include "../kudry/Application/Application.hpp"
 #include "../kudry/engine/SFML/engineSFML.hpp"
-#include "../kudry/window/FigureDrawer/FigureDrawer.hpp"
+//#include "../kudry/window/FigureDrawer/FigureDrawer.hpp"
 #include "../kudry/window/Instrument/Instrument.hpp"
 #include "../kudry/window/Instrument/Canvas.hpp"
 #include "../kudry/LOGS/logs.hpp"
@@ -24,14 +24,14 @@ int main(int argc, char* argv[])
         kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
     
     kudry::Canvas canvas(
-        kudry::FlatObj(200, 100),
-        kudry::FlatObj(500, 800),
+        kudry::FlatObj<int>(200, 100),
+        kudry::FlatObj<int>(500, 800),
         kudry::Color::LightGreyColor
     );
 
     kudry::Pencil pencil;
-    pencil.button.SetSize(kudry::FlatObj(50, 50));
-    pencil.button.SetOrigin(kudry::FlatObj(50, 50));
+    pencil.button.SetSize(kudry::FlatObj<int>(50, 50));
+    pencil.button.SetOrigin(kudry::FlatObj<int>(50, 50));
     pencil.button.SetColor(kudry::Color::DarkGreyColor);
     
     app.NewWindow(&canvas);

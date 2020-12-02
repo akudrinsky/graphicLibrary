@@ -15,8 +15,8 @@ public:
     RectangleButton();
 
     RectangleButton(
-        const FlatObj& origin, 
-        const FlatObj& size, 
+        const FlatObj<int>& origin, 
+        const FlatObj<int>& size, 
         const Color& backgroundColor = Color::BlackColor
     );
 

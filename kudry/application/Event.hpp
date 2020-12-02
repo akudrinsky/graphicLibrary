@@ -45,9 +45,9 @@ public:
         WasReleased,
         WasMoved,
     };
-    FlatObj Position;
+    FlatObj<int> Position;
     ActionType Action;
-    MouseEvent(const FlatObj& pos, const ActionType& action);
+    MouseEvent(const FlatObj<int>& pos, const ActionType& action);
 };
 
 /*--------------------------------------------------------------------------*/

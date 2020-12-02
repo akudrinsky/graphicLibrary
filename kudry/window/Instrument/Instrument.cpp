@@ -71,8 +71,8 @@ Pencil::Pencil()
     thickness(10)
 {
     button.SetColor(Color::RedColor);
-    button.SetOrigin(FlatObj(10, 10));
-    button.SetSize(FlatObj(100, 100));
+    button.SetOrigin(FlatObj<int>(10, 10));
+    button.SetSize(FlatObj<int>(100, 100));
 }
 
 /*--------------------------------------------------------------------------*/
@@ -120,11 +120,11 @@ void Pencil::Draw(engineInterface* engine)
         for (int i = 0; i < (long)previousDots.size() - 1; ++i)
         {
             LOGS("Points %d -> %d", i, i + 1)
-            const FlatObj& first = previousDots[i];
-            const FlatObj& second = previousDots[i + 1];
+            const FlatObj<int>& first = previousDots[i];
+            const FlatObj<int>& second = previousDots[i + 1];
 
             double k = std::numeric_limits<double>::max();
-            if (fabs(first.x - second.x) > FlatObj::SmallDifference)
+            if (fabs(first.x - second.x) > FlatObj<int>::SmallDifference)
             {
                 k = (first.y - second.y) / 
                     (first.x - second.x);
@@ -141,7 +141,7 @@ void Pencil::Draw(engineInterface* engine)
                     for (int deltaY = -thickness; deltaY < thickness; ++deltaY)
                     {
                         picture->SetPixel(
-                            FlatObj(
+                            FlatObj<int>(
                                 x + deltaX,
                                 k * x + b + deltaY
                             ), 

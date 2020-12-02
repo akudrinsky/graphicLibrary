@@ -76,7 +76,7 @@ public:
 protected:
     Thickness_t thickness;
     // the closer to beginning - the earlier dot was presented
-    std::deque<FlatObj> previousDots;
+    std::deque<FlatObj<int>> previousDots;
 
     // Uses spline techique to draw lines
     // See: https://en.wikipedia.org/wiki/Spline_interpolation

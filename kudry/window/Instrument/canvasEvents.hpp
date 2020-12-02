@@ -11,7 +11,7 @@ namespace kudry
 class CanvasEvent : public UserEvent
 {
 public:
-    FlatObj pos;
+    FlatObj<int> pos;
     Picture* pict;
     MouseEvent::ActionType act;
 };

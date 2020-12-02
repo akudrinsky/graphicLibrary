@@ -7,15 +7,15 @@ namespace kudry
 
 RectangleWindow::RectangleWindow()
     :
-    shape(FlatObj(0.0, 0.0), FlatObj(0.0, 0.0)),
+    shape(FlatObj<int>(0, 0), FlatObj<int>(0, 0)),
     backgroundColor(kudry::Color::DarkGreyColor)
 {}
 
 /*--------------------------------------------------------------------------*/
 
 RectangleWindow::RectangleWindow(
-    const FlatObj& center, 
-    const FlatObj& size, 
+    const FlatObj<int>& center, 
+    const FlatObj<int>& size, 
     const Color& backgroundColor
 )   :
     shape(center, size),
@@ -51,14 +51,14 @@ void RectangleWindow::SetColor(const Color& newColor)
 
 /*--------------------------------------------------------------------------*/
 
-void RectangleWindow::SetOrigin(const FlatObj& newOrigin)
+void RectangleWindow::SetOrigin(const FlatObj<int>& newOrigin)
 {
     shape.SetOrigin(newOrigin);
 }
 
 /*--------------------------------------------------------------------------*/
 
-void RectangleWindow::SetSize(const FlatObj& newSize)
+void RectangleWindow::SetSize(const FlatObj<int>& newSize)
 {
     shape.SetSize(newSize);
 }
@@ -82,14 +82,14 @@ const Color& RectangleWindow::GetColor() const
 
 /*--------------------------------------------------------------------------*/
 
-const FlatObj& RectangleWindow::GetOrigin() const
+const FlatObj<int>& RectangleWindow::GetOrigin() const
 {
     return shape.GetOrigin();
 }
 
 /*--------------------------------------------------------------------------*/
 
-const FlatObj& RectangleWindow::GetSize() const
+const FlatObj<int>& RectangleWindow::GetSize() const
 {
     return shape.GetSize();
 }

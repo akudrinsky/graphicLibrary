@@ -17,7 +17,7 @@ public:
     ~TextWindow();
 
     // Sets coordinates of text field
-    void SetCoords(const FlatObj& newCoords);
+    void SetCoords(const FlatObj<int>& newCoords);
 
 //    void ChangeFont(const Font* newFont);
 
@@ -44,7 +44,7 @@ private:
     const Font* font;
     std::string text;
     const uint8_t size;
-    FlatObj coords;
+    FlatObj<int> coords;
 };
 
 }

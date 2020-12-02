@@ -11,8 +11,8 @@ RectangleButton::RectangleButton()
 /*--------------------------------------------------------------------------*/
 
 RectangleButton::RectangleButton(
-    const FlatObj& center, 
-    const FlatObj& size, 
+    const FlatObj<int>& center, 
+    const FlatObj<int>& size, 
     const Color& backgroundColor
 )   :
     RectangleWindow(center, size, backgroundColor)

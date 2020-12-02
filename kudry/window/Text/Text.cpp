@@ -22,7 +22,7 @@ TextWindow::~TextWindow()
 
 /*--------------------------------------------------------------------------*/
 
-void TextWindow::SetCoords(const FlatObj& newCoords)
+void TextWindow::SetCoords(const FlatObj<int>& newCoords)
 {
     coords = newCoords;
 }

@@ -58,7 +58,7 @@ private:
 
     static std::unordered_map<const void*, void*> resources;
 
-    static sf::Vector2f changeFlatObj(const FlatObj& coords);
+    static sf::Vector2f changeFlatObj(const FlatObj<int>& coords);
 
     static sf::Color changeColor(const Color& color);
 
@@ -72,8 +72,8 @@ private:
     void createLine(
         const Color& clr,
         Thickness_t thickness,
-        const FlatObj& from,
-        const FlatObj& to
+        const FlatObj<int>& from,
+        const FlatObj<int>& to
     );
     */
 

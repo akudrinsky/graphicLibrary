@@ -10,8 +10,8 @@ class ScrollableText : public RectangleWindow
 public:
     ScrollableText(
         const TextWindow& fulltext, 
-        const FlatObj& center, 
-        const FlatObj& size, 
+        const FlatObj<int>& center, 
+        const FlatObj<int>& size, 
         const Color& backgroundColor = Color::BlackColor
     );
 

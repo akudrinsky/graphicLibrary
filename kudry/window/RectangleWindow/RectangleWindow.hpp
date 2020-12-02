@@ -15,8 +15,8 @@ public:
     RectangleWindow();
 
     RectangleWindow(
-        const FlatObj& center, 
-        const FlatObj& size, 
+        const FlatObj<int>& center, 
+        const FlatObj<int>& size, 
         const Color& backgroundColor = Color::BlackColor
     );
 
@@ -24,15 +24,15 @@ public:
 
     void SetColor(const Color& newColor);
 
-    void SetOrigin(const FlatObj& newOrigin);
+    void SetOrigin(const FlatObj<int>& newOrigin);
 
-    void SetSize(const FlatObj& newSize);
+    void SetSize(const FlatObj<int>& newSize);
 
     const Color& GetColor() const;
 
-    const FlatObj& GetOrigin() const;
+    const FlatObj<int>& GetOrigin() const;
 
-    const FlatObj& GetSize() const;
+    const FlatObj<int>& GetSize() const;
 
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 

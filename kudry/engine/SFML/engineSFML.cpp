@@ -53,7 +53,7 @@ void engineSFML::Destroy()
 
 /*--------------------------------------------------------------------------*/
 
-sf::Vector2f engineSFML::changeFlatObj(const FlatObj& size) 
+sf::Vector2f engineSFML::changeFlatObj(const FlatObj<int>& size) 
 {
     return sf::Vector2f((float)size.x, (float)size.y);
 }
@@ -180,7 +180,7 @@ Event* engineSFML::createMyEvent(const sf::Event& sfmlEvent)
         case sf::Event::MouseButtonPressed:
         {
             myEvent = new MouseEvent(
-                FlatObj(
+                FlatObj<int>(
                     sfmlEvent.mouseButton.x, 
                     sfmlEvent.mouseButton.y), 
                 MouseEvent::WasPressed);
@@ -189,7 +189,7 @@ Event* engineSFML::createMyEvent(const sf::Event& sfmlEvent)
         case sf::Event::MouseButtonReleased:
         {
             myEvent = new MouseEvent(
-                FlatObj(
+                FlatObj<int>(
                     sfmlEvent.mouseButton.x, 
                     sfmlEvent.mouseButton.y), 
                 MouseEvent::WasReleased);
@@ -198,7 +198,7 @@ Event* engineSFML::createMyEvent(const sf::Event& sfmlEvent)
         case sf::Event::MouseMoved:                
         {
             myEvent = new MouseEvent(
-                FlatObj(
+                FlatObj<int>(
                     sfmlEvent.mouseButton.x, 
                     sfmlEvent.mouseButton.y), 
                 MouseEvent::WasMoved);

@@ -4,17 +4,25 @@ namespace kudry
 {
 
 // Just 2d object
+template<typename Measure>
 class FlatObj 
 {
 public:
-    FlatObj(const double& x, const double& y)
+    FlatObj(const Measure& x, const Measure& y)
         :
         x(x),
         y(y)
     {}
 
-    double x;
-    double y;
+    template<typename AnotherMeasure>
+    FlatObj(const FlatObj<AnotherMeasure>& other)
+        :
+        x(other.x),
+        y(other.y)
+    {}
+
+    Measure x;
+    Measure y;
 
     static constexpr double SmallDifference = 1.0 / 1000.0;
 };

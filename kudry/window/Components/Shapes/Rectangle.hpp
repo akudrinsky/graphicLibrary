@@ -10,27 +10,27 @@ class RectangleShape : AbstractShapeComponent
 public:
     RectangleShape() = delete;
 
-    RectangleShape(const FlatObj& origin, const FlatObj& size);
+    RectangleShape(const FlatObj<int>& origin, const FlatObj<int>& size);
     
-    virtual bool Contains(const FlatObj& point) override;
+    virtual bool Contains(const FlatObj<int>& point) override;
 
-    FlatObj& GetOrigin();
+    FlatObj<int>& GetOrigin();
 
-    FlatObj& GetSize();
+    FlatObj<int>& GetSize();
 
-    const FlatObj& GetOrigin() const;
+    const FlatObj<int>& GetOrigin() const;
 
-    const FlatObj& GetSize() const;
+    const FlatObj<int>& GetSize() const;
 
-    void SetOrigin(const FlatObj& origin);
+    void SetOrigin(const FlatObj<int>& origin);
 
-    void SetSize(const FlatObj& size);
+    void SetSize(const FlatObj<int>& size);
 
     //virtual void Draw(engineInterface* Canvas) override;
 
 protected:
-    FlatObj origin_;
-    FlatObj size_;
+    FlatObj<int> origin_;
+    FlatObj<int> size_;
     // TODO: Draw ?
 };
 

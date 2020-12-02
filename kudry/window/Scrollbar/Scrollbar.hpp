@@ -10,8 +10,8 @@ class Scrollbar : public AbstractWindow
 {
 public:
     Scrollbar(
-        const FlatObj& origin, 
-        const FlatObj& size, 
+        const FlatObj<int>& origin, 
+        const FlatObj<int>& size, 
         const Color& endsColor,
         const Color& middleColor
     );
@@ -36,8 +36,8 @@ private:
     {
     public:
         upperButton(
-            const FlatObj& center, 
-            const FlatObj& size, 
+            const FlatObj<int>& center, 
+            const FlatObj<int>& size, 
             const Color& backgroundColor,
             Scrollbar* scrlbar
         );
@@ -51,8 +51,8 @@ private:
     {
     public:
         lowerButton(
-            const FlatObj& center, 
-            const FlatObj& size, 
+            const FlatObj<int>& center, 
+            const FlatObj<int>& size, 
             const Color& backgroundColor,
             Scrollbar* scrlbar
         );
@@ -66,8 +66,8 @@ private:
     {
     public:
         middleButton(
-            const FlatObj& center, 
-            const FlatObj& size, 
+            const FlatObj<int>& center, 
+            const FlatObj<int>& size, 
             const Color& backgroundColor,
             Scrollbar* scrlbar
         );
@@ -77,7 +77,7 @@ private:
     private:
         Scrollbar* scrlbar;
         // !!! ERROR: May be pointer to freed space !!!
-        const FlatObj* clickData;
+        const FlatObj<int>* clickData;
     };
 
     void SendPosition();
