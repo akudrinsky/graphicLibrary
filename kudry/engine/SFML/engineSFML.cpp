@@ -223,6 +223,7 @@ void engineSFML::DrawLine(
     const Canvas* canvas
 )
 {
+    LOGS("Drawing line (%lg, %lg) -> (%lg, %lg)", from.x, from.y, to.x, to.y)
     auto sfmlColor = changeColor(clr);
     sf::Vertex line[2];
     line[0].position = sf::Vector2f(from.x, from.y);
@@ -254,11 +255,13 @@ void engineSFML::DrawCurve(
     const Canvas* canvas
 )
 {
+    //LOGS("Drawing curve")
     if (points.size() <= 1) 
         return;
 
     for (int i = 0; i < (long)points.size() - 1; ++i)
     {
+        LOGS("Points %d -> %d", i, i + 1)
         DrawLine(clr, thickness, points[i], points[i + 1], canvas);
     }
 }

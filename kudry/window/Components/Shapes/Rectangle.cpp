@@ -3,7 +3,7 @@
 namespace kudry
 {
 
-RectangleShape::RectangleShape(FlatObj origin, FlatObj size)
+RectangleShape::RectangleShape(const FlatObj& origin, const FlatObj& size)
     :
     origin_(origin),
     size_(size)

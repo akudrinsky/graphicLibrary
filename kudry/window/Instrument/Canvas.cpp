@@ -5,6 +5,16 @@
 namespace kudry
 {
 
+Canvas::Canvas(
+    const FlatObj &position, 
+    const FlatObj &size, 
+    const Color &color
+)   :
+    RectangleWindow(position, size)
+{
+
+}
+
 bool Canvas::HandleEvent(Event *event)
 {
     switch (event->GetEventType())
@@ -15,7 +25,7 @@ bool Canvas::HandleEvent(Event *event)
             if (!shape.Contains(realEvent->Position))
                 return false;
 
-            LOGS("Mouse event on Canvas\nCoords are (%lg, %lg)\n", realEvent->Position.x, realEvent->Position.y)
+            LOGS("Mouse event on Canvas\nCoords are (%lg, %lg)\nType is %d\n", realEvent->Position.x, realEvent->Position.y, realEvent->Action)
 
             CanvasEvent passingEvent {
                 .pos = realEvent->Position, 

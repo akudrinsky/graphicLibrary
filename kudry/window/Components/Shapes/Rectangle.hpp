@@ -10,7 +10,7 @@ class RectangleShape : AbstractShapeComponent
 public:
     RectangleShape() = delete;
 
-    RectangleShape(FlatObj origin, FlatObj size);
+    RectangleShape(const FlatObj& origin, const FlatObj& size);
     
     virtual bool Contains(const FlatObj& point) override;
 

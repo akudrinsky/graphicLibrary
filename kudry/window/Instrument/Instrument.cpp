@@ -86,6 +86,8 @@ bool Pencil::HandleEvent(Event *event)
             if (canvas == nullptr)
                 canvas = realEvent->canvas;
 
+            LOGS("Saw %lu dots", previousDots.size())
+
             //drawLine(realEvent);
 
             return true;
@@ -105,12 +107,17 @@ void Pencil::Draw(engineInterface* engine)
 {
     button.Draw(engine);
 
-    engine->DrawCurve(
-        clr,
-        thickness,
-        previousDots,
-        canvas
-    );
+    if (previousDots.size() > 1)
+    {
+        engine->DrawCurve(
+            clr,
+            thickness,
+            previousDots,
+            canvas
+        );
+
+        previousDots.clear();
+    }
 }
 
 /*--------------------------------------------------------------------------*/
