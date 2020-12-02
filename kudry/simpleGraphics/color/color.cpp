@@ -3,12 +3,16 @@
 namespace kudry 
 {
 
-Color::Color(int Red, int Green, int Blue) 
+Color::Color(uint8_t Red, uint8_t Green, uint8_t Blue, uint8_t Alpha) 
     : 
     Red(Red),
     Green(Green),
-    Blue(Blue) 
+    Blue(Blue),
+    Alpha(Alpha)
 {}
+
+/*--------------------------------------------------------------------------*/
+
 const Color Color::BlackColor(0, 0, 0);
 const Color Color::RedColor(255, 0, 0);
 const Color Color::GreenColor(0, 255, 0);
