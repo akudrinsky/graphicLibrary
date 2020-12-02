@@ -248,44 +248,17 @@ void engineSFML::createTextObj(const TextWindow* textToDraw)
 
 /*--------------------------------------------------------------------------*/
 
-sf::RenderTexture* engineSFML::textureByCanvas(const Canvas* canvas)
+void engineSFML::DrawPicture(const Picture* picture)
 {
-    if (!resources.count(canvas))
-    {
-        auto texture = new sf::RenderTexture;
+    sf::Texture texture;
+    texture.create(picture->GetSize().x, picture->GetSize().y);
+    texture.update(picture->GetRawData());
 
-        texture->create(
-            static_cast<unsigned int>(canvas->GetSize().x), 
-            static_cast<unsigned int>(canvas->GetSize().y)
-        );
-        texture->clear(changeColor(canvas->GetColor()));
+    sf::Sprite sprite(texture);
 
-        resources.emplace(canvas, texture);
-    }
+    sprite.setPosition(picture->GetOrigin().x, picture->GetOrigin().y);
 
-    return static_cast<sf::RenderTexture*>(resources.at(canvas));
-}
-
-/*--------------------------------------------------------------------------*/
-
-sf::Sprite engineSFML::spriteByCanvas(const Canvas* canvas)
-{
-    auto texture = textureByCanvas(canvas);
-
-    sf::Sprite viewSprite(texture->getTexture());
-    viewSprite.setPosition(
-        static_cast<unsigned int>(canvas->GetOrigin().x), 
-        static_cast<unsigned int>(canvas->GetOrigin().y)
-    );
-
-    return viewSprite;
-}
-
-/*--------------------------------------------------------------------------*/
-
-void engineSFML::DrawCanvas(const Canvas *canvas)
-{
-    windowOS->draw(spriteByCanvas(canvas));
+    windowOS->draw(sprite);
 }
 
 }

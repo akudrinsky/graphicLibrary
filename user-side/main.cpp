@@ -23,10 +23,11 @@ int main(int argc, char* argv[])
     auto& app = 
         kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
     
-    kudry::Canvas canvas;
-    canvas.SetColor(kudry::Color::LightGreyColor);
-    canvas.SetOrigin(kudry::FlatObj(200, 100));
-    canvas.SetSize(kudry::FlatObj(500, 800));
+    kudry::Canvas canvas(
+        kudry::FlatObj(200, 100),
+        kudry::FlatObj(500, 800),
+        kudry::Color::LightGreyColor
+    );
 
     kudry::Pencil pencil;
     pencil.button.SetSize(kudry::FlatObj(50, 50));

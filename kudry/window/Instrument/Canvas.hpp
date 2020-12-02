@@ -21,9 +21,22 @@ public:
 
     void LoadFromFile(const char* filename);
 
-    void SaveToFile(const char* filename);
+    void SaveToFile(const char* filename) const;
 
-    // virtual void Draw(engineInterface* engine) override;
+    const Picture& GetPicture() const;
+
+    void SetOrigin(const FlatObj& origin);
+
+    void SetSize(const FlatObj& size);
+
+    void SetColor(const Color& clr);
+
+    virtual void Draw(engineInterface* engine) override;
+
+    virtual void EmplaceWindow([[maybe_unused]] AbstractWindow* window) override;
+
+    virtual void RemoveWindow([[maybe_unused]] AbstractWindow* window) override;
+
 private:
     Picture picture;
 };

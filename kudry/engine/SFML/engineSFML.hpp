@@ -39,7 +39,7 @@ public:
         double offset = 0.0
     ) override;
 
-    virtual void DrawCanvas(const Canvas* canvas) override;
+    virtual void DrawPicture(const Picture* picture) override;
 
     virtual void Init(const std::string_view& windowName) override;
 

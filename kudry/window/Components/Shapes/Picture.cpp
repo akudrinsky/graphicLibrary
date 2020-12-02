@@ -11,6 +11,10 @@ Picture::Picture(const FlatObj& position, const FlatObj& imgSize)
 
 void Picture::SetPixel(const FlatObj& where, const Color& clr)
 {
+    if (!Contains(where))
+    {
+        return;
+    }
     int posInData = arrayPosition(where);
     memcpy(pixelsData + posInData, &clr, sizeof(clr));
 }
@@ -37,7 +41,8 @@ const uint8_t* Picture::GetRawData() const
 
 int Picture::arrayPosition(const FlatObj& where) const
 {
-    return (where.y * GetSize().x + where.x) * sizeof(Color);
+    LOGS("Position of (%lg, %lg) in (%lg, %lg) picture with sizes (%lg, %lg) should be %lg", where.x, where.y, origin_.x, origin_.y, size_.x, size_.y, (where.y * GetSize().x + where.x) * sizeof(Color))
+    return ((where.y - origin_.y) * GetSize().x + (where.x - origin_.x)) * sizeof(Color);
 }
 
 int Picture::pixelsNum() const

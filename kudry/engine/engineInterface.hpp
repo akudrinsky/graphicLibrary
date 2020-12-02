@@ -44,8 +44,8 @@ public:
         double offset = 0.0
     ) = 0;
 
-    // Draws canvas
-    virtual void DrawCanvas(const Canvas* canvas) = 0;
+    // Draws pictures
+    virtual void DrawPicture(const Picture* picture) = 0;
 
     // Inits the low-level library
     virtual void Init(const std::string_view& windowName) = 0;

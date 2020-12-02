@@ -119,9 +119,10 @@ void Pencil::Draw(engineInterface* engine)
     {
         for (int i = 0; i < (long)previousDots.size() - 1; ++i)
         {
+            LOGS("Points %d -> %d", i, i + 1)
             const FlatObj& first = previousDots[i];
             const FlatObj& second = previousDots[i + 1];
-            LOGS("Points %d -> %d", i, i + 1)
+
             double k = std::numeric_limits<double>::max();
             if (fabs(first.x - second.x) > FlatObj::SmallDifference)
             {

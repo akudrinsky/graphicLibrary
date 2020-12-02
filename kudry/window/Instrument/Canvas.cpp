@@ -1,6 +1,7 @@
 #include "Canvas.hpp"
 #include "canvasEvents.hpp"
 #include "../../Application/SubscriptionManager/SubscriptionManager.hpp"
+#include "../../engine/engineInterface.hpp"
 
 namespace kudry
 {
@@ -14,6 +15,8 @@ Canvas::Canvas(
 {
     picture.Fill(color);
 }
+
+/*--------------------------------------------------------------------------*/
 
 bool Canvas::HandleEvent(Event *event)
 {
@@ -55,6 +58,49 @@ bool Canvas::HandleEvent(Event *event)
     return false;
 }
 
-//void Canvas::Draw(engineInterface *engine){}
+/*--------------------------------------------------------------------------*/
+
+void Canvas::Draw(engineInterface* engine)
+{
+    engine->DrawPicture(&picture);
+}
+
+/*--------------------------------------------------------------------------*/
+
+void Canvas::EmplaceWindow(AbstractWindow*)
+{}
+
+/*--------------------------------------------------------------------------*/
+
+void Canvas::RemoveWindow(AbstractWindow*)
+{}
+
+/*--------------------------------------------------------------------------*/
+
+const Picture& Canvas::GetPicture() const
+{
+    return picture;
+}
+
+/*--------------------------------------------------------------------------*/
+
+void Canvas::SetOrigin(const FlatObj& origin)
+{
+    picture.SetOrigin(origin);
+}
+
+/*--------------------------------------------------------------------------*/
+
+void Canvas::SetSize(const FlatObj& size)
+{
+    picture.SetSize(size);
+}
+
+/*--------------------------------------------------------------------------*/
+
+void Canvas::SetColor(const Color& clr)
+{
+    picture.Fill(clr);
+}
 
 }
