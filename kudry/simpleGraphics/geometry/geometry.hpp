@@ -15,6 +15,8 @@ public:
 
     double x;
     double y;
+
+    static constexpr double SmallDifference = 1.0 / 1000.0;
 };
 
 }

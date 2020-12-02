@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../../Application/EventTypes/UserEvent.hpp"
+#include "../Components/Shapes/Picture.hpp"
 #include "Canvas.hpp"
 #include "Instrument.hpp"
 
@@ -11,7 +12,7 @@ class CanvasEvent : public UserEvent
 {
 public:
     FlatObj pos;
-    class Canvas* canvas;
+    Picture* pict;
     MouseEvent::ActionType act;
 };
 

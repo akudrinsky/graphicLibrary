@@ -30,11 +30,6 @@ Color Picture::GetPixel(const FlatObj& where) const
     return *reinterpret_cast<Color*>(pixelsData + posInData);
 }
 
-FlatObj Picture::GetSize() const
-{
-    return imgSize;
-}
-
 const uint8_t* Picture::GetRawData() const
 {
     return pixelsData;

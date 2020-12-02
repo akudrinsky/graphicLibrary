@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Rectangle.hpp"
+#include "../../../simpleGraphics/color/color.hpp"
 #include <cstdlib>
 #include <cstring>
 

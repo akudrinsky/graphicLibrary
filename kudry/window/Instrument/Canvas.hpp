@@ -2,7 +2,7 @@
 
 #include "Instrument.hpp"
 #include "../RectangleButton/RectangleButton.hpp"
-#include "../../simpleGraphics/Image/Image.hpp"
+#include "../Components/Shapes/Picture.hpp"
 
 namespace kudry
 {
@@ -25,7 +25,7 @@ public:
 
     // virtual void Draw(engineInterface* engine) override;
 private:
-    Image img;
+    Picture picture;
 };
 
 }

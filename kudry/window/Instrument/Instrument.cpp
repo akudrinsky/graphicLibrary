@@ -9,14 +9,16 @@ namespace kudry
 
 /*--------------------------------------------------------------------------*/
 
-AbstractInstrument::AbstractInstrument()
-    :
-    canvas(nullptr)
-{}
+AbstractInstrument* AbstractInstrument::active = nullptr;
+
+Color AbstractInstrument::mainColor = Color::RedColor;
 
 /*--------------------------------------------------------------------------*/
 
-AbstractInstrument* AbstractInstrument::active = nullptr;
+AbstractInstrument::AbstractInstrument()
+    :
+    picture(nullptr)
+{}
 
 /*--------------------------------------------------------------------------*/
 
@@ -30,6 +32,13 @@ void AbstractInstrument::SetActive()
 AbstractInstrument* AbstractInstrument::GetActive()
 {
     return active;
+}
+
+/*--------------------------------------------------------------------------*/
+
+const Color& AbstractInstrument::GetMainColor() const
+{
+    return mainColor;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -59,10 +68,9 @@ void ManagingButton::OnRelease()
 Pencil::Pencil()
     :
     button(this),
-    clr(Color::RedColor),
     thickness(10)
 {
-    button.SetColor(clr);
+    button.SetColor(Color::RedColor);
     button.SetOrigin(FlatObj(10, 10));
     button.SetSize(FlatObj(100, 100));
 }
@@ -83,8 +91,8 @@ bool Pencil::HandleEvent(Event *event)
             LOGS("Instrument %p has received user event\n", GetActive())
             CanvasEvent* realEvent = static_cast<CanvasEvent*>(event);
             previousDots.push_back(realEvent->pos);
-            if (canvas == nullptr)
-                canvas = realEvent->canvas;
+            if (picture == nullptr)
+                picture = realEvent->pict;
 
             LOGS("Saw %lu dots", previousDots.size())
 
@@ -109,12 +117,39 @@ void Pencil::Draw(engineInterface* engine)
 
     if (previousDots.size() > 1)
     {
-        engine->DrawCurve(
-            clr,
-            thickness,
-            previousDots,
-            canvas
-        );
+        for (int i = 0; i < (long)previousDots.size() - 1; ++i)
+        {
+            const FlatObj& first = previousDots[i];
+            const FlatObj& second = previousDots[i + 1];
+            LOGS("Points %d -> %d", i, i + 1)
+            double k = std::numeric_limits<double>::max();
+            if (fabs(first.x - second.x) > FlatObj::SmallDifference)
+            {
+                k = (first.y - second.y) / 
+                    (first.x - second.x);
+            }
+
+            double b = (first.x * second.y - first.y * second.x) / (first.x - second.x);
+
+            const Color& clr = GetMainColor();
+
+            for (int x = first.x; x < second.x; ++x)
+            {
+                for (int deltaX = -thickness; deltaX < thickness; ++deltaX)
+                {
+                    for (int deltaY = -thickness; deltaY < thickness; ++deltaY)
+                    {
+                        picture->SetPixel(
+                            FlatObj(
+                                x + deltaX,
+                                k * x + b + deltaY
+                            ), 
+                            clr
+                        );
+                    }
+                }
+            }
+        }
 
         previousDots.clear();
     }

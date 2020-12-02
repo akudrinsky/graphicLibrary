@@ -4,6 +4,8 @@
 #include "canvasEvents.hpp"
 #include "../RectangleButton/RectangleButton.hpp"
 #include "../../simpleGraphics/color/color.hpp"
+#include <limits>
+#include <cmath>
 
 //#include <optional>
 #include <deque>
@@ -22,13 +24,18 @@ public:
 
     static AbstractInstrument* GetActive();
 
+    const Color& GetMainColor() const;
+
 protected:
     void SetActive();
-    Canvas* canvas;
+    Picture* picture;
 
 private:
     // Active instrument, that would affect the Canvas
     static AbstractInstrument* active;
+    
+    // Main color, that is defined by managing buttons
+    static Color mainColor;
 
     friend class ManagingButton;
 };
@@ -67,7 +74,6 @@ public:
     ManagingButton button;
 
 protected:
-    Color clr; 
     Thickness_t thickness;
     // the closer to beginning - the earlier dot was presented
     std::deque<FlatObj> previousDots;

@@ -10,9 +10,9 @@ Canvas::Canvas(
     const FlatObj &size, 
     const Color &color
 )   :
-    RectangleWindow(position, size)
+    picture(position, size)
 {
-
+    picture.Fill(color);
 }
 
 bool Canvas::HandleEvent(Event *event)
@@ -22,14 +22,18 @@ bool Canvas::HandleEvent(Event *event)
         case Event::Mouse:
         {
             MouseEvent* realEvent = static_cast<MouseEvent*>(event);
-            if (!shape.Contains(realEvent->Position))
+            if (!picture.Contains(realEvent->Position))
                 return false;
 
-            LOGS("Mouse event on Canvas\nCoords are (%lg, %lg)\nType is %d\n", realEvent->Position.x, realEvent->Position.y, realEvent->Action)
+            LOGS(
+                "Mouse event on Canvas\nCoords are (%lg, %lg)\nType is %d\n",
+                realEvent->Position.x, 
+                realEvent->Position.y, 
+                realEvent->Action)
 
             CanvasEvent passingEvent {
                 .pos = realEvent->Position, 
-                .canvas = this, 
+                .pict = &picture, 
                 .act = realEvent->Action};
 
             if (AbstractInstrument::GetActive() != nullptr)
