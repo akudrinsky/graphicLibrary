@@ -40,19 +40,15 @@ template<class T> Format& Format::operator,(const T &argument)
 
 #ifdef DEBUG
 
-template<typename... Args>
-void LOGS(std::string formatString, Args... args)
-{
-    std::cerr << "-----LOG-----\n~~~~~~~~~~~~~\n";
-    std::cerr << (Format(formatString), args...);
-    //std::cerr << (Format("\n~~~~~~~~~~~~~\nFILE: %\nLINE: %\nFUNC: %"), );
+#define LOGS(...)\
+    fprintf(stderr, "-----LOG-----\n~~~~~~~~~~~~~\n");\
+    fprintf(stderr, __VA_ARGS__);\
+    fprintf(stderr, "\n~~~~~~~~~~~~~\nFILE: %s\nLINE: %d\nFUNC: %s", __FILE__, __LINE__,__func__);\
     fprintf(stderr, "\n---LOG-END---\n\n\n\n");
-}
+
 
 #else
 
-template<typename... Args>
-void LOGS(std::string formatString, Args... args)
-{}
+#define LOGS(...)
 
 #endif
