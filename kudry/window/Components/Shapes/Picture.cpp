@@ -6,7 +6,7 @@ namespace kudry
 Picture::Picture(const FlatObj<int>& position, const FlatObj<int>& imgSize)
     :
     RectangleShape(position, imgSize),
-    pixelsData(new uint8_t[sizeof(Color) * pixelsNum()])
+    pixelsData(new uint8_t[sizeof(Color) * imgSize.x * imgSize.y])
 {}
 
 void Picture::SetPixel(const FlatObj<int>& where, const Color& clr)
@@ -41,13 +41,13 @@ const uint8_t* Picture::GetRawData() const
 
 int Picture::arrayPosition(const FlatObj<int>& where) const
 {
-    LOGS("Position of (%d, %d) in (%d, %d) picture with sizes (%d, %d) should be %lu", where.x, where.y, origin_.x, origin_.y, size_.x, size_.y, (where.y * GetSize().x + where.x) * sizeof(Color))
+    //LOGS("Position of (%d, %d) in (%d, %d) picture with sizes (%d, %d) should be %lu", where.x, where.y, origin_.x, origin_.y, size_.x, size_.y, (where.y * GetSize().x + where.x) * sizeof(Color))
     return ((where.y - origin_.y) * GetSize().x + (where.x - origin_.x)) * sizeof(Color);
 }
 
 int Picture::pixelsNum() const
 {
-    return GetSize().x * GetSize().y;
+    return GetSize().x * GetSize().y * sizeof(Color);
 }
 
 }

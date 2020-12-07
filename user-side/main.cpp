@@ -25,8 +25,8 @@ int main(int argc, char* argv[])
         kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
     
     kudry::Canvas canvas(
-        kudry::FlatObj<int>(200, 100),
-        kudry::FlatObj<int>(500, 800),
+        kudry::FlatObj<int>(400, 100),
+        kudry::FlatObj<int>(1200, 100),
         kudry::Color::LightGreyColor
     );
 

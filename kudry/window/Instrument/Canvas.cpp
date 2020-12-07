@@ -34,10 +34,11 @@ bool Canvas::HandleEvent(Event *event)
                 realEvent->Position.y, 
                 realEvent->Action)
 
-            CanvasEvent passingEvent {
+            CanvasEvent passingEvent{
                 .pos = realEvent->Position, 
                 .pict = &picture, 
-                .act = realEvent->Action};
+                .act = realEvent->Action
+            };
 
             if (AbstractInstrument::GetActive() != nullptr)
             {
