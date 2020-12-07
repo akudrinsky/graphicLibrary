@@ -20,8 +20,8 @@ int main(int argc, char* argv[])
         kudry::Application<kudry::engineSFML>::GetInstance(argv[1]);
 
     kudry::Scrollbar scrlbar(
-        kudry::FlatObj(1000, 200),
-        kudry::FlatObj(30, 700),
+        kudry::FlatObj<int>(1000, 200),
+        kudry::FlatObj<int>(30, 700),
         kudry::Color(50, 50, 50),
         kudry::Color(150, 150, 150)
     );
@@ -41,8 +41,8 @@ int main(int argc, char* argv[])
 
     kudry::ScrollableText scrltext(
         text,
-        kudry::FlatObj(100, 100),
-        kudry::FlatObj(800, 700),
+        kudry::FlatObj<int>(100, 100),
+        kudry::FlatObj<int>(800, 700),
         kudry::Color(100, 100, 100)
     ); 
 

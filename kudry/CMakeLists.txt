@@ -32,6 +32,7 @@ add_library(kudry
     ./engine/SFML/engineSFML.cpp
     ./engine/OpenGL/engineOpenGL.cpp
     ./simpleGraphics/color/color.cpp
+    ./LOGS/logs.cpp
 )
 
 find_package(SFML REQUIRED system window graphics)

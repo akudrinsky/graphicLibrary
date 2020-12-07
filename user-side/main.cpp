@@ -1,9 +1,9 @@
 #include "../kudry/Application/Application.hpp"
 #include "../kudry/engine/SFML/engineSFML.hpp"
-//#include "../kudry/window/FigureDrawer/FigureDrawer.hpp"
 #include "../kudry/window/Instrument/Instrument.hpp"
 #include "../kudry/window/Instrument/Canvas.hpp"
 #include "../kudry/LOGS/logs.hpp"
+#include <iostream>
 
 #include <fstream>
 #include <string>
@@ -12,6 +12,7 @@
 
 int main(int argc, char* argv[]) 
 {
+    std::cerr << (Format("% is equal to %\n"), 10, "tratata");
     if (argc != 2) 
     {
         printf("Need name if window\n");
