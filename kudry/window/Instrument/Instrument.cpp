@@ -124,13 +124,13 @@ void Pencil::Draw(engineInterface* engine)
             const FlatObj<int>& second = previousDots[i + 1];
 
             double k = std::numeric_limits<double>::max();
+            double b = std::numeric_limits<double>::max();
+
             if (fabs(first.x - second.x) > FlatObj<int>::SmallDifference)
             {
-                k = (first.y - second.y) / 
-                    (first.x - second.x);
+                k = (first.y - second.y) / (first.x - second.x);
+                b = (first.x * second.y - first.y * second.x) / (first.x - second.x);
             }
-
-            double b = (first.x * second.y - first.y * second.x) / (first.x - second.x);
 
             const Color& clr = GetMainColor();
 
