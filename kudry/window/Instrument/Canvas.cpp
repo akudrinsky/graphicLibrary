@@ -25,20 +25,24 @@ bool Canvas::HandleEvent(Event *event)
         case Event::Mouse:
         {
             MouseEvent* realEvent = static_cast<MouseEvent*>(event);
+                        
             if (!picture.Contains(realEvent->Position))
                 return false;
-
+            
+            /*
             LOGS(
-                "Mouse event on Canvas\nCoords are (%d, %d)\nType is %d\n",
+                "Mouse event on Canvas\n"
+                "Coords are (%d, %d)\n"
+                "Type is %d\n",
                 realEvent->Position.x, 
                 realEvent->Position.y, 
                 realEvent->Action)
+            */
 
             CanvasEvent passingEvent{
                 .pos = FlatObj<int>(
                     realEvent->Position.x - picture.GetOrigin().x,
                     realEvent->Position.y - picture.GetOrigin().y),
-                //.pos = realEvent->Position, 
                 .pict = &picture, 
                 .act = realEvent->Action};
 
@@ -51,6 +55,11 @@ bool Canvas::HandleEvent(Event *event)
             }
 
             return true;
+            break;
+        }
+        case Event::Close:
+        {
+
             break;
         }
         default:

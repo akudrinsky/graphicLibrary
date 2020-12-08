@@ -68,7 +68,8 @@ void ManagingButton::OnRelease()
 Pencil::Pencil()
     :
     button(this),
-    thickness(10)
+    thickness(10),
+    isActive(false)
 {
     button.SetColor(Color::RedColor);
     button.SetOrigin(FlatObj<int>(10, 10));
@@ -97,13 +98,20 @@ bool Pencil::HandleEvent(Event *event)
         {
             LOGS("Instrument %p has received user event\n", GetActive())
             CanvasEvent* realEvent = static_cast<CanvasEvent*>(event);
-            previousDots.push_back(realEvent->pos);
+
+            if (realEvent->act == MouseEvent::WasPressed)
+                isActive = true;
+
+            if (isActive)
+                previousDots.push_back(realEvent->pos);
+
             if (picture == nullptr)
                 picture = realEvent->pict;
 
             LOGS("Saw %lu dots", previousDots.size())
-
-            //drawLine(realEvent);
+            
+            if (realEvent->act == MouseEvent::WasReleased)
+                isActive = false;
 
             return true;
             break;
@@ -124,23 +132,20 @@ void Pencil::Draw(engineInterface* engine)
     
     if (previousDots.size() > 1)
     {
-        /*
-        auto pos = picture->GetOrigin();
-        for (int i = 0; i < 20; ++i)
-        {
-            for (int j = 0; j < 30; ++j)
-            {
-                picture->SetPixel(FlatObj<int>(pos.x + i, pos.y + j), Color::RedColor);
-            }
-        }
-        */
-
         for (int i = 0; i < (long)previousDots.size() - 1; ++i)
         {
             const FlatObj<int>& first = previousDots[i];
             const FlatObj<int>& second = previousDots[i + 1];
 
-            LOGS("Points (%d, %d) -> (%d, %d)\nThickness is %d", first.x, first.y, second.x, second.y, thickness)
+            /*
+            LOGS(
+                "Points (%d, %d) -> (%d, %d)\nThickness is %d", 
+                first.x, 
+                first.y, 
+                second.x, 
+                second.y, 
+                thickness)
+            */
             
             double k = std::numeric_limits<double>::max();
             double b = std::numeric_limits<double>::max();
@@ -174,10 +179,8 @@ void Pencil::Draw(engineInterface* engine)
                         picture->SetPixel(
                             FlatObj<int>(
                                 x + deltaX,
-                                k * x + b + deltaY// + picture->GetOrigin().y
-                            ), 
-                            clr
-                        );
+                                k * x + b + deltaY), 
+                            clr);
                     }
                 }
             }

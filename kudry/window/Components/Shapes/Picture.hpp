@@ -26,6 +26,8 @@ private:
     
     unsigned long arrayPosition(const FlatObj<int>& where) const;
 
+    bool ContainsLocal(const FlatObj<int>& where) const;
+
     unsigned long pixelsNum() const;
 };
 

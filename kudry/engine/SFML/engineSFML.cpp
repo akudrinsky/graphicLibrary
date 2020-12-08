@@ -197,10 +197,11 @@ Event* engineSFML::createMyEvent(const sf::Event& sfmlEvent)
         }
         case sf::Event::MouseMoved:                
         {
+            //LOGS("MOVE")
             myEvent = new MouseEvent(
                 FlatObj<int>(
-                    sfmlEvent.mouseButton.x, 
-                    sfmlEvent.mouseButton.y), 
+                    sfmlEvent.mouseMove.x, 
+                    sfmlEvent.mouseMove.y), 
                 MouseEvent::WasMoved);
             break;
         }

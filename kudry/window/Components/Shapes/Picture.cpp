@@ -11,7 +11,7 @@ Picture::Picture(const FlatObj<int>& position, const FlatObj<int>& imgSize)
 
 void Picture::SetPixel(const FlatObj<int>& where, const Color& clr)
 {
-    if (!Contains(where))
+    if (!ContainsLocal(where))
     {
         //LOGS("Does not contain")
         return;
@@ -31,9 +31,20 @@ void Picture::Fill(const Color& clr)
     }
 }
 
+bool Picture::ContainsLocal(const FlatObj<int> &point) const
+{
+    if (point.x < 0 || point.x > size_.x)
+        return false;
+    
+    if (point.y < 0 || point.y > size_.y)
+        return false;
+    
+    return true;
+}
+
 Color Picture::GetPixel(const FlatObj<int>& where) const
 {
-    if (!Contains(where))
+    if (!ContainsLocal(where))
     {
         return Color::BlackColor;
     }
@@ -60,7 +71,7 @@ unsigned long Picture::arrayPosition(const FlatObj<int>& where) const
         ((where.y - origin_.y) * GetSize().x + (where.x - origin_.x)) * sizeof(Color), 
         pixelsNum())
     */
-    return ((where.y - origin_.y) * GetSize().x + (where.x - origin_.x)) * sizeof(Color);
+    return ((where.y) * GetSize().x + (where.x)) * sizeof(Color);
 }
 
 unsigned long Picture::pixelsNum() const

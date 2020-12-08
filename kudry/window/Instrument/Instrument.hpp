@@ -80,6 +80,8 @@ protected:
     // the closer to beginning - the earlier dot was presented
     std::deque<FlatObj<int>> previousDots;
 
+    bool isActive;
+
     // Uses spline techique to draw lines
     // See: https://en.wikipedia.org/wiki/Spline_interpolation
     void drawLine(CanvasEvent* event);
