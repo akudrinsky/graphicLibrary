@@ -24,9 +24,9 @@ public:
 private:
     uint8_t* pixelsData;
     
-    int arrayPosition(const FlatObj<int>& where) const;
+    unsigned long arrayPosition(const FlatObj<int>& where) const;
 
-    int pixelsNum() const;
+    unsigned long pixelsNum() const;
 };
 
 }

@@ -10,7 +10,7 @@ namespace kudry
 class AbstractShapeComponent
 {
 public:
-    virtual bool Contains(const FlatObj<int>& point) = 0;
+    virtual bool Contains(const FlatObj<int>& point) const = 0;
 
     // TODO: Draw ?
 };

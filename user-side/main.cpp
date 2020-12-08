@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
     
     kudry::Canvas canvas(
         kudry::FlatObj<int>(400, 100),
-        kudry::FlatObj<int>(1200, 100),
+        kudry::FlatObj<int>(1200, 1000),
         kudry::Color::LightGreyColor
     );
 

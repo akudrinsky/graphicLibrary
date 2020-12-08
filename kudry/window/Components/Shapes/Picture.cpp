@@ -13,10 +13,13 @@ void Picture::SetPixel(const FlatObj<int>& where, const Color& clr)
 {
     if (!Contains(where))
     {
+        //LOGS("Does not contain")
         return;
     }
-    int posInData = arrayPosition(where);
+    unsigned long posInData = arrayPosition(where);
+    //LOGS("Pixel was %d\n", *(int*)(pixelsData + posInData));
     memcpy(pixelsData + posInData, &clr, sizeof(clr));
+    //LOGS("Pixel is %d\n", *(int*)(pixelsData + posInData));
 }
 
 void Picture::Fill(const Color& clr)
@@ -30,6 +33,10 @@ void Picture::Fill(const Color& clr)
 
 Color Picture::GetPixel(const FlatObj<int>& where) const
 {
+    if (!Contains(where))
+    {
+        return Color::BlackColor;
+    }
     int posInData = arrayPosition(where);
     return *reinterpret_cast<Color*>(pixelsData + posInData);
 }
@@ -39,13 +46,24 @@ const uint8_t* Picture::GetRawData() const
     return pixelsData;
 }
 
-int Picture::arrayPosition(const FlatObj<int>& where) const
+unsigned long Picture::arrayPosition(const FlatObj<int>& where) const
 {
-    //LOGS("Position of (%d, %d) in (%d, %d) picture with sizes (%d, %d) should be %lu", where.x, where.y, origin_.x, origin_.y, size_.x, size_.y, (where.y * GetSize().x + where.x) * sizeof(Color))
+    /*
+    LOGS(
+        "Position of (%d, %d) in (%d, %d) picture with sizes (%d, %d) should be %lu / %lu", 
+        where.x, 
+        where.y, 
+        origin_.x, 
+        origin_.y, 
+        size_.x, 
+        size_.y, 
+        ((where.y - origin_.y) * GetSize().x + (where.x - origin_.x)) * sizeof(Color), 
+        pixelsNum())
+    */
     return ((where.y - origin_.y) * GetSize().x + (where.x - origin_.x)) * sizeof(Color);
 }
 
-int Picture::pixelsNum() const
+unsigned long Picture::pixelsNum() const
 {
     return GetSize().x * GetSize().y * sizeof(Color);
 }

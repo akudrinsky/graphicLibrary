@@ -9,14 +9,14 @@ RectangleShape::RectangleShape(const FlatObj<int>& origin, const FlatObj<int>& s
     size_(size)
 {}
 
-bool RectangleShape::Contains(const FlatObj<int>& point)
+bool RectangleShape::Contains(const FlatObj<int>& point) const
 {
-    //LOGS("check x\n")
+    //LOGS("check x : %d in [%d, %d]\n", point.x, origin_.x, origin_.x + size_.x)
     // check x axis
     if (point.x < origin_.x or point.x > origin_.x + size_.x)
         return false;
 
-    //LOGS("check y\n")
+    //LOGS("check y : %d in [%d, %d]\n", point.y, origin_.y, origin_.y + size_.y)
     // check y axis
     if (point.y < origin_.y or point.y > origin_.y + size_.y)
         return false;

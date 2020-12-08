@@ -71,6 +71,8 @@ public:
 
     virtual void RemoveWindow([[maybe_unused]] AbstractWindow* window) override;
 
+    void SetThickness(const Thickness_t& newThickness);
+
     ManagingButton button;
 
 protected:

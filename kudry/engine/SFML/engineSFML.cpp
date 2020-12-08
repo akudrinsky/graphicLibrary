@@ -250,6 +250,7 @@ void engineSFML::createTextObj(const TextWindow* textToDraw)
 
 void engineSFML::DrawPicture(const Picture* picture)
 {
+    //LOGS("Drawing pict")
     sf::Texture texture;
     texture.create(picture->GetSize().x, picture->GetSize().y);
     texture.update(picture->GetRawData());

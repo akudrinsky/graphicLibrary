@@ -77,6 +77,13 @@ Pencil::Pencil()
 
 /*--------------------------------------------------------------------------*/
 
+void Pencil::SetThickness(const Thickness_t& newThickness)
+{
+    thickness = newThickness;
+}
+
+/*--------------------------------------------------------------------------*/
+
 bool Pencil::HandleEvent(Event *event)
 {
     switch (event->GetEventType())
@@ -114,28 +121,52 @@ bool Pencil::HandleEvent(Event *event)
 void Pencil::Draw(engineInterface* engine)
 {
     button.Draw(engine);
-
+    
     if (previousDots.size() > 1)
     {
+        /*
+        auto pos = picture->GetOrigin();
+        for (int i = 0; i < 20; ++i)
+        {
+            for (int j = 0; j < 30; ++j)
+            {
+                picture->SetPixel(FlatObj<int>(pos.x + i, pos.y + j), Color::RedColor);
+            }
+        }
+        */
+
         for (int i = 0; i < (long)previousDots.size() - 1; ++i)
         {
-            LOGS("Points %d -> %d", i, i + 1)
             const FlatObj<int>& first = previousDots[i];
             const FlatObj<int>& second = previousDots[i + 1];
 
+            LOGS("Points (%d, %d) -> (%d, %d)\nThickness is %d", first.x, first.y, second.x, second.y, thickness)
+            
             double k = std::numeric_limits<double>::max();
             double b = std::numeric_limits<double>::max();
+
+            //auto& pictOrigin = picture->GetOrigin();
 
             if (fabs(first.x - second.x) > FlatObj<int>::SmallDifference)
             {
                 k = (first.y - second.y) / (first.x - second.x);
+                //b = (first.x * (second.y - pictOrigin.y) - (first.y - pictOrigin.y) * second.x) / (first.x - second.x);
                 b = (first.x * second.y - first.y * second.x) / (first.x - second.x);
             }
+            
+            //double k = 1.0;
+            //double b = -100.0;
 
-            const Color& clr = GetMainColor();
+            //Color clr = GetMainColor();
+            Color clr = Color::RedColor;
+            LOGS("Color is %d", *(int*)&clr)
 
-            for (int x = first.x; x < second.x; ++x)
+            for (
+                int x = std::min(first.x, second.x); 
+                x < std::max(first.x, second.x); 
+                ++x)
             {
+                //LOGS("Pixel")
                 for (int deltaX = -thickness; deltaX < thickness; ++deltaX)
                 {
                     for (int deltaY = -thickness; deltaY < thickness; ++deltaY)
@@ -143,17 +174,19 @@ void Pencil::Draw(engineInterface* engine)
                         picture->SetPixel(
                             FlatObj<int>(
                                 x + deltaX,
-                                k * x + b + deltaY
+                                k * x + b + deltaY// + picture->GetOrigin().y
                             ), 
                             clr
                         );
                     }
                 }
             }
+            //LOGS("Drew %d dots\n", first.x)
         }
-
+        
         previousDots.clear();
     }
+    
 }
 
 /*--------------------------------------------------------------------------*/

@@ -35,10 +35,12 @@ bool Canvas::HandleEvent(Event *event)
                 realEvent->Action)
 
             CanvasEvent passingEvent{
-                .pos = realEvent->Position, 
+                .pos = FlatObj<int>(
+                    realEvent->Position.x - picture.GetOrigin().x,
+                    realEvent->Position.y - picture.GetOrigin().y),
+                //.pos = realEvent->Position, 
                 .pict = &picture, 
-                .act = realEvent->Action
-            };
+                .act = realEvent->Action};
 
             if (AbstractInstrument::GetActive() != nullptr)
             {

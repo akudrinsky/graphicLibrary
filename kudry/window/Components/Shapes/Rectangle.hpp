@@ -12,7 +12,7 @@ public:
 
     RectangleShape(const FlatObj<int>& origin, const FlatObj<int>& size);
     
-    virtual bool Contains(const FlatObj<int>& point) override;
+    virtual bool Contains(const FlatObj<int>& point) const override;
 
     FlatObj<int>& GetOrigin();
 
