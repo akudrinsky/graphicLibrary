@@ -14,6 +14,8 @@ class Color
 public:
     Color(uint8_t Red, uint8_t Green, uint8_t Blue, uint8_t Alpha = 255);
 
+    Color(const Color& clr);
+
     uint8_t Red;
     uint8_t Green;
     uint8_t Blue;

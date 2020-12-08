@@ -14,7 +14,7 @@ public:
     Canvas(
         const FlatObj<int>& position, 
         const FlatObj<int>& size, 
-        const Color& color = Color::DarkGreyColor
+        const Color& color = Color::WhiteColor
     );
 
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;

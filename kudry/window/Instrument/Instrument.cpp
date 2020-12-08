@@ -36,7 +36,13 @@ AbstractInstrument* AbstractInstrument::GetActive()
 
 /*--------------------------------------------------------------------------*/
 
-const Color& AbstractInstrument::GetMainColor() const
+void AbstractInstrument::SetMainColor(const Color& clr)
+{
+    mainColor = clr;
+}
+
+/*--------------------------------------------------------------------------*/
+const Color& AbstractInstrument::GetMainColor()
 {
     return mainColor;
 }
@@ -111,7 +117,10 @@ bool Pencil::HandleEvent(Event *event)
             LOGS("Saw %lu dots", previousDots.size())
             
             if (realEvent->act == MouseEvent::WasReleased)
+            {
                 isActive = false;
+                previousDots.clear();
+            }
 
             return true;
             break;
@@ -130,89 +139,82 @@ void Pencil::Draw(engineInterface* engine)
 {
     button.Draw(engine);
     
-    if (previousDots.size() > 1)
-    {
-        for (int i = 0; i < (long)previousDots.size() - 1; ++i)
-        {
-            const FlatObj<int>& first = previousDots[i];
-            const FlatObj<int>& second = previousDots[i + 1];
-
-            /*
-            LOGS(
-                "Points (%d, %d) -> (%d, %d)\nThickness is %d", 
-                first.x, 
-                first.y, 
-                second.x, 
-                second.y, 
-                thickness)
-            */
-            
-            double k = std::numeric_limits<double>::max();
-            double b = std::numeric_limits<double>::max();
-
-            //auto& pictOrigin = picture->GetOrigin();
-
-            if (fabs(first.x - second.x) > FlatObj<int>::SmallDifference)
-            {
-                k = (first.y - second.y) / (first.x - second.x);
-                //b = (first.x * (second.y - pictOrigin.y) - (first.y - pictOrigin.y) * second.x) / (first.x - second.x);
-                b = (first.x * second.y - first.y * second.x) / (first.x - second.x);
-            }
-            
-            //double k = 1.0;
-            //double b = -100.0;
-
-            //Color clr = GetMainColor();
-            Color clr = Color::RedColor;
-            LOGS("Color is %d", *(int*)&clr)
-
-            for (
-                int x = std::min(first.x, second.x); 
-                x < std::max(first.x, second.x); 
-                ++x)
-            {
-                //LOGS("Pixel")
-                for (int deltaX = -thickness; deltaX < thickness; ++deltaX)
-                {
-                    for (int deltaY = -thickness; deltaY < thickness; ++deltaY)
-                    {
-                        picture->SetPixel(
-                            FlatObj<int>(
-                                x + deltaX,
-                                k * x + b + deltaY), 
-                            clr);
-                    }
-                }
-            }
-            //LOGS("Drew %d dots\n", first.x)
-        }
-        
-        previousDots.clear();
-    }
-    
+    drawLine(GetMainColor());
 }
 
 /*--------------------------------------------------------------------------*/
 
-void Pencil::drawLine(CanvasEvent* event)
+void Pencil::drawLine(const Color& clr)
 {
-    if (previousDots.size() == 0)
+    for (int i = 0; i < (long)previousDots.size() - 1; ++i)
     {
-        // Here I state that if there is no dots, 
-        // then we will draw spline basing on an assumption,
-        // that first dot will we used in spline twice.
-        previousDots.push_back(event->pos);
-        //previousDots.push_back(event->pos);
-    }
-    else if (previousDots.size() == 1)
-    {
+        const FlatObj<int>& firstDot = previousDots[i];
+        const FlatObj<int>& secondDot = previousDots[i + 1];
 
+        int FlatObj<int>::* primaryAxis = nullptr;
+        int FlatObj<int>::* secondaryAxis = nullptr;
 
+        int xDotDiff = abs(previousDots[i].x - previousDots[i + 1].x);
+        int yDotDiff = abs(previousDots[i].y - previousDots[i + 1].y);
+
+        if (xDotDiff > yDotDiff)
+        {
+            primaryAxis = &FlatObj<int>::x;
+            secondaryAxis = &FlatObj<int>::y;
+        }
+        else
+        {
+            primaryAxis = &FlatObj<int>::y;
+            secondaryAxis = &FlatObj<int>::x;
+        }
+        if (
+            fabs(firstDot.*primaryAxis - secondDot.*primaryAxis) < 
+            FlatObj<double>::SmallDifference)
+        {
+            continue;
+        }
+
+        double k = (firstDot.*secondaryAxis - secondDot.*secondaryAxis) / 
+            (firstDot.*primaryAxis - secondDot.*primaryAxis);
+        double b = (
+            firstDot.*primaryAxis * secondDot.*secondaryAxis - 
+            firstDot.*secondaryAxis * secondDot.*primaryAxis
+            ) / 
+            (firstDot.*primaryAxis - secondDot.*primaryAxis);
+
+        for (
+            int x = std::min(firstDot.*primaryAxis, secondDot.*primaryAxis); 
+            x < std::max(firstDot.*primaryAxis, secondDot.*primaryAxis); 
+            ++x)
+        {
+                //LOGS("Pixel")
+            for (int deltaX = -thickness; deltaX < thickness; ++deltaX)
+            {
+                for (int deltaY = -thickness; deltaY < thickness; ++deltaY)
+                {
+                    if (xDotDiff > yDotDiff)
+                    {
+                        picture->SetPixel(
+                        FlatObj<int>(
+                            x + deltaX,
+                            k * x + b + deltaY), 
+                            clr);
+                    }
+                    else
+                    {
+                        picture->SetPixel(
+                        FlatObj<int>(
+                            k * x + b + deltaY,
+                            x + deltaX), 
+                        clr);
+                    }
+                }
+            }
+        }
     }
-    else
-    {
-        LOGS("Unknown size of prev dots: %lu", previousDots.size())
-    }
+    
+    if (previousDots.size() >= 2)
+        previousDots.clear();
 }
 
 /*--------------------------------------------------------------------------*/
@@ -224,5 +226,14 @@ void Pencil::EmplaceWindow(AbstractWindow*)
 
 void Pencil::RemoveWindow(AbstractWindow*)
 {}
+
+/*--------------------------------------------------------------------------*/
+
+void Eraser::Draw(engineInterface *engine)
+{
+    button.Draw(engine);
+    
+    drawLine(Color::WhiteColor);
+}
 
 }

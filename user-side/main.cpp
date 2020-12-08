@@ -26,17 +26,24 @@ int main(int argc, char* argv[])
     
     kudry::Canvas canvas(
         kudry::FlatObj<int>(400, 100),
-        kudry::FlatObj<int>(1200, 1000),
-        kudry::Color::LightGreyColor
+        kudry::FlatObj<int>(1200, 1000)
     );
 
     kudry::Pencil pencil;
     pencil.button.SetSize(kudry::FlatObj<int>(50, 50));
     pencil.button.SetOrigin(kudry::FlatObj<int>(50, 50));
     pencil.button.SetColor(kudry::Color::DarkGreyColor);
+
+    kudry::Eraser eraser;
+    eraser.button.SetSize(kudry::FlatObj<int>(50, 50));
+    eraser.button.SetOrigin(kudry::FlatObj<int>(50, 150));
+    eraser.button.SetColor(kudry::Color::DarkGreyColor);
+
+    kudry::Pencil::SetMainColor(kudry::Color::GreenColor);
     
     app.NewWindow(&canvas);
     app.NewWindow(&pencil);
+    app.NewWindow(&eraser);
 
     LOGS("loop\n")
 

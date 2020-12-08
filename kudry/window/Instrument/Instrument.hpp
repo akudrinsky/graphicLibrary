@@ -24,7 +24,9 @@ public:
 
     static AbstractInstrument* GetActive();
 
-    const Color& GetMainColor() const;
+    static void SetMainColor(const Color& clr);
+
+    static const Color& GetMainColor();
 
 protected:
     void SetActive();
@@ -84,7 +86,7 @@ protected:
 
     // Uses spline techique to draw lines
     // See: https://en.wikipedia.org/wiki/Spline_interpolation
-    void drawLine(CanvasEvent* event);
+    void drawLine(const Color& clr);
 };
 
 /*--------------------------------------------------------------------------*/
@@ -93,7 +95,7 @@ protected:
 class Eraser : public Pencil
 {
 public:
-    virtual bool HandleEvent([[maybe_unused]] Event* event) override;
+    virtual void Draw(engineInterface* engine) override;
 };
 
 }
