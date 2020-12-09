@@ -36,12 +36,4 @@ MouseEvent::MouseEvent(const FlatObj<int> &pos, const MouseEvent::ActionType &ac
     Action(action)
 {}
 
-/*--------------------------------------------------------------------------*/
-
-ScrollbarEvent::ScrollbarEvent(double position)
-    :
-    Event(Scrollbar),
-    Position(position)
-{}
-
 }

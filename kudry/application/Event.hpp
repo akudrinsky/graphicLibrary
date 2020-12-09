@@ -15,7 +15,6 @@ public:
         Unknown,
         Mouse,
         Keyboard,
-        Scrollbar,
         Close,
         User,
         Canvas,
@@ -48,17 +47,6 @@ public:
     FlatObj<int> Position;
     ActionType Action;
     MouseEvent(const FlatObj<int>& pos, const ActionType& action);
-};
-
-/*--------------------------------------------------------------------------*/
-
-// Desribes all events got from scrollbar
-// TODO: make it a user event
-class ScrollbarEvent : public Event
-{
-public:
-    double Position;
-    ScrollbarEvent(double position);
 };
 
 }

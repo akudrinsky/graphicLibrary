@@ -27,7 +27,7 @@ bool ScrollableText::HandleEvent([[maybe_unused]] Event* event)
 {
     switch (event->GetEventType())
     {
-        case Event::Scrollbar:
+        case Event::User:
         {
             auto realEvent = static_cast<ScrollbarEvent*>(event);
             position = realEvent->Position;

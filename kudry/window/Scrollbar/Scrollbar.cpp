@@ -81,6 +81,13 @@ void Scrollbar::SendPosition()
 
 /*--------------------------------------------------------------------------*/
 
+void Scrollbar::SetColor(const Color &newColor)
+{
+    middleButton.SetColor(newColor);
+}
+
+/*--------------------------------------------------------------------------*/
+
 Scrollbar::upperButton::upperButton(
     const FlatObj<int>& center, 
     const FlatObj<int>& size, 
@@ -207,6 +214,14 @@ void Scrollbar::lowerButton::OnClick()
 /*--------------------------------------------------------------------------*/
 
 void Scrollbar::lowerButton::OnRelease()
+{}
+
+/*--------------------------------------------------------------------------*/
+
+ScrollbarEvent::ScrollbarEvent(double position, Scrollbar* receivedFrom)
+    :
+    Position(position),
+    ReceivedFrom(receivedFrom)
 {}
 
 }

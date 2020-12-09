@@ -1,5 +1,6 @@
 #include "../RectangleWindow/RectangleWindow.hpp"
 #include "../RectangleButton/RectangleButton.hpp"
+#include "../../Application/EventTypes/UserEvent.hpp"
 
 namespace kudry
 {
@@ -22,6 +23,8 @@ public:
     void SetStep(const double& newStep);
 
     virtual ~Scrollbar() override;
+
+    void SetColor(const Color& newColor);
 
     virtual bool HandleEvent([[maybe_unused]] Event* event) override;
 
@@ -89,5 +92,18 @@ private:
     lowerButton toLower;
     middleButton middle;
 };
+
+/*--------------------------------------------------------------------------*/
+
+// Desribes all events got from scrollbar
+// TODO: make it a user event
+class ScrollbarEvent : public UserEvent
+{
+public:
+    double Position;
+    Scrollbar* ReceivedFrom;
+    ScrollbarEvent(double position, Scrollbar* receivedFrom);
+};
+
 
 }
