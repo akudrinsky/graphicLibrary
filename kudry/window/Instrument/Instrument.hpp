@@ -44,7 +44,7 @@ private:
 
 /*--------------------------------------------------------------------------*/
 
-// Decsribes button, that manages this instrument.
+// Decsribes button, that manages an instrument.
 class ManagingButton : public RectangleButton
 {
 public:
