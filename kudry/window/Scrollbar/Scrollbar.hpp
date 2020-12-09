@@ -80,7 +80,7 @@ private:
     private:
         Scrollbar* scrlbar;
         // !!! ERROR: May be pointer to freed space !!!
-        const FlatObj<int>* clickData;
+        FlatObj<int> clickData;
     };
 
     void SendPosition();

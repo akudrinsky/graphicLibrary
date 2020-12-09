@@ -102,7 +102,7 @@ bool Pencil::HandleEvent(Event *event)
         }
         case Event::User:
         {
-            LOGS("Instrument %p has received user event\n", GetActive())
+            //LOGS("Instrument %p has received user event\n", GetActive())
             CanvasEvent* realEvent = static_cast<CanvasEvent*>(event);
 
             if (realEvent->act == MouseEvent::WasPressed)
@@ -114,7 +114,7 @@ bool Pencil::HandleEvent(Event *event)
             if (picture == nullptr)
                 picture = realEvent->pict;
 
-            LOGS("Saw %lu dots", previousDots.size())
+            //LOGS("Saw %lu dots", previousDots.size())
             
             if (realEvent->act == MouseEvent::WasReleased)
             {

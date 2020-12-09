@@ -21,7 +21,7 @@ public:
         y(other.y)
     {}
 
-    FlatObj<Measure> operator+(const FlatObj<Measure>& other)
+    FlatObj<Measure> operator+(const FlatObj<Measure>& other) const
     {
         return FlatObj<Measure>(this->x + other.x, this->y + other.y);
     }

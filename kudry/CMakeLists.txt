@@ -14,6 +14,7 @@ add_library(kudry
     STATIC 
     ./window/RectangleButton/RectangleButton.cpp
     ./window/Instrument/Instrument.cpp
+    ./window/Instrument/InstrControllers.cpp
     ./window/Instrument/Canvas.cpp
     ./window/Instrument/canvasEvents.cpp
     ./window/RectangleWindow/RectangleWindow.cpp

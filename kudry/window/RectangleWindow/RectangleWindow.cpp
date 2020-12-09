@@ -82,6 +82,13 @@ const Color& RectangleWindow::GetColor() const
 
 /*--------------------------------------------------------------------------*/
 
+Color& RectangleWindow::GetColor()
+{
+    return backgroundColor;
+}
+
+/*--------------------------------------------------------------------------*/
+
 const FlatObj<int>& RectangleWindow::GetOrigin() const
 {
     return shape.GetOrigin();

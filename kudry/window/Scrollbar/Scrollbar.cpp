@@ -41,7 +41,10 @@ Scrollbar::~Scrollbar()
 
 bool Scrollbar::HandleEvent([[maybe_unused]] Event* event)
 {
-    SubscriptionManager::Send(this, event);
+    toUpper.HandleEvent(event);
+    toLower.HandleEvent(event);
+    middle.HandleEvent(event);
+    //SubscriptionManager::Send(this, event);
     return false;
 }
 
@@ -75,7 +78,7 @@ void Scrollbar::RemoveWindow([[maybe_unused]] AbstractWindow* window)
 
 void Scrollbar::SendPosition()
 {
-    ScrollbarEvent posEvent(position);
+    ScrollbarEvent posEvent(position, this);
     SubscriptionManager::Send(this, &posEvent);
 }
 
@@ -83,7 +86,7 @@ void Scrollbar::SendPosition()
 
 void Scrollbar::SetColor(const Color &newColor)
 {
-    middleButton.SetColor(newColor);
+    middle.SetColor(newColor);
 }
 
 /*--------------------------------------------------------------------------*/
@@ -126,7 +129,7 @@ Scrollbar::middleButton::middleButton(
 )   :
     RectangleButton(center, size, backgroundColor),
     scrlbar(scrlbar),
-    clickData(reinterpret_cast<const FlatObj<int>*>(0xBAD))
+    clickData(-2, -2)
 {
     SubscriptionManager::Subscribe(scrlbar, this);
 }
@@ -135,7 +138,7 @@ Scrollbar::middleButton::middleButton(
 
 void Scrollbar::middleButton::OnClick()
 {
-    clickData = nullptr;
+    clickData = FlatObj<int>(-1, -1);
 }
 
 /*--------------------------------------------------------------------------*/
@@ -145,9 +148,9 @@ void Scrollbar::middleButton::OnRelease()
     if (shape.GetSize().y == 0.0)
         return;
 
-    scrlbar->position = (clickData->y - shape.GetOrigin().y) / shape.GetSize().y;
+    scrlbar->position = (clickData.y - shape.GetOrigin().y) / shape.GetSize().y;
     scrlbar->SendPosition();
-    LOGS("position = %lg after middle button\n", scrlbar->position)
+    LOGS("position = %lg after middle button in %p\n", scrlbar->position, this)
 }
 
 /*--------------------------------------------------------------------------*/
@@ -169,9 +172,9 @@ bool Scrollbar::middleButton::HandleEvent(Event* event)
             }
             else if (realEvent->Action == MouseEvent::WasReleased)
             {
-                if (clickData != nullptr)
+                if (clickData.x != -1 || clickData.y != -1)
                     return false;
-                clickData = &realEvent->Position;
+                clickData = realEvent->Position;
                 OnRelease();
             }
                 

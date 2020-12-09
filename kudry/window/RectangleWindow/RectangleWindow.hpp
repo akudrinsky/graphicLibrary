@@ -30,6 +30,8 @@ public:
 
     const Color& GetColor() const;
 
+    Color& GetColor();
+
     const FlatObj<int>& GetOrigin() const;
 
     const FlatObj<int>& GetSize() const;

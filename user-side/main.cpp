@@ -2,6 +2,7 @@
 #include "../kudry/engine/SFML/engineSFML.hpp"
 #include "../kudry/window/Instrument/Instrument.hpp"
 #include "../kudry/window/Instrument/Canvas.hpp"
+#include "../kudry/window/Instrument/InstrControllers.hpp"
 #include "../kudry/LOGS/logs.hpp"
 #include <iostream>
 
@@ -40,10 +41,16 @@ int main(int argc, char* argv[])
     eraser.button.SetColor(kudry::Color::DarkGreyColor);
 
     kudry::Pencil::SetMainColor(kudry::Color::GreenColor);
+
+    kudry::Palette palette(
+        kudry::FlatObj<int>(1700, 800),
+        kudry::FlatObj<int>(400, 400)
+    );
     
     app.NewWindow(&canvas);
     app.NewWindow(&pencil);
     app.NewWindow(&eraser);
+    app.NewWindow(&palette);
 
     LOGS("loop\n")
 
