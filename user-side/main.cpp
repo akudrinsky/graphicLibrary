@@ -14,6 +14,7 @@
 int main(int argc, char* argv[]) 
 {
     std::cerr << (Format("% is equal to %\n"), 10, "tratata");
+
     if (argc != 2) 
     {
         printf("Need name if window\n");
@@ -55,7 +56,7 @@ int main(int argc, char* argv[])
     app.NewWindow(&palette);
     app.NewWindow(&thckCntrl);
 
-    LOGS("loop\n")
+    LOGS("Loop\n")
 
     return app.Loop();
 }

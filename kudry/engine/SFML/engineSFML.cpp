@@ -263,4 +263,11 @@ void engineSFML::DrawPicture(const Picture* picture)
     windowOS->draw(sprite);
 }
 
+/*--------------------------------------------------------------------------*/
+
+void engineInterface::SavePicture(const Picture* picture, const char* filename)
+{
+    
+}
+
 }

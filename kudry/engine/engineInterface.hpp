@@ -18,8 +18,11 @@ namespace kudry
 // Interface for connecting high-level Application interface with low-level drawing library
 class engineInterface {
 public:
-    // Contains pointers to AbstractWindow's
+    // Contains pointers to existing AbstractWindows
     using WindowContainer = std::unordered_set<AbstractWindow*>;
+
+    // Saves picture to file
+    void SavePicture(const Picture* picture, const char* filename);
 
     // Adds window to set of attached windows
     virtual void NewWindow(AbstractWindow* window) = 0;

@@ -72,6 +72,20 @@ bool Canvas::HandleEvent(Event *event)
 
 /*--------------------------------------------------------------------------*/
 
+void Canvas::LoadFromFile(const char* filename)
+{
+
+}
+
+/*--------------------------------------------------------------------------*/
+
+void Canvas::SaveToFile(const char* filename) const
+{
+    
+}
+
+/*--------------------------------------------------------------------------*/
+
 void Canvas::Draw(engineInterface* engine)
 {
     engine->DrawPicture(&picture);
