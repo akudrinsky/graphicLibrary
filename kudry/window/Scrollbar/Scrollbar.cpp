@@ -148,7 +148,7 @@ void Scrollbar::middleButton::OnRelease()
     if (shape.GetSize().y == 0.0)
         return;
 
-    scrlbar->position = (clickData.y - shape.GetOrigin().y) / shape.GetSize().y;
+    scrlbar->position = ((double)clickData.y - (double)shape.GetOrigin().y) / (double)shape.GetSize().y;
     scrlbar->SendPosition();
     LOGS("position = %lg after middle button in %p\n", scrlbar->position, this)
 }

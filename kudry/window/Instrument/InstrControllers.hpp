@@ -20,4 +20,18 @@ private:
     RectangleWindow resultClr;
 };
 
+class ThicknessController : public RectangleWindow
+{
+public:
+    ThicknessController(const FlatObj<int>& position, const FlatObj<int>& size);
+
+    virtual bool HandleEvent([[maybe_unused]] Event* event) override;
+
+    virtual void Draw(engineInterface* engine) override;
+
+private:
+    Scrollbar thckCntrl;
+    RectangleWindow resultThck;
+};
+
 }

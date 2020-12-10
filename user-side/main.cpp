@@ -27,8 +27,7 @@ int main(int argc, char* argv[])
     
     kudry::Canvas canvas(
         kudry::FlatObj<int>(400, 100),
-        kudry::FlatObj<int>(1200, 1000)
-    );
+        kudry::FlatObj<int>(1200, 1000));
 
     kudry::Pencil pencil;
     pencil.button.SetSize(kudry::FlatObj<int>(50, 50));
@@ -44,13 +43,17 @@ int main(int argc, char* argv[])
 
     kudry::Palette palette(
         kudry::FlatObj<int>(1700, 800),
-        kudry::FlatObj<int>(400, 400)
-    );
+        kudry::FlatObj<int>(400, 400));
+    
+    kudry::ThicknessController thckCntrl(
+        kudry::FlatObj<int>(1700, 300),
+        kudry::FlatObj<int>(400, 400));
     
     app.NewWindow(&canvas);
     app.NewWindow(&pencil);
     app.NewWindow(&eraser);
     app.NewWindow(&palette);
+    app.NewWindow(&thckCntrl);
 
     LOGS("loop\n")
 
