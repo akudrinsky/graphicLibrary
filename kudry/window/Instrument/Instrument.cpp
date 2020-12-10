@@ -13,6 +13,10 @@ AbstractInstrument* AbstractInstrument::active = nullptr;
 
 Color AbstractInstrument::mainColor = Color::RedColor;
 
+Thickness_t AbstractInstrument::thickness = 10;
+
+const Thickness_t AbstractInstrument::maxThickness = 20;
+
 /*--------------------------------------------------------------------------*/
 
 AbstractInstrument::AbstractInstrument()
@@ -42,9 +46,31 @@ void AbstractInstrument::SetMainColor(const Color& clr)
 }
 
 /*--------------------------------------------------------------------------*/
+
 const Color& AbstractInstrument::GetMainColor()
 {
     return mainColor;
+}
+
+/*--------------------------------------------------------------------------*/
+
+void AbstractInstrument::SetThickness(const Thickness_t& thck)
+{
+    thickness = thck;
+}
+
+/*--------------------------------------------------------------------------*/
+
+const Thickness_t& AbstractInstrument::GetThickness()
+{
+    return thickness;
+}
+
+/*--------------------------------------------------------------------------*/
+
+const Thickness_t& AbstractInstrument::GetMaxThickness()
+{
+    return maxThickness;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -74,19 +100,11 @@ void ManagingButton::OnRelease()
 Pencil::Pencil()
     :
     button(this),
-    thickness(10),
     isActive(false)
 {
     button.SetColor(Color::RedColor);
     button.SetOrigin(FlatObj<int>(10, 10));
     button.SetSize(FlatObj<int>(100, 100));
-}
-
-/*--------------------------------------------------------------------------*/
-
-void Pencil::SetThickness(const Thickness_t& newThickness)
-{
-    thickness = newThickness;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -182,12 +200,12 @@ void Pencil::drawLine(const Color& clr)
             ) / 
             (firstDot.*primaryAxis - secondDot.*primaryAxis);
 
+        Thickness_t thickness = GetThickness();
         for (
             int x = std::min(firstDot.*primaryAxis, secondDot.*primaryAxis); 
             x < std::max(firstDot.*primaryAxis, secondDot.*primaryAxis); 
             ++x)
         {
-                //LOGS("Pixel")
             for (int deltaX = -thickness; deltaX < thickness; ++deltaX)
             {
                 for (int deltaY = -thickness; deltaY < thickness; ++deltaY)

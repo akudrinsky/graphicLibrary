@@ -28,6 +28,12 @@ public:
 
     static const Color& GetMainColor();
 
+    static void SetThickness(const Thickness_t& thck);
+
+    static const Thickness_t& GetThickness();
+
+    static const Thickness_t& GetMaxThickness();
+
 protected:
     void SetActive();
     Picture* picture;
@@ -36,6 +42,12 @@ private:
     // Active instrument, that would affect the Canvas
     static AbstractInstrument* active;
     
+    // Thickness of all instruments
+    static Thickness_t thickness;
+
+    // Maximum available thickness
+    static const Thickness_t maxThickness;
+
     // Main color, that is defined by managing buttons
     static Color mainColor;
 
@@ -73,12 +85,13 @@ public:
 
     virtual void RemoveWindow([[maybe_unused]] AbstractWindow* window) override;
 
-    void SetThickness(const Thickness_t& newThickness);
+    //void SetThickness(const Thickness_t& newThickness);
+
+    //const Thickness_t& GetThickness() const;
 
     ManagingButton button;
 
 protected:
-    Thickness_t thickness;
     // the closer to beginning - the earlier dot was presented
     std::deque<FlatObj<int>> previousDots;
 
